@@ -8,6 +8,8 @@
         android:minSdkVersion="24"
         android:targetSdkVersion="32" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <permission
         android:name="com.geekbrain.android.nasa_api.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
@@ -26,6 +28,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/Theme.Nasa_api" >
         <activity
             android:name="com.geekbrain.android.nasa_api.MainActivity"

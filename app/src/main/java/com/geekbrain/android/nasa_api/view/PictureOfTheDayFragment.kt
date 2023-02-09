@@ -6,9 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.Observer
-import androidx.navigation.fragment.findNavController
-import com.geekbrain.android.nasa_api.R
+import coil.load
 import com.geekbrain.android.nasa_api.databinding.FragmentPictureOfTheDayBinding
 import com.geekbrain.android.nasa_api.viewmodel.AppState
 import com.geekbrain.android.nasa_api.viewmodel.PictureOfTheDayViewModel
@@ -24,6 +22,10 @@ class PictureOfTheDayFragment : Fragment() {
 
     val viewModel by viewModels<PictureOfTheDayViewModel>()
 
+companion object{
+    fun newInstance() = PictureOfTheDayFragment()
+
+}
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -38,15 +40,21 @@ class PictureOfTheDayFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        viewModel.getLiveData().observe(viewLifecycleOwner, object: Observer<AppState>{
-            override fun onChanged(t: AppState?) {
-                TODO("Not yet implemented")
+        viewModel.getLiveData().observe(viewLifecycleOwner
+        ) { renderDateFromNasa(it) }
+
+        viewModel.sendRequest()
+    }
+
+    private fun renderDateFromNasa(appState: AppState) {
+        when (appState) {
+            is AppState.Error -> {}
+            AppState.Loading -> {}
+            is AppState.Success -> {
+                binding.imageView.load(appState.pictureOfTheDayResponseData.url)
+                    //TODO настроить загрузку изображения error() placeholder()
+
             }
-
-        })
-
-        binding.buttonFirst.setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
         }
     }
 

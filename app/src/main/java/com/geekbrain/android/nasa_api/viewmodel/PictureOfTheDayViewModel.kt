@@ -8,8 +8,8 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class PictureOfTheDayViewModel(
-    private val liveData: MutableLiveData<AppState>,
+class PictureOfTheDayViewModel (
+    private val liveData: MutableLiveData<AppState> = MutableLiveData(),
     private val remoteRepository: RemoteRepositoryImpl = RemoteRepositoryImpl()
 ) : ViewModel() {
 
@@ -37,7 +37,7 @@ class PictureOfTheDayViewModel(
         }
 
         override fun onFailure(call: Call<PictureOfTheDayResponseData>, t: Throwable) {
-            TODO("Not yet implemented")
+            liveData.postValue(AppState.Error(t))
         }
 
     }
