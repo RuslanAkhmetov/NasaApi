@@ -1,5 +1,7 @@
 package com.geekbrain.android.nasa_api.view
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -48,6 +50,12 @@ companion object{
 
         binding.chipyesterday.setOnClickListener{
             Toast.makeText(requireContext(), "chipYesterday", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.inputLayout.setEndIconOnClickListener{
+            startActivity(Intent(Intent.ACTION_VIEW).apply {
+                data = Uri.parse("https://ru.wikipedia.org/wiki/${binding.input.text.toString()}")
+            })
         }
     }
 

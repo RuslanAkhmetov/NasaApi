@@ -45,4 +45,8 @@
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
     <string name="nasapictureoftheday">NasaPictureOfTheDay</string>
+    <string name="hint">Подсказака</string>
+    <string name="before_yesterday">Before yesterday</string>
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
 </resources>
