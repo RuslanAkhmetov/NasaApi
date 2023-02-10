@@ -11,23 +11,42 @@
         android:layout_height="match_parent"
         android:padding="16dp">
 
-        <Button
-            android:id="@+id/button_first"
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/next"
-            app:layout_constraintBottom_toTopOf="@id/imageView"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-        />
+            app:singleSelection="true"
+            app:layout_constraintEnd_toEndOf="parent">
 
-        <ImageView
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipyesterday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="yesterday" />
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="today" />
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="tomorrow" />
+
+
+        </com.google.android.material.chip.ChipGroup>
+
+        <com.geekbrain.android.nasa_api.utils.MyImageView
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"/>
-
+            android:contentDescription="@string/nasapictureoftheday"
+            app:layout_constraintTop_toBottomOf="@+id/chipGroup"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

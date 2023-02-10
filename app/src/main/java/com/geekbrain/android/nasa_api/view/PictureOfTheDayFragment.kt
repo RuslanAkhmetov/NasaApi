@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.viewModels
 import coil.load
 import com.geekbrain.android.nasa_api.databinding.FragmentPictureOfTheDayBinding
@@ -44,6 +45,10 @@ companion object{
         ) { renderDateFromNasa(it) }
 
         viewModel.sendRequest()
+
+        binding.chipyesterday.setOnClickListener{
+            Toast.makeText(requireContext(), "chipYesterday", Toast.LENGTH_SHORT).show()
+        }
     }
 
     private fun renderDateFromNasa(appState: AppState) {

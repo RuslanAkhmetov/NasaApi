@@ -5,9 +5,11 @@ color white
 dimen fab_margin
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable my_selector_background_chip
 id FirstFragment
 id action_settings
-id button_first
+id chipGroup
+id chipyesterday
 id container
 id imageView
 id nav_graph
@@ -23,11 +25,13 @@ string action_settings
 string app_name
 string first_fragment_label
 string lorem_ipsum
+string nasapictureoftheday
 string next
 string picture_of_the_day_request
 string previous
 string second_fragment_label
 style Base.Theme.Nasa_api
+style MyChipStyle
 style Theme.Nasa_api
 xml backup_rules
 xml data_extraction_rules
