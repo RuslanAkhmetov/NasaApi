@@ -34,13 +34,16 @@
         sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
-    </string><string name="nasapictureoftheday">NasaPictureOfTheDay</string><string name="hint">Подсказака</string></file><file path="C:\Users\1\AndroidStudioProjects\nasa_api\app\src\main\res\values\themes.xml" qualifiers=""><style name="Base.Theme.Nasa_api" parent="Theme.Material3.DayNight.NoActionBar">
+    </string><string name="nasapictureoftheday">NasaPictureOfTheDay</string><string name="hint">Label</string><string name="today">Today</string><string name="before_yesterday">Before yesterday</string><string name="yesterday">Yesterday</string></file><file path="C:\Users\1\AndroidStudioProjects\nasa_api\app\src\main\res\values\themes.xml" qualifiers=""><style name="Base.Theme.Nasa_api" parent="Theme.Material3.DayNight.NoActionBar">
         
         
         <item name="chipStyle">@style/MyChipStyle</item>
+        <item name="textInputStyle">@style/MyTextInputStyle</item>
     </style><style name="Theme.Nasa_api" parent="Base.Theme.Nasa_api"/><style name="MyChipStyle" parent="Widget.Material3.Chip.Suggestion">
         <item name="chipBackgroundColor">@drawable/my_selector_background_chip</item>
         <item name="rippleColor">#7C1293</item>
+    </style><style name="MyTextInputStyle" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="helperTextTextColor">#355C8C</item>
     </style></file><file path="C:\Users\1\AndroidStudioProjects\nasa_api\app\src\main\res\values-land\dimens.xml" qualifiers="land"><dimen name="fab_margin">48dp</dimen></file><file path="C:\Users\1\AndroidStudioProjects\nasa_api\app\src\main\res\values-night\themes.xml" qualifiers="night-v8"><style name="Base.Theme.Nasa_api" parent="Theme.Material3.DayNight.NoActionBar">
         
         

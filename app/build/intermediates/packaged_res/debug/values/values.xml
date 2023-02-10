@@ -6,8 +6,9 @@
     <dimen name="fab_margin">16dp</dimen>
     <string name="action_settings">Settings</string>
     <string name="app_name">nasa_api</string>
+    <string name="before_yesterday">Before yesterday</string>
     <string name="first_fragment_label">First Fragment</string>
-    <string name="hint">Подсказака</string>
+    <string name="hint">Label</string>
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
         volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
@@ -49,14 +50,20 @@
     <string name="picture_of_the_day_request">planetary/apod</string>
     <string name="previous">Previous</string>
     <string name="second_fragment_label">Second Fragment</string>
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
     <style name="Base.Theme.Nasa_api" parent="Theme.Material3.DayNight.NoActionBar">
         
         
         <item name="chipStyle">@style/MyChipStyle</item>
+        <item name="textInputStyle">@style/MyTextInputStyle</item>
     </style>
     <style name="MyChipStyle" parent="Widget.Material3.Chip.Suggestion">
         <item name="chipBackgroundColor">@drawable/my_selector_background_chip</item>
         <item name="rippleColor">#7C1293</item>
+    </style>
+    <style name="MyTextInputStyle" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="helperTextTextColor">#355C8C</item>
     </style>
     <style name="Theme.Nasa_api" parent="Base.Theme.Nasa_api"/>
 </resources>

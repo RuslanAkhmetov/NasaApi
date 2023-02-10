@@ -15,6 +15,6 @@ interface PictureOfTheDayAPI {
     @GET(PICTURE_OF_THE_DAY)
     fun getPictureOfTheDayByDate(
         @Query("api_key") apiKey: String,
-        @Query("date") date: String            //date in format "YYYY-MM-DD"
+        @Query("date") date: String            //date in format "yyyy-MM-dd"
     ): Call<PictureOfTheDayResponseData>
 }

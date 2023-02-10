@@ -21,6 +21,8 @@ drawable my_selector_background_chip
 id FirstFragment
 id action_settings
 id chipGroup
+id chipbeforeyesterday
+id chiptoday
 id chipyesterday
 id container
 id imageView
@@ -37,6 +39,7 @@ mipmap ic_launcher_round
 navigation nav_graph
 string action_settings
 string app_name
+string before_yesterday
 string first_fragment_label
 string hint
 string lorem_ipsum
@@ -45,8 +48,11 @@ string next
 string picture_of_the_day_request
 string previous
 string second_fragment_label
+string today
+string yesterday
 style Base.Theme.Nasa_api
 style MyChipStyle
+style MyTextInputStyle
 style Theme.Nasa_api
 xml backup_rules
 xml data_extraction_rules

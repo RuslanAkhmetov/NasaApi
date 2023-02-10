@@ -4,11 +4,16 @@
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
         <item name="chipStyle">@style/MyChipStyle</item>
+        <item name="textInputStyle">@style/MyTextInputStyle</item>
     </style>
 
     <style name="MyChipStyle" parent="Widget.Material3.Chip.Suggestion">
         <item name="chipBackgroundColor">@drawable/my_selector_background_chip</item>
         <item name="rippleColor">#7C1293</item>
+    </style>
+
+    <style name="MyTextInputStyle" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="helperTextTextColor">#355C8C</item>
     </style>
 
     <style name="Theme.Nasa_api" parent="Base.Theme.Nasa_api" />

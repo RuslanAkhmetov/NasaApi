@@ -2,6 +2,7 @@ package com.geekbrain.android.nasa_api.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.geekbrain.android.nasa_api.BuildConfig
 import com.geekbrain.android.nasa_api.repositoty.PictureOfTheDayResponseData
 import com.geekbrain.android.nasa_api.repositoty.RemoteRepositoryImpl
 import retrofit2.Call
@@ -20,7 +21,14 @@ class PictureOfTheDayViewModel (
     fun sendRequest() {
         liveData.postValue(AppState.Loading)
         remoteRepository.getPictureOfTheDayApi()
-            .getPictureOfTheDay(com.geekbrain.android.nasa_api.BuildConfig.NASA_API_KEY)
+            .getPictureOfTheDay(BuildConfig.NASA_API_KEY)
+            .enqueue(callback)
+    }
+
+    fun sendRequest(selectedDate: String){
+        liveData.postValue(AppState.Loading)
+        remoteRepository.getPictureOfTheDayApi()
+            .getPictureOfTheDayByDate(BuildConfig.NASA_API_KEY, selectedDate)
             .enqueue(callback)
     }
 
