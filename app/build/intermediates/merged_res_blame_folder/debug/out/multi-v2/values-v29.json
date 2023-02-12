@@ -1,17 +1,17 @@
 {
     "logs": [
         {
-            "outputFile": "com.geekbrain.android.nasa_api.app-mergeDebugResources-44:/values-v29/values-v29.xml",
+            "outputFile": "com.geekbrain.android.nasa_api.app-mergeDebugResources-3:/values-v29/values-v29.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\1\\AndroidStudioProjects\\nasa_api\\app\\src\\main\\res\\values-v29\\themes.xml",
+                    "source": "B:\\AndroidStudioProjects\\NasaApi\\app\\src\\main\\res\\values-v29\\themes.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
-                        "startOffsets": "64",
+                        "startOffsets": "66",
                         "endLines": "7",
                         "endColumns": "12",
-                        "endOffsets": "430"
+                        "endOffsets": "437"
                     },
                     "to": {
                         "startLines": "2",

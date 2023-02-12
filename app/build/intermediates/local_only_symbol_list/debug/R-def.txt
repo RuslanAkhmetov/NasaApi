@@ -28,11 +28,14 @@ id container
 id imageView
 id input
 id inputLayout
+id loadingLayout
+id mainFragmentLoadingLayout
 id nav_graph
 id nav_host_fragment_content_main
 layout activity_main
 layout content_main
 layout fragment_picture_of_the_day
+layout loading_layout
 menu menu_main
 mipmap ic_launcher
 mipmap ic_launcher_round

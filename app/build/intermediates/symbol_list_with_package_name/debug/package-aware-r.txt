@@ -2722,8 +2722,10 @@ id line3
 id linear
 id listMode
 id list_item
+id loadingLayout
 id locale
 id ltr
+id mainFragmentLoadingLayout
 id masked
 id match_constraint
 id match_parent
@@ -3076,6 +3078,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_picture_of_the_day
+layout loading_layout
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

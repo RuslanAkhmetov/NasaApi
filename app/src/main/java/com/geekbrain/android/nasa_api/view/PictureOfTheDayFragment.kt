@@ -13,6 +13,7 @@ import androidx.annotation.RequiresApi
 import androidx.fragment.app.viewModels
 import coil.dispose
 import coil.load
+import com.geekbrain.android.nasa_api.R
 import com.geekbrain.android.nasa_api.databinding.FragmentPictureOfTheDayBinding
 import com.geekbrain.android.nasa_api.viewmodel.AppState
 import com.geekbrain.android.nasa_api.viewmodel.PictureOfTheDayViewModel
@@ -87,7 +88,7 @@ class PictureOfTheDayFragment : Fragment() {
     private fun getSelectedDay(day: DAYS): String {
         val calendar = Calendar.getInstance()
         calendar.add(Calendar.DATE, day.offset)
-        val dateFormat = SimpleDateFormat("yyyy-MM-dd")
+        val dateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.US)
         return dateFormat.format(calendar.time)
     }
 
@@ -98,10 +99,18 @@ class PictureOfTheDayFragment : Fragment() {
                 Toast.makeText(activity, appState.error.toString(), Toast.LENGTH_LONG).show()
             }
             AppState.Loading -> {
+                binding.imageView.visibility = View.GONE
+                binding.mainFragmentLoadingLayout.visibility = View.VISIBLE
                 
             }
             is AppState.Success -> {
-                binding.imageView.load(appState.pictureOfTheDayResponseData.url)
+                binding.imageView.visibility = View.VISIBLE
+                binding.mainFragmentLoadingLayout.visibility = View.GONE
+                binding.imageView.load(appState.pictureOfTheDayResponseData.url){
+                    error(R.drawable.ic_load_error_vector)
+                    placeholder(R.drawable.ic_hamburger_menu_bottom_bar)
+                }
+
                 //TODO настроить загрузку изображения error() placeholder()
 
             }
