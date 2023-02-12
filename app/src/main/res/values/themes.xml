@@ -3,8 +3,25 @@
     <style name="Base.Theme.Nasa_api" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="myColor">#2E468E</item>
         <item name="chipStyle">@style/MyChipStyle</item>
         <item name="textInputStyle">@style/MyTextInputStyle</item>
+    </style>
+
+    <style name="MyFirstTheme" parent="Base.Theme.Nasa_api"/>
+    <style name="MySecondTheme" parent="Base.Theme.Nasa_api"/>
+    <style name="MyThirdTheme" parent="Base.Theme.Nasa_api"/>
+
+    <style name="RedTheme" parent="MyFirstTheme">
+        <item name="myColor">#FF0101</item>
+    </style>
+
+    <style name="GreenTheme" parent="MySecondTheme">
+        <item name="myColor">#1E7320</item>
+    </style>
+
+    <style name="BlueTheme" parent="MyThirdTheme">
+        <item name="myColor">#142542</item>
     </style>
 
     <style name="MyChipStyle" parent="Widget.Material3.Chip.Suggestion">
@@ -13,7 +30,7 @@
     </style>
 
     <style name="MyTextInputStyle" parent="Widget.Material3.TextInputLayout.OutlinedBox">
-        <item name="helperTextTextColor">#355C8C</item>
+        <item name="helperTextTextColor">#25447A</item>
     </style>
 
     <style name="Theme.Nasa_api" parent="Base.Theme.Nasa_api" />
