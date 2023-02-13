@@ -3,8 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.geekbrain.android.nasa_api.MainActivity">
     <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
+        android:id="@+id/action_bar_favorite"
+        android:icon="@drawable/ic_favourite_menu"
+        android:title="@string/fayvourite"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_bar_settings"
+        android:icon="@drawable/ic_settings_menu"
         android:title="@string/action_settings"
-        app:showAsAction="never" />
+        app:showAsAction="ifRoom" />
 </menu>

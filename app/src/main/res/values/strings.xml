@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">nasa_api</string>
+    <string name="app_name">Nasa Picture of the day</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
@@ -49,4 +49,5 @@
     <string name="before_yesterday">Before yesterday</string>
     <string name="today">Today</string>
     <string name="yesterday">Yesterday</string>
+    <string name="fayvourite">Fayvourite</string>
 </resources>

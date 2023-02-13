@@ -4,15 +4,14 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.fragment.app.viewModels
 import coil.dispose
 import coil.load
+import com.geekbrain.android.nasa_api.MainActivity
 import com.geekbrain.android.nasa_api.R
 import com.geekbrain.android.nasa_api.databinding.FragmentPictureOfTheDayBinding
 import com.geekbrain.android.nasa_api.viewmodel.AppState
@@ -58,6 +57,8 @@ class PictureOfTheDayFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+/*        setHasOptionsMenu(true)*/
+
         viewModel.getLiveData().observe(
             viewLifecycleOwner
         ) { renderDateFromNasa(it) }
@@ -83,6 +84,30 @@ class PictureOfTheDayFragment : Fragment() {
                 data = Uri.parse("https://ru.wikipedia.org/wiki/${binding.input.text.toString()}")
             })
         }
+
+        (requireActivity() as MainActivity).setSupportActionBar(binding.bottomAppBar)
+        setHasOptionsMenu(true)
+
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        super.onCreateOptionsMenu(menu, inflater)
+        inflater.inflate(R.menu.menu_main, menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            R.id.action_bar_favorite->{
+
+            }
+
+            R.id.action_bar_settings ->{
+                //TODA открыть фрагмент настроек
+
+            }
+        }
+
+        return super.onOptionsItemSelected(item)
     }
 
     private fun getSelectedDay(day: DAYS): String {

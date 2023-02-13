@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:2:1-39:12
+ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:2:1-38:12
 MERGED from [androidx.databinding:viewbinding:7.3.0] C:\Users\1\.gradle\caches\transforms-3\c4cb892f171ca1d410550e46c7385279\transformed\viewbinding-7.3.0\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.navigation:navigation-fragment-ktx:2.5.3] C:\Users\1\.gradle\caches\transforms-3\193aa2d74ed654916f8e042d0373995a\transformed\navigation-fragment-ktx-2.5.3\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-fragment:2.5.3] C:\Users\1\.gradle\caches\transforms-3\4d90e017240cbd00708bb51a92ea710d\transformed\navigation-fragment-2.5.3\AndroidManifest.xml:17:1-24:12
@@ -66,22 +66,22 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\1\.gradle\caches
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\1\.gradle\caches\transforms-3\3ac119fa795bc1ef3ecdd8c6ea4af554\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\1\.gradle\caches\transforms-3\5b9f05308f02d2aab4c4e2d31764b8b7\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\1\.gradle\caches\transforms-3\92ea4c83570acad78d5bdafbde5f30d9\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:2:1-38:12
 	package
 		INJECTED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:2:1-39:12
+		ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:2:1-38:12
 		INJECTED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:2:1-39:12
+		ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:2:1-38:12
 		INJECTED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:2:1-39:12
+		ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:2:1-38:12
 		INJECTED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:2:11-69
@@ -90,7 +90,7 @@ ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest
 	android:name
 		ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:7:5-37:19
+ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:7:5-36:19
 MERGED from [com.google.android.material:material:1.9.0-alpha01] C:\Users\1\.gradle\caches\transforms-3\db7566edfcf17594ba5f90965a53480d\transformed\material-1.9.0-alpha01\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.9.0-alpha01] C:\Users\1\.gradle\caches\transforms-3\db7566edfcf17594ba5f90965a53480d\transformed\material-1.9.0-alpha01\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\1\.gradle\caches\transforms-3\9827ec6617366e82ed5e7c7a909d86e6\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -112,57 +112,55 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\1\.gradle\caches\t
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.9.0] C:\Users\1\.gradle\caches\transforms-3\9baae2a0a064870b9506522ab355f7bf\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:15:9-35
-	android:label
-		ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:13:9-41
+		ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:14:9-35
 	android:fullBackupContent
 		ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:11:9-54
 	android:roundIcon
-		ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:14:9-54
+		ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:13:9-54
 	tools:targetApi
-		ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:17:9-29
+		ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:16:9-29
 	android:icon
 		ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:12:9-43
 	android:allowBackup
 		ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:9:9-35
 	android:theme
-		ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:16:9-46
+		ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:15:9-46
 	android:dataExtractionRules
 		ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:10:9-65
 	android:name
 		ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:8:9-31
 activity#com.geekbrain.android.nasa_api.MainActivity
-ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:19:9-33:20
+ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:18:9-32:20
 	android:label
-		ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:22:13-45
+		ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:21:13-45
 	android:exported
-		ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:21:13-36
+		ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:20:13-36
 	android:theme
-		ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:23:13-50
+		ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:22:13-50
 	android:name
-		ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:20:13-41
+		ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:19:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:24:13-28:29
+ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:23:13-27:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:25:17-69
+ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:24:17-69
 	android:name
-		ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:25:25-66
+		ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:24:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:27:17-77
+ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:26:17-77
 	android:name
-		ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:27:27-74
+		ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:26:27-74
 meta-data#android.app.lib_name
-ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:30:13-32:36
+ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:29:13-31:36
 	android:value
-		ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:32:17-33
+		ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:31:17-33
 	android:name
-		ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:31:17-52
+		ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:30:17-52
 meta-data#preloaded_fonts
-ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:34:9-36:57
+ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:33:9-35:57
 	android:resource
-		ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:36:13-54
+		ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:35:13-54
 	android:name
-		ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:35:13-43
+		ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:34:13-43
 uses-sdk
 INJECTED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml

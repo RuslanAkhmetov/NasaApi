@@ -2021,6 +2021,7 @@ color mtrl_textinput_disabled_color
 color mtrl_textinput_filled_box_default_background_color
 color mtrl_textinput_focused_box_stroke_color
 color mtrl_textinput_hovered_box_stroke_color
+color my_color
 color notification_action_color_filter
 color notification_icon_bg_color
 color primary_dark_material_dark
@@ -3056,7 +3057,9 @@ id actionUp
 id action_bar
 id action_bar_activity_content
 id action_bar_container
+id action_bar_favorite
 id action_bar_root
+id action_bar_settings
 id action_bar_spinner
 id action_bar_subtitle
 id action_bar_title
@@ -3069,7 +3072,6 @@ id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
-id action_settings
 id action_text
 id actions
 id activity_chooser_view_content
@@ -3098,6 +3100,7 @@ id beginning
 id bestChoice
 id blocking
 id bottom
+id bottomAppBar
 id bounce
 id bounceBoth
 id bounceEnd
@@ -3189,6 +3192,7 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id fab
 id fade
 id fill
 id fill_horizontal
@@ -3762,6 +3766,7 @@ string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string fayvourite
 string first_fragment_label
 string hide_bottom_view_on_scroll_behavior
 string hint
@@ -4195,9 +4200,11 @@ style MaterialAlertDialog_MaterialComponents_Title_Panel
 style MaterialAlertDialog_MaterialComponents_Title_Panel_CenterStacked
 style MaterialAlertDialog_MaterialComponents_Title_Text
 style MaterialAlertDialog_MaterialComponents_Title_Text_CenterStacked
+style MyAppBarStyle
 style MyChipStyle
 style MyFirstTheme
 style MySecondTheme
+style MyShapeAppearanceSmallComponent
 style MyTextAppearanceBody2
 style MyTextInputStyle
 style MyThirdTheme
