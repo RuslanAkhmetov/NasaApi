@@ -10,10 +10,10 @@ com.geekbrain.android.nasa_api.app-savedstate-1.2.0-8 C:\Users\akhmr\.gradle\cac
 com.geekbrain.android.nasa_api.app-savedstate-ktx-1.2.0-9 C:\Users\akhmr\.gradle\caches\transforms-3\04895025fcff7b847a976160948aa35f\transformed\savedstate-ktx-1.2.0\res
 com.geekbrain.android.nasa_api.app-emoji2-views-helper-1.2.0-10 C:\Users\akhmr\.gradle\caches\transforms-3\0b622ae0009252fd9de3ea6d232488c7\transformed\emoji2-views-helper-1.2.0\res
 com.geekbrain.android.nasa_api.app-lifecycle-livedata-core-2.5.1-11 C:\Users\akhmr\.gradle\caches\transforms-3\0ff8f254ca685ecf1cb4e6f520f40b73\transformed\lifecycle-livedata-core-2.5.1\res
-com.geekbrain.android.nasa_api.app-material-1.7.0-12 C:\Users\akhmr\.gradle\caches\transforms-3\11918c9aa544653f8c45c32ea9ac02b8\transformed\material-1.7.0\res
-com.geekbrain.android.nasa_api.app-navigation-common-ktx-2.5.3-13 C:\Users\akhmr\.gradle\caches\transforms-3\14773c8e6d2502c6ece1e6ed358fa259\transformed\navigation-common-ktx-2.5.3\res
-com.geekbrain.android.nasa_api.app-navigation-fragment-ktx-2.5.3-14 C:\Users\akhmr\.gradle\caches\transforms-3\193aa2d74ed654916f8e042d0373995a\transformed\navigation-fragment-ktx-2.5.3\res
-com.geekbrain.android.nasa_api.app-fragment-1.5.4-15 C:\Users\akhmr\.gradle\caches\transforms-3\1c1077551397bc580f78d2be9a739a69\transformed\fragment-1.5.4\res
+com.geekbrain.android.nasa_api.app-navigation-common-ktx-2.5.3-12 C:\Users\akhmr\.gradle\caches\transforms-3\14773c8e6d2502c6ece1e6ed358fa259\transformed\navigation-common-ktx-2.5.3\res
+com.geekbrain.android.nasa_api.app-navigation-fragment-ktx-2.5.3-13 C:\Users\akhmr\.gradle\caches\transforms-3\193aa2d74ed654916f8e042d0373995a\transformed\navigation-fragment-ktx-2.5.3\res
+com.geekbrain.android.nasa_api.app-fragment-1.5.4-14 C:\Users\akhmr\.gradle\caches\transforms-3\1c1077551397bc580f78d2be9a739a69\transformed\fragment-1.5.4\res
+com.geekbrain.android.nasa_api.app-material-1.8.0-15 C:\Users\akhmr\.gradle\caches\transforms-3\2a946bde9a4e0c9c7bbee8320ee727eb\transformed\material-1.8.0\res
 com.geekbrain.android.nasa_api.app-lifecycle-livedata-core-ktx-2.5.1-16 C:\Users\akhmr\.gradle\caches\transforms-3\2e125ad05a44616f2deadbea97146ec6\transformed\lifecycle-livedata-core-ktx-2.5.1\res
 com.geekbrain.android.nasa_api.app-navigation-common-2.5.3-17 C:\Users\akhmr\.gradle\caches\transforms-3\4395dade681fcf4da2542b852475e2b1\transformed\navigation-common-2.5.3\res
 com.geekbrain.android.nasa_api.app-transition-1.4.1-18 C:\Users\akhmr\.gradle\caches\transforms-3\46540cdaaf96706a34eff11b7aa197ca\transformed\transition-1.4.1\res

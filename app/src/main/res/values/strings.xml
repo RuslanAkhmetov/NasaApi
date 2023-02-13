@@ -52,4 +52,7 @@
     <string name="fayvourite">Fayvourite</string>
     <string name="wiki_search">Wiki search</string>
     <string name="picture_of_the_day">Picture of the day</string>
+    <string name="red">Red</string>
+    <string name="green">Green</string>
+    <string name="blue">Blue</string>
 </resources>

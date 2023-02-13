@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.geekbrain.android.nasa_api.view.PictureOfTheDayFragment"
+        android:name="com.geekbrain.android.nasa_api.view.picture.PictureOfTheDayFragment"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_picture_of_the_day">
 

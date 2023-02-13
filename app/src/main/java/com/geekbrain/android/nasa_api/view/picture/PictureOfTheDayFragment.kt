@@ -1,4 +1,4 @@
-package com.geekbrain.android.nasa_api.view
+package com.geekbrain.android.nasa_api.view.picture
 
 import android.content.Intent
 import android.net.Uri
@@ -14,6 +14,8 @@ import coil.load
 import com.geekbrain.android.nasa_api.MainActivity
 import com.geekbrain.android.nasa_api.R
 import com.geekbrain.android.nasa_api.databinding.FragmentPictureOfTheDayBinding
+import com.geekbrain.android.nasa_api.view.drawer.BottomNavigationDrawerFragment
+import com.geekbrain.android.nasa_api.view.settings.SettingsFragment
 import com.geekbrain.android.nasa_api.viewmodel.AppState
 import com.geekbrain.android.nasa_api.viewmodel.PictureOfTheDayViewModel
 import java.text.SimpleDateFormat
@@ -102,8 +104,18 @@ class PictureOfTheDayFragment : Fragment() {
             }
 
             R.id.action_bar_settings ->{
-                //TODO открыть фрагмент настроек
+                requireActivity().supportFragmentManager
+                    .beginTransaction()
+                    .hide(this)
+                    .add(R.id.container, SettingsFragment.newInstance())
+                    .addToBackStack("")
+                    .commit()
+            }
 
+            android.R.id.home ->{
+                activity?.let {
+                    BottomNavigationDrawerFragment().show(it.supportFragmentManager, "TAG")
+                }
             }
         }
 

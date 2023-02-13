@@ -9,17 +9,23 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
 
-        <item name="motionEasingLinearInterpolator">@attr/motionEasingStandardInterpolator</item>
 
         <item name="myColor">@color/my_color</item>
+        <item name="myColor2">#FF0101</item>
         <item name="chipStyle">@style/MyChipStyle</item>
         <item name="textInputStyle">@style/MyTextInputStyle</item>
 
         <item name="textAppearanceBody2">@style/MyTextAppearanceBody2</item>
         <item name="shapeAppearanceSmallComponent">@style/MyShapeAppearanceSmallComponent</item>
         <item name="bottomAppBarStyle">@style/MyAppBarStyle</item>
+        <item name="tabStyle">@style/MyTabLayoutStyle</item>
         <!-- <item name="textAppearanceLabelLarge">@style/MyTextAppearanceBody2</item>-->
 
+    </style>
+
+    <style name="MyTabLayoutStyle" parent="@style/Widget.Material3.TabLayout">
+        <item name="tabIndicatorFullWidth">false</item>
+        <item name="tabIndicatorColor">?myColor2</item>
     </style>
 
     <style name="MyAppBarStyle" parent="@style/Widget.Material3.BottomAppBar">
@@ -30,7 +36,6 @@
     <style name="MyShapeAppearanceSmallComponent" parent="ShapeAppearance.Material3.SmallComponent">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">50%</item>
-
     </style>
 
     <style name="MyTextAppearanceBody2" parent="TextAppearance.AppCompat.Body2">

@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
 import androidx.navigation.ui.AppBarConfiguration
 import com.geekbrain.android.nasa_api.databinding.ActivityMainBinding
-import com.geekbrain.android.nasa_api.view.PictureOfTheDayFragment
+import com.geekbrain.android.nasa_api.view.picture.PictureOfTheDayFragment
 
 class MainActivity : AppCompatActivity() {
 

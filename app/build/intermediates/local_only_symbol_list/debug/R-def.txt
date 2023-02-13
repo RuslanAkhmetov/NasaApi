@@ -5,6 +5,7 @@ array com_google_android_gms_fonts_certs_dev
 array com_google_android_gms_fonts_certs_prod
 array preloaded_fonts
 attr myColor
+attr myColor2
 color black
 color color_gray
 color my_color
@@ -42,10 +43,16 @@ id loadingLayout
 id mainFragmentLoadingLayout
 id nav_graph
 id nav_host_fragment_content_main
+id navigation_one
+id navigation_two
+id navigation_view
 layout activity_main
+layout bottom_navigation_layout
 layout content_main
 layout fragment_picture_of_the_day
+layout fragment_settings
 layout loading_layout
+menu menu_bottom_navigation
 menu menu_main
 mipmap ic_launcher
 mipmap ic_launcher_round
@@ -53,8 +60,10 @@ navigation nav_graph
 string action_settings
 string app_name
 string before_yesterday
+string blue
 string fayvourite
 string first_fragment_label
+string green
 string hint
 string lorem_ipsum
 string nasapictureoftheday
@@ -62,6 +71,7 @@ string next
 string picture_of_the_day
 string picture_of_the_day_request
 string previous
+string red
 string second_fragment_label
 string today
 string wiki_search
@@ -74,6 +84,7 @@ style MyChipStyle
 style MyFirstTheme
 style MySecondTheme
 style MyShapeAppearanceSmallComponent
+style MyTabLayoutStyle
 style MyTextAppearanceBody2
 style MyTextInputStyle
 style MyThirdTheme
