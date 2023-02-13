@@ -1,10 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "com.geekbrain.android.nasa_api.app-mergeDebugResources-44:/values-sq/values-sq.xml",
+            "outputFile": "com.geekbrain.android.nasa_api.app-mergeDebugResources-3:/values-sq/values-sq.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\1\\.gradle\\caches\\transforms-3\\5d469c2e3400197681f459dcf6caccdf\\transformed\\appcompat-1.6.0\\res\\values-sq\\values-sq.xml",
+                    "source": "C:\\Users\\akhmr\\.gradle\\caches\\transforms-3\\b4e66e66b71c1541ec208d8dd4bcf2b6\\transformed\\navigation-ui-2.5.3\\res\\values-sq\\values-sq.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,161",
+                        "endColumns": "105,118",
+                        "endOffsets": "156,275"
+                    },
+                    "to": {
+                        "startLines": "89,90",
+                        "startColumns": "4,4",
+                        "startOffsets": "7530,7636",
+                        "endColumns": "105,118",
+                        "endOffsets": "7631,7750"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\akhmr\\.gradle\\caches\\transforms-3\\5d469c2e3400197681f459dcf6caccdf\\transformed\\appcompat-1.6.0\\res\\values-sq\\values-sq.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\1\\.gradle\\caches\\transforms-3\\9baae2a0a064870b9506522ab355f7bf\\transformed\\core-1.9.0\\res\\values-sq\\values-sq.xml",
+                    "source": "C:\\Users\\akhmr\\.gradle\\caches\\transforms-3\\9baae2a0a064870b9506522ab355f7bf\\transformed\\core-1.9.0\\res\\values-sq\\values-sq.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -38,7 +55,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\1\\.gradle\\caches\\transforms-3\\11918c9aa544653f8c45c32ea9ac02b8\\transformed\\material-1.7.0\\res\\values-sq\\values-sq.xml",
+                    "source": "C:\\Users\\akhmr\\.gradle\\caches\\transforms-3\\11918c9aa544653f8c45c32ea9ac02b8\\transformed\\material-1.7.0\\res\\values-sq\\values-sq.xml",
                     "from": {
                         "startLines": "2,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -54,23 +71,6 @@
                         "endLines": "5,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,91",
                         "endColumns": "12,85,100,125,82,64,99,69,58,97,63,58,71,62,53,116,56,61,53,71,134,82,77,140,83,81,89,52,58,65,70,78,87,75,77,71,72,88,71,93,98,73,71,100,49,65,89,88,61,63,62,115,107,108,108,56,62,82",
                         "endOffsets": "312,3094,3195,3321,3404,3469,3569,3639,3698,3796,3860,3919,3991,4054,4108,4225,4282,4344,4398,4470,4605,4688,4766,4907,4991,5073,5163,5216,5275,5341,5412,5491,5579,5655,5733,5805,5878,5967,6039,6133,6232,6306,6378,6479,6529,6595,6685,6774,6836,6900,6963,7079,7187,7296,7405,7462,7525,7833"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\1\\.gradle\\caches\\transforms-3\\b4e66e66b71c1541ec208d8dd4bcf2b6\\transformed\\navigation-ui-2.5.3\\res\\values-sq\\values-sq.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,161",
-                        "endColumns": "105,118",
-                        "endOffsets": "156,275"
-                    },
-                    "to": {
-                        "startLines": "89,90",
-                        "startColumns": "4,4",
-                        "startOffsets": "7530,7636",
-                        "endColumns": "105,118",
-                        "endOffsets": "7631,7750"
                     }
                 }
             ]
