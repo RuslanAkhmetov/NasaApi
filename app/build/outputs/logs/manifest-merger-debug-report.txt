@@ -12,7 +12,7 @@ MERGED from [androidx.navigation:navigation-ui-ktx:2.5.3] C:\Users\1\.gradle\cac
 MERGED from [androidx.navigation:navigation-runtime-ktx:2.5.3] C:\Users\1\.gradle\caches\transforms-3\a7bbf0a283131392ae58fd6319be3ef0\transformed\navigation-runtime-ktx-2.5.3\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-ui:2.5.3] C:\Users\1\.gradle\caches\transforms-3\b4e66e66b71c1541ec208d8dd4bcf2b6\transformed\navigation-ui-2.5.3\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-runtime:2.5.3] C:\Users\1\.gradle\caches\transforms-3\e833320794d5a51a8d6d7b4e7c83dab3\transformed\navigation-runtime-2.5.3\AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.material:material:1.9.0-alpha01] C:\Users\1\.gradle\caches\transforms-3\db7566edfcf17594ba5f90965a53480d\transformed\material-1.9.0-alpha01\AndroidManifest.xml:17:1-26:12
+MERGED from [com.google.android.material:material:1.7.0] C:\Users\1\.gradle\caches\transforms-3\11918c9aa544653f8c45c32ea9ac02b8\transformed\material-1.7.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\1\.gradle\caches\transforms-3\9827ec6617366e82ed5e7c7a909d86e6\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [io.coil-kt:coil:2.1.0] C:\Users\1\.gradle\caches\transforms-3\714aef8fff9b2df1f961243ec0e3a80e\transformed\coil-2.1.0\AndroidManifest.xml:2:1-9:12
 MERGED from [io.coil-kt:coil-base:2.1.0] C:\Users\1\.gradle\caches\transforms-3\ea3719a0c9fe83e7bdc76f5c5fdc792a\transformed\coil-base-2.1.0\AndroidManifest.xml:2:1-9:12
@@ -91,8 +91,8 @@ ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest
 		ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:5:22-64
 application
 ADDED from C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:7:5-36:19
-MERGED from [com.google.android.material:material:1.9.0-alpha01] C:\Users\1\.gradle\caches\transforms-3\db7566edfcf17594ba5f90965a53480d\transformed\material-1.9.0-alpha01\AndroidManifest.xml:24:5-20
-MERGED from [com.google.android.material:material:1.9.0-alpha01] C:\Users\1\.gradle\caches\transforms-3\db7566edfcf17594ba5f90965a53480d\transformed\material-1.9.0-alpha01\AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.material:material:1.7.0] C:\Users\1\.gradle\caches\transforms-3\11918c9aa544653f8c45c32ea9ac02b8\transformed\material-1.7.0\AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.material:material:1.7.0] C:\Users\1\.gradle\caches\transforms-3\11918c9aa544653f8c45c32ea9ac02b8\transformed\material-1.7.0\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\1\.gradle\caches\transforms-3\9827ec6617366e82ed5e7c7a909d86e6\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\1\.gradle\caches\transforms-3\9827ec6617366e82ed5e7c7a909d86e6\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\1\.gradle\caches\transforms-3\deb0f498e52113346f15fc7035367f54\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:24:5-25:19
@@ -181,8 +181,8 @@ MERGED from [androidx.navigation:navigation-ui:2.5.3] C:\Users\1\.gradle\caches\
 MERGED from [androidx.navigation:navigation-ui:2.5.3] C:\Users\1\.gradle\caches\transforms-3\b4e66e66b71c1541ec208d8dd4bcf2b6\transformed\navigation-ui-2.5.3\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-runtime:2.5.3] C:\Users\1\.gradle\caches\transforms-3\e833320794d5a51a8d6d7b4e7c83dab3\transformed\navigation-runtime-2.5.3\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-runtime:2.5.3] C:\Users\1\.gradle\caches\transforms-3\e833320794d5a51a8d6d7b4e7c83dab3\transformed\navigation-runtime-2.5.3\AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.material:material:1.9.0-alpha01] C:\Users\1\.gradle\caches\transforms-3\db7566edfcf17594ba5f90965a53480d\transformed\material-1.9.0-alpha01\AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.material:material:1.9.0-alpha01] C:\Users\1\.gradle\caches\transforms-3\db7566edfcf17594ba5f90965a53480d\transformed\material-1.9.0-alpha01\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.7.0] C:\Users\1\.gradle\caches\transforms-3\11918c9aa544653f8c45c32ea9ac02b8\transformed\material-1.7.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.7.0] C:\Users\1\.gradle\caches\transforms-3\11918c9aa544653f8c45c32ea9ac02b8\transformed\material-1.7.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\1\.gradle\caches\transforms-3\9827ec6617366e82ed5e7c7a909d86e6\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\1\.gradle\caches\transforms-3\9827ec6617366e82ed5e7c7a909d86e6\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
 MERGED from [io.coil-kt:coil:2.1.0] C:\Users\1\.gradle\caches\transforms-3\714aef8fff9b2df1f961243ec0e3a80e\transformed\coil-2.1.0\AndroidManifest.xml:5:5-7:41

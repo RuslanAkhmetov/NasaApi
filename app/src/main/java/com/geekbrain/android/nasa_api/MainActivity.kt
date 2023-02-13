@@ -3,9 +3,7 @@ package com.geekbrain.android.nasa_api
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
-import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.navigateUp
 import com.geekbrain.android.nasa_api.databinding.ActivityMainBinding
 import com.geekbrain.android.nasa_api.view.PictureOfTheDayFragment
 
@@ -30,11 +28,4 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-
-
-    override fun onSupportNavigateUp(): Boolean {
-        val navController = findNavController(R.id.nav_host_fragment_content_main)
-        return navController.navigateUp(appBarConfiguration)
-                || super.onSupportNavigateUp()
-    }
 }

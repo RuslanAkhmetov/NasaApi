@@ -59,10 +59,12 @@ string hint
 string lorem_ipsum
 string nasapictureoftheday
 string next
+string picture_of_the_day
 string picture_of_the_day_request
 string previous
 string second_fragment_label
 string today
+string wiki_search
 string yesterday
 style Base.Theme.Nasa_api
 style BlueTheme

@@ -47,12 +47,16 @@
         sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
-    </string><string name="nasapictureoftheday">NasaPictureOfTheDay</string><string name="hint">Wiki search</string><string name="before_yesterday">Before yesterday</string><string name="today">Today</string><string name="yesterday">Yesterday</string><string name="fayvourite">Fayvourite</string></file><file path="C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\res\values\themes.xml" qualifiers=""><style name="Base.Theme.Nasa_api" parent="Theme.Material3.DynamicColors.DayNight">
+    </string><string name="nasapictureoftheday">NasaPictureOfTheDay</string><string name="hint">Wiki search</string><string name="before_yesterday">Before yesterday</string><string name="today">Today</string><string name="yesterday">Yesterday</string><string name="fayvourite">Fayvourite</string><string name="wiki_search">Wiki search</string><string name="picture_of_the_day">Picture of the day</string></file><file path="C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\res\values\themes.xml" qualifiers=""><style name="Base.Theme.Nasa_api" parent="Theme.Material3.DynamicColors.DayNight">
         
         
 
+
+
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+
+        <item name="motionEasingLinearInterpolator">@attr/motionEasingStandardInterpolator</item>
 
         <item name="myColor">@color/my_color</item>
         <item name="chipStyle">@style/MyChipStyle</item>
@@ -63,10 +67,17 @@
         <item name="bottomAppBarStyle">@style/MyAppBarStyle</item>
         
 
+    </style><style name="MyAppBarStyle" parent="@style/Widget.Material3.BottomAppBar">
+        <item name="backgroundTint">@color/my_color</item>
+        <item name="navigationIconTint">@color/white</item>
+    </style><style name="MyShapeAppearanceSmallComponent" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+
     </style><style name="MyTextAppearanceBody2" parent="TextAppearance.AppCompat.Body2">
         <item name="fontFamily">@font/aladin</item>
         <item name="android:fontFamily">@font/aladin</item>
-        <item name="android:textStyle">bold</item>
+        <item name="android:textStyle">normal</item>
         <item name="android:textAllCaps">true</item>
         <item name="android:textSize">16sp</item>
         <item name="android:letterSpacing">0.11785</item>
@@ -83,14 +94,7 @@
         <item name="shapeAppearance">@style/MyShapeAppearanceSmallComponent</item>
     </style><style name="MyTextInputStyle" parent="Widget.Material3.TextInputLayout.OutlinedBox">
         <item name="helperTextTextColor">#25447A</item>
-    </style><style name="Theme.Nasa_api" parent="Base.Theme.Nasa_api"/><style name="MyShapeAppearanceSmallComponent" parent="ShapeAppearance.Material3.SmallComponent">
-        <item name="cornerFamily">rounded</item>
-        <item name="cornerSize">50%</item>
-
-    </style><style name="MyAppBarStyle" parent="@style/Widget.Material3.BottomAppBar">
-        <item name="backgroundTint">@color/my_color</item>
-        <item name="navigationIconTint">@color/white</item>
-    </style></file><file path="C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\res\values-land\dimens.xml" qualifiers="land"><dimen name="fab_margin">48dp</dimen></file><file path="C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\res\values-night\themes.xml" qualifiers="night-v8"><style name="Base.Theme.Nasa_api" parent="Theme.Material3.DayNight.NoActionBar">
+    </style><style name="Theme.Nasa_api" parent="Base.Theme.Nasa_api"/></file><file path="C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\res\values-land\dimens.xml" qualifiers="land"><dimen name="fab_margin">48dp</dimen></file><file path="C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\res\values-night\themes.xml" qualifiers="night-v8"><style name="Base.Theme.Nasa_api" parent="Theme.Material3.DayNight.NoActionBar">
         
         
     </style></file><file path="C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\res\values-v29\themes.xml" qualifiers="v29"><style name="Theme.Nasa_api" parent="Base.Theme.Nasa_api">

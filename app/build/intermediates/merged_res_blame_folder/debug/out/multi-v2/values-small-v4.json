@@ -4,7 +4,7 @@
             "outputFile": "com.geekbrain.android.nasa_api.app-mergeDebugResources-44:/values-small-v4/values-small-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\1\\.gradle\\caches\\transforms-3\\db7566edfcf17594ba5f90965a53480d\\transformed\\material-1.9.0-alpha01\\res\\values-small-v4\\values-small-v4.xml",
+                    "source": "C:\\Users\\1\\.gradle\\caches\\transforms-3\\11918c9aa544653f8c45c32ea9ac02b8\\transformed\\material-1.7.0\\res\\values-small-v4\\values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

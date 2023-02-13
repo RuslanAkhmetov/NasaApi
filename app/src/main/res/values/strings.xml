@@ -50,4 +50,6 @@
     <string name="today">Today</string>
     <string name="yesterday">Yesterday</string>
     <string name="fayvourite">Fayvourite</string>
+    <string name="wiki_search">Wiki search</string>
+    <string name="picture_of_the_day">Picture of the day</string>
 </resources>

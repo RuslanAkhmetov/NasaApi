@@ -102,7 +102,7 @@ class PictureOfTheDayFragment : Fragment() {
             }
 
             R.id.action_bar_settings ->{
-                //TODA открыть фрагмент настроек
+                //TODO открыть фрагмент настроек
 
             }
         }

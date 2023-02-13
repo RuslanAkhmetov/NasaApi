@@ -67,17 +67,23 @@
     </string>
     <string name="nasapictureoftheday">NasaPictureOfTheDay</string>
     <string name="next">Next</string>
+    <string name="picture_of_the_day">Picture of the day</string>
     <string name="picture_of_the_day_request">planetary/apod</string>
     <string name="previous">Previous</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="today">Today</string>
+    <string name="wiki_search">Wiki search</string>
     <string name="yesterday">Yesterday</string>
     <style name="Base.Theme.Nasa_api" parent="Theme.Material3.DynamicColors.DayNight">
         
         
 
+
+
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+
+        <item name="motionEasingLinearInterpolator">@attr/motionEasingStandardInterpolator</item>
 
         <item name="myColor">@color/my_color</item>
         <item name="chipStyle">@style/MyChipStyle</item>
@@ -115,7 +121,7 @@
     <style name="MyTextAppearanceBody2" parent="TextAppearance.AppCompat.Body2">
         <item name="fontFamily">@font/aladin</item>
         <item name="android:fontFamily">@font/aladin</item>
-        <item name="android:textStyle">bold</item>
+        <item name="android:textStyle">normal</item>
         <item name="android:textAllCaps">true</item>
         <item name="android:textSize">16sp</item>
         <item name="android:letterSpacing">0.11785</item>
