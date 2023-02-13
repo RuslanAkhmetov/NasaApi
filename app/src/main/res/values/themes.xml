@@ -1,11 +1,24 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Nasa_api" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.Nasa_api" parent="Theme.Material3.DynamicColors.DayNight">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
         <item name="myColor">#2E468E</item>
         <item name="chipStyle">@style/MyChipStyle</item>
         <item name="textInputStyle">@style/MyTextInputStyle</item>
+
+        <item name="textAppearanceBody2">@style/MyTextAppearanceBody2</item>
+        <item name="textAppearanceLabelLarge">@style/MyTextAppearanceBody2</item>
+
+    </style>
+
+    <style name="MyTextAppearanceBody2" parent="TextAppearance.AppCompat.Body2">
+        <item name="fontFamily">@font/aladin</item>
+        <item name="android:fontFamily">@font/aladin</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:letterSpacing">0.11785</item>
     </style>
 
     <style name="MyFirstTheme" parent="Base.Theme.Nasa_api"/>

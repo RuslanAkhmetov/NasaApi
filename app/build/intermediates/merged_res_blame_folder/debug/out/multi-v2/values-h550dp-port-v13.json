@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.geekbrain.android.nasa_api.app-mergeDebugResources-3:/values-h550dp-port-v13/values-h550dp-port-v13.xml",
+            "outputFile": "com.geekbrain.android.nasa_api.app-mergeDebugResources-44:/values-h550dp-port-v13/values-h550dp-port-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\akhmr\\.gradle\\caches\\transforms-3\\055016e2074555411b5d7f0bd2b88195\\transformed\\material-1.5.0-alpha04\\res\\values-h550dp-port-v13\\values-h550dp-port-v13.xml",
+                    "source": "C:\\Users\\1\\.gradle\\caches\\transforms-3\\db7566edfcf17594ba5f90965a53480d\\transformed\\material-1.9.0-alpha01\\res\\values-h550dp-port-v13\\values-h550dp-port-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

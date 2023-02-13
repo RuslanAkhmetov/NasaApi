@@ -46,6 +46,10 @@
                 android:value="" />
         </activity>
 
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
         <uses-library
             android:name="androidx.window.extensions"
             android:required="false" />

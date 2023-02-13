@@ -1,5 +1,10 @@
 R_DEF: Internal format may change without notice
 local
+array com_google_android_gms_fonts_certs
+array com_google_android_gms_fonts_certs_dev
+array com_google_android_gms_fonts_certs_prod
+array preloaded_fonts
+attr myColor
 color black
 color color_gray
 color white
@@ -18,6 +23,7 @@ drawable ic_send
 drawable ic_settings_menu
 drawable ic_wikipedia
 drawable my_selector_background_chip
+font aladin
 id FirstFragment
 id action_settings
 id chipGroup
@@ -54,8 +60,15 @@ string second_fragment_label
 string today
 string yesterday
 style Base.Theme.Nasa_api
+style BlueTheme
+style GreenTheme
 style MyChipStyle
+style MyFirstTheme
+style MySecondTheme
+style MyTextAppearanceBody2
 style MyTextInputStyle
+style MyThirdTheme
+style RedTheme
 style Theme.Nasa_api
 xml backup_rules
 xml data_extraction_rules

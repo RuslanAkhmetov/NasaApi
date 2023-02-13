@@ -54,10 +54,11 @@
             app:layout_constraintTop_toBottomOf="@+id/chipGroup"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"  >
+
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/input"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.geekbrain.android.nasa_api.utils.MyImageView
