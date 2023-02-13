@@ -11300,14 +11300,14 @@
         <item name="textInputStyle">@style/MyTextInputStyle</item>
 
         <item name="textAppearanceBody2">@style/MyTextAppearanceBody2</item>
-        <item name="textAppearanceLabelLarge">@style/MyTextAppearanceBody2</item>
+       
 
     </style><style name="MyTextAppearanceBody2" parent="TextAppearance.AppCompat.Body2">
         <item name="fontFamily">@font/aladin</item>
         <item name="android:fontFamily">@font/aladin</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textAllCaps">true</item>
-        <item name="android:textSize">54sp</item>
+        <item name="android:textSize">16sp</item>
         <item name="android:letterSpacing">0.11785</item>
     </style><style name="MyFirstTheme" parent="Base.Theme.Nasa_api"/><style name="MySecondTheme" parent="Base.Theme.Nasa_api"/><style name="MyThirdTheme" parent="Base.Theme.Nasa_api"/><style name="RedTheme" parent="MyFirstTheme">
         <item name="myColor">#FF0101</item>
@@ -11318,6 +11318,7 @@
     </style><style name="MyChipStyle" parent="Widget.Material3.Chip.Suggestion">
         <item name="chipBackgroundColor">@drawable/my_selector_background_chip</item>
         <item name="rippleColor">#7C1293</item>
+        <item name="android:textAppearance">@style/MyTextAppearanceBody2</item>
     </style><style name="MyTextInputStyle" parent="Widget.Material3.TextInputLayout.OutlinedBox">
         <item name="helperTextTextColor">#25447A</item>
     </style><style name="Theme.Nasa_api" parent="Base.Theme.Nasa_api"/></file><file path="C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\res\values-land\dimens.xml" qualifiers="land"><dimen name="fab_margin">48dp</dimen></file><file path="C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\res\values-night\themes.xml" qualifiers="night-v8"><style name="Base.Theme.Nasa_api" parent="Theme.Material3.DayNight.NoActionBar">

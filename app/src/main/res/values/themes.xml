@@ -8,7 +8,7 @@
         <item name="textInputStyle">@style/MyTextInputStyle</item>
 
         <item name="textAppearanceBody2">@style/MyTextAppearanceBody2</item>
-        <item name="textAppearanceLabelLarge">@style/MyTextAppearanceBody2</item>
+       <!-- <item name="textAppearanceLabelLarge">@style/MyTextAppearanceBody2</item>-->
 
     </style>
 
@@ -40,6 +40,7 @@
     <style name="MyChipStyle" parent="Widget.Material3.Chip.Suggestion">
         <item name="chipBackgroundColor">@drawable/my_selector_background_chip</item>
         <item name="rippleColor">#7C1293</item>
+        <item name="android:textAppearance">@style/MyTextAppearanceBody2</item>
     </style>
 
     <style name="MyTextInputStyle" parent="Widget.Material3.TextInputLayout.OutlinedBox">
