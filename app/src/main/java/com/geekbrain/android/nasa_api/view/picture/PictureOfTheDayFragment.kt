@@ -14,12 +14,14 @@ import coil.load
 import com.geekbrain.android.nasa_api.MainActivity
 import com.geekbrain.android.nasa_api.R
 import com.geekbrain.android.nasa_api.databinding.FragmentPictureOfTheDayBinding
+import com.geekbrain.android.nasa_api.utils.DAYS
 import com.geekbrain.android.nasa_api.view.drawer.BottomNavigationDrawerFragment
 import com.geekbrain.android.nasa_api.view.settings.SettingsFragment
 import com.geekbrain.android.nasa_api.viewmodel.AppState
 import com.geekbrain.android.nasa_api.viewmodel.PictureOfTheDayViewModel
 import java.text.SimpleDateFormat
 import java.util.*
+import com.geekbrain.android.nasa_api.utils.getSelectedDay
 
 
 class PictureOfTheDayFragment : Fragment() {
@@ -37,12 +39,6 @@ class PictureOfTheDayFragment : Fragment() {
     companion object {
         fun newInstance() = PictureOfTheDayFragment()
 
-    }
-
-    enum class DAYS(val offset: Int) {
-        BEFORE_YESTERDAY(-2),
-        YESTERDAY(-1),
-        TODAY(0),
     }
 
     override fun onCreateView(
@@ -122,31 +118,30 @@ class PictureOfTheDayFragment : Fragment() {
         return super.onOptionsItemSelected(item)
     }
 
-    private fun getSelectedDay(day: DAYS): String {
-        val calendar = Calendar.getInstance()
-        calendar.add(Calendar.DATE, day.offset)
-        val dateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.US)
-        return dateFormat.format(calendar.time)
-    }
 
-    private fun renderDateFromNasa(appState: AppState) {
-        when (appState) {
+
+    private fun renderDateFromNasa(responseAppState: AppState) {
+        when (responseAppState) {
             is AppState.Error -> {
-                binding.imageView.dispose()
-                Toast.makeText(activity, appState.error.toString(), Toast.LENGTH_LONG).show()
+                binding.pictureOfTheDayImageView.dispose()
+                Toast.makeText(activity, responseAppState.error.toString(), Toast.LENGTH_LONG).show()
             }
             AppState.Loading -> {
-                binding.imageView.visibility = View.GONE
+                binding.pictureOfTheDayImageView.visibility = View.GONE
+                binding.explanationTextView.visibility = View.GONE
                 binding.mainFragmentLoadingLayout.visibility = View.VISIBLE
                 
             }
             is AppState.Success -> {
-                binding.imageView.visibility = View.VISIBLE
                 binding.mainFragmentLoadingLayout.visibility = View.GONE
-                binding.imageView.load(appState.pictureOfTheDayResponseData.url){
+                binding.pictureOfTheDayImageView.visibility = View.VISIBLE
+                binding.explanationTextView.visibility = View.VISIBLE
+                binding.pictureOfTheDayImageView.load(responseAppState.pictureOfTheDayResponseData.url){
                     error(R.drawable.ic_load_error_vector)
                     placeholder(R.drawable.ic_hamburger_menu_bottom_bar)
                 }
+                binding.explanationTextView.text =
+                    responseAppState.pictureOfTheDayResponseData.explanation
 
                 //TODO настроить загрузку изображения error() placeholder()
 

@@ -2662,6 +2662,7 @@ dimen notification_small_icon_size_as_large
 dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
+dimen padding_5dp
 dimen sliding_pane_detail_pane_width
 dimen tooltip_corner_radius
 dimen tooltip_horizontal_padding
@@ -3057,6 +3058,7 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id explanationTextView
 id fab
 id fade
 id fill
@@ -3095,7 +3097,6 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
-id imageView
 id immediateStop
 id included
 id indeterminate
@@ -3224,6 +3225,7 @@ id path
 id pathRelative
 id peekHeight
 id percent
+id pictureOfTheDayImageView
 id pin
 id position
 id postLayout

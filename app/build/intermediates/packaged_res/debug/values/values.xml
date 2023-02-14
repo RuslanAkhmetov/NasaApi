@@ -24,6 +24,7 @@
     <color name="my_color">#2E468E</color>
     <color name="white">#FFFFFFFF</color>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="padding_5dp">5dp</dimen>
     <string name="action_settings">Settings</string>
     <string name="app_name">Nasa Picture of the day</string>
     <string name="before_yesterday">Before yesterday</string>
@@ -125,7 +126,6 @@
     <style name="MyTabLayoutStyle" parent="@style/Widget.Material3.TabLayout">
         <item name="tabIndicatorFullWidth">false</item>
         <item name="tabIndicatorColor">?myColor2</item>
-
     </style>
     <style name="MyTextAppearanceBody2" parent="TextAppearance.AppCompat.Body2">
         <item name="fontFamily">@font/aladin</item>

@@ -11,6 +11,7 @@ color color_gray
 color my_color
 color white
 dimen fab_margin
+dimen padding_5dp
 drawable ic_archive
 drawable ic_back_fab
 drawable ic_favourite_menu
@@ -35,8 +36,8 @@ id chipbeforeyesterday
 id chiptoday
 id chipyesterday
 id container
+id explanationTextView
 id fab
-id imageView
 id input
 id inputLayout
 id loadingLayout
@@ -46,6 +47,7 @@ id nav_host_fragment_content_main
 id navigation_one
 id navigation_two
 id navigation_view
+id pictureOfTheDayImageView
 layout activity_main
 layout bottom_navigation_layout
 layout content_main
