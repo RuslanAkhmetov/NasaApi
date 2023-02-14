@@ -55,4 +55,6 @@
     <string name="red">Red</string>
     <string name="green">Green</string>
     <string name="blue">Blue</string>
+    <string name="moon_theme">Moon Theme</string>
+    <string name="mars_theme">Mars Theme</string>
 </resources>

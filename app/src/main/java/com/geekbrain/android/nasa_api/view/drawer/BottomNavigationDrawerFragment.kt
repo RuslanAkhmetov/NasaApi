@@ -26,8 +26,14 @@ class BottomNavigationDrawerFragment : BottomSheetDialogFragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.navigationView.setNavigationItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
-                R.id.navigation_one -> Toast.makeText(context, "1", Toast.LENGTH_LONG).show()
-                R.id.navigation_two -> Toast.makeText(context, "2", Toast.LENGTH_LONG).show()
+                R.id.action_theme_moon -> {
+                    activity?.setTheme(R.style.MoonTheme)
+                    activity?.recreate()
+                } //Toast.makeText(context, "1", Toast.LENGTH_LONG).show()
+                R.id.action_theme_mars -> {
+                    activity?.setTheme(R.style.MarsTheme)
+                    activity?.recreate()
+                }
             }
             true
         }

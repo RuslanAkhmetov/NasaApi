@@ -19,8 +19,6 @@ import com.geekbrain.android.nasa_api.view.drawer.BottomNavigationDrawerFragment
 import com.geekbrain.android.nasa_api.view.settings.SettingsFragment
 import com.geekbrain.android.nasa_api.viewmodel.AppState
 import com.geekbrain.android.nasa_api.viewmodel.PictureOfTheDayViewModel
-import java.text.SimpleDateFormat
-import java.util.*
 import com.geekbrain.android.nasa_api.utils.getSelectedDay
 
 
@@ -117,8 +115,6 @@ class PictureOfTheDayFragment : Fragment() {
 
         return super.onOptionsItemSelected(item)
     }
-
-
 
     private fun renderDateFromNasa(responseAppState: AppState) {
         when (responseAppState) {

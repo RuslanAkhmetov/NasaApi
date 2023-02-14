@@ -21,6 +21,128 @@
     <attr format="color" name="myColor2"/>
     <color name="black">#FF000000</color>
     <color name="color_gray">#668E8A8A</color>
+    <color name="mars_seed">#c700e0</color>
+    <color name="mars_theme_dark_background">#1E1A1D</color>
+    <color name="mars_theme_dark_error">#FFB4AB</color>
+    <color name="mars_theme_dark_errorContainer">#93000A</color>
+    <color name="mars_theme_dark_inverseOnSurface">#1E1A1D</color>
+    <color name="mars_theme_dark_inversePrimary">#A300B8</color>
+    <color name="mars_theme_dark_inverseSurface">#E9E0E4</color>
+    <color name="mars_theme_dark_onBackground">#E9E0E4</color>
+    <color name="mars_theme_dark_onError">#690005</color>
+    <color name="mars_theme_dark_onErrorContainer">#FFDAD6</color>
+    <color name="mars_theme_dark_onPrimary">#580064</color>
+    <color name="mars_theme_dark_onPrimaryContainer">#FFD6FC</color>
+    <color name="mars_theme_dark_onSecondary">#5E1133</color>
+    <color name="mars_theme_dark_onSecondaryContainer">#FFD9E2</color>
+    <color name="mars_theme_dark_onSurface">#E9E0E4</color>
+    <color name="mars_theme_dark_onSurfaceVariant">#D0C3CC</color>
+    <color name="mars_theme_dark_onTertiary">#4C251E</color>
+    <color name="mars_theme_dark_onTertiaryContainer">#FFDAD4</color>
+    <color name="mars_theme_dark_outline">#998D96</color>
+    <color name="mars_theme_dark_outlineVariant">#4D444C</color>
+    <color name="mars_theme_dark_primary">#FCAAFF</color>
+    <color name="mars_theme_dark_primaryContainer">#7D008D</color>
+    <color name="mars_theme_dark_scrim">#000000</color>
+    <color name="mars_theme_dark_secondary">#FFB1C8</color>
+    <color name="mars_theme_dark_secondaryContainer">#7B2949</color>
+    <color name="mars_theme_dark_shadow">#000000</color>
+    <color name="mars_theme_dark_surface">#1E1A1D</color>
+    <color name="mars_theme_dark_surfaceTint">#FCAAFF</color>
+    <color name="mars_theme_dark_surfaceVariant">#4D444C</color>
+    <color name="mars_theme_dark_tertiary">#F6B8AC</color>
+    <color name="mars_theme_dark_tertiaryContainer">#673B33</color>
+    <color name="mars_theme_light_background">#FFFBFF</color>
+    <color name="mars_theme_light_error">#BA1A1A</color>
+    <color name="mars_theme_light_errorContainer">#FFDAD6</color>
+    <color name="mars_theme_light_inverseOnSurface">#F7EEF2</color>
+    <color name="mars_theme_light_inversePrimary">#FCAAFF</color>
+    <color name="mars_theme_light_inverseSurface">#332F32</color>
+    <color name="mars_theme_light_onBackground">#1E1A1D</color>
+    <color name="mars_theme_light_onError">#FFFFFF</color>
+    <color name="mars_theme_light_onErrorContainer">#410002</color>
+    <color name="mars_theme_light_onPrimary">#FFFFFF</color>
+    <color name="mars_theme_light_onPrimaryContainer">#36003E</color>
+    <color name="mars_theme_light_onSecondary">#FFFFFF</color>
+    <color name="mars_theme_light_onSecondaryContainer">#3E001D</color>
+    <color name="mars_theme_light_onSurface">#1E1A1D</color>
+    <color name="mars_theme_light_onSurfaceVariant">#4D444C</color>
+    <color name="mars_theme_light_onTertiary">#FFFFFF</color>
+    <color name="mars_theme_light_onTertiaryContainer">#33110B</color>
+    <color name="mars_theme_light_outline">#7F747C</color>
+    <color name="mars_theme_light_outlineVariant">#D0C3CC</color>
+    <color name="mars_theme_light_primary">#F44336</color>
+    <color name="mars_theme_light_primaryContainer">#FFD6FC</color>
+    <color name="mars_theme_light_scrim">#000000</color>
+    <color name="mars_theme_light_secondary">#984061</color>
+    <color name="mars_theme_light_secondaryContainer">#FFD9E2</color>
+    <color name="mars_theme_light_shadow">#000000</color>
+    <color name="mars_theme_light_surface">#FFFBFF</color>
+    <color name="mars_theme_light_surfaceTint">#A300B8</color>
+    <color name="mars_theme_light_surfaceVariant">#EDDFE8</color>
+    <color name="mars_theme_light_tertiary">#825249</color>
+    <color name="mars_theme_light_tertiaryContainer">#FFDAD4</color>
+    <color name="moon_seed">#a4cddd</color>
+    <color name="moon_theme_dark_background">#191C1D</color>
+    <color name="moon_theme_dark_error">#FFB4AB</color>
+    <color name="moon_theme_dark_errorContainer">#93000A</color>
+    <color name="moon_theme_dark_inverseOnSurface">#191C1D</color>
+    <color name="moon_theme_dark_inversePrimary">#00677F</color>
+    <color name="moon_theme_dark_inverseSurface">#E1E3E4</color>
+    <color name="moon_theme_dark_onBackground">#E1E3E4</color>
+    <color name="moon_theme_dark_onError">#690005</color>
+    <color name="moon_theme_dark_onErrorContainer">#FFDAD6</color>
+    <color name="moon_theme_dark_onPrimary">#003543</color>
+    <color name="moon_theme_dark_onPrimaryContainer">#B5EBFF</color>
+    <color name="moon_theme_dark_onSecondary">#381E72</color>
+    <color name="moon_theme_dark_onSecondaryContainer">#E9DDFF</color>
+    <color name="moon_theme_dark_onSurface">#E1E3E4</color>
+    <color name="moon_theme_dark_onSurfaceVariant">#BFC8CC</color>
+    <color name="moon_theme_dark_onTertiary">#2B2E4D</color>
+    <color name="moon_theme_dark_onTertiaryContainer">#E0E0FF</color>
+    <color name="moon_theme_dark_outline">#8A9296</color>
+    <color name="moon_theme_dark_outlineVariant">#40484C</color>
+    <color name="moon_theme_dark_primary">#5BD5FA</color>
+    <color name="moon_theme_dark_primaryContainer">#004E60</color>
+    <color name="moon_theme_dark_scrim">#000000</color>
+    <color name="moon_theme_dark_secondary">#CFBCFF</color>
+    <color name="moon_theme_dark_secondaryContainer">#4F378A</color>
+    <color name="moon_theme_dark_shadow">#000000</color>
+    <color name="moon_theme_dark_surface">#191C1D</color>
+    <color name="moon_theme_dark_surfaceTint">#5BD5FA</color>
+    <color name="moon_theme_dark_surfaceVariant">#40484C</color>
+    <color name="moon_theme_dark_tertiary">#C2C3EB</color>
+    <color name="moon_theme_dark_tertiaryContainer">#424465</color>
+    <color name="moon_theme_light_background">#FBFCFE</color>
+    <color name="moon_theme_light_error">#BA1A1A</color>
+    <color name="moon_theme_light_errorContainer">#FFDAD6</color>
+    <color name="moon_theme_light_inverseOnSurface">#EFF1F2</color>
+    <color name="moon_theme_light_inversePrimary">#5BD5FA</color>
+    <color name="moon_theme_light_inverseSurface">#2E3132</color>
+    <color name="moon_theme_light_onBackground">#191C1D</color>
+    <color name="moon_theme_light_onError">#FFFFFF</color>
+    <color name="moon_theme_light_onErrorContainer">#410002</color>
+    <color name="moon_theme_light_onPrimary">#FFFFFF</color>
+    <color name="moon_theme_light_onPrimaryContainer">#001F28</color>
+    <color name="moon_theme_light_onSecondary">#FFFFFF</color>
+    <color name="moon_theme_light_onSecondaryContainer">#22005C</color>
+    <color name="moon_theme_light_onSurface">#191C1D</color>
+    <color name="moon_theme_light_onSurfaceVariant">#40484C</color>
+    <color name="moon_theme_light_onTertiary">#FFFFFF</color>
+    <color name="moon_theme_light_onTertiaryContainer">#161937</color>
+    <color name="moon_theme_light_outline">#70787C</color>
+    <color name="moon_theme_light_outlineVariant">#BFC8CC</color>
+    <color name="moon_theme_light_primary">#00677F</color>
+    <color name="moon_theme_light_primaryContainer">#B5EBFF</color>
+    <color name="moon_theme_light_scrim">#000000</color>
+    <color name="moon_theme_light_secondary">#6750A4</color>
+    <color name="moon_theme_light_secondaryContainer">#E9DDFF</color>
+    <color name="moon_theme_light_shadow">#000000</color>
+    <color name="moon_theme_light_surface">#FBFCFE</color>
+    <color name="moon_theme_light_surfaceTint">#00677F</color>
+    <color name="moon_theme_light_surfaceVariant">#DBE4E8</color>
+    <color name="moon_theme_light_tertiary">#5A5C7E</color>
+    <color name="moon_theme_light_tertiaryContainer">#E0E0FF</color>
     <color name="my_color">#2E468E</color>
     <color name="white">#FFFFFFFF</color>
     <dimen name="fab_margin">16dp</dimen>
@@ -69,6 +191,8 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <string name="mars_theme">Mars Theme</string>
+    <string name="moon_theme">Moon Theme</string>
     <string name="nasapictureoftheday">NasaPictureOfTheDay</string>
     <string name="next">Next</string>
     <string name="picture_of_the_day">Picture of the day</string>
@@ -83,14 +207,13 @@
         
         
 
-
-
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
 
 
         <item name="myColor">@color/my_color</item>
         <item name="myColor2">#FF0101</item>
+
         <item name="chipStyle">@style/MyChipStyle</item>
         <item name="textInputStyle">@style/MyTextInputStyle</item>
 
@@ -106,6 +229,62 @@
     </style>
     <style name="GreenTheme" parent="MySecondTheme">
         <item name="myColor">#1E7320</item>
+    </style>
+    <style name="MarsTheme" parent="Base.Theme.Nasa_api">
+        <item name="colorPrimary">@color/mars_theme_light_primary</item>
+        <item name="colorOnPrimary">@color/mars_theme_light_onPrimary</item>
+        <item name="colorPrimaryContainer">@color/mars_theme_light_primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/mars_theme_light_onPrimaryContainer</item>
+        <item name="colorSecondary">@color/mars_theme_light_secondary</item>
+        <item name="colorOnSecondary">@color/mars_theme_light_onSecondary</item>
+        <item name="colorSecondaryContainer">@color/mars_theme_light_secondaryContainer</item>
+        <item name="colorOnSecondaryContainer">@color/mars_theme_light_onSecondaryContainer</item>
+        <item name="colorTertiary">@color/mars_theme_light_tertiary</item>
+        <item name="colorOnTertiary">@color/mars_theme_light_onTertiary</item>
+        <item name="colorTertiaryContainer">@color/mars_theme_light_tertiaryContainer</item>
+        <item name="colorOnTertiaryContainer">@color/mars_theme_light_onTertiaryContainer</item>
+        <item name="colorError">@color/mars_theme_light_error</item>
+        <item name="colorErrorContainer">@color/mars_theme_light_errorContainer</item>
+        <item name="colorOnError">@color/mars_theme_light_onError</item>
+        <item name="colorOnErrorContainer">@color/mars_theme_light_onErrorContainer</item>
+        <item name="android:colorBackground">@color/mars_theme_light_background</item>
+        <item name="colorOnBackground">@color/mars_theme_light_onBackground</item>
+        <item name="colorSurface">@color/mars_theme_light_surface</item>
+        <item name="colorOnSurface">@color/mars_theme_light_onSurface</item>
+        <item name="colorSurfaceVariant">@color/mars_theme_light_surfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/mars_theme_light_onSurfaceVariant</item>
+        <item name="colorOutline">@color/mars_theme_light_outline</item>
+        <item name="colorOnSurfaceInverse">@color/mars_theme_light_inverseOnSurface</item>
+        <item name="colorSurfaceInverse">@color/mars_theme_light_inverseSurface</item>
+        <item name="colorPrimaryInverse">@color/mars_theme_light_inversePrimary</item>
+    </style>
+    <style name="MoonTheme" parent="Base.Theme.Nasa_api">
+        <item name="colorPrimary">@color/moon_theme_light_primary</item>
+        <item name="colorOnPrimary">@color/moon_theme_light_onPrimary</item>
+        <item name="colorPrimaryContainer">@color/moon_theme_light_primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/moon_theme_light_onPrimaryContainer</item>
+        <item name="colorSecondary">@color/moon_theme_light_secondary</item>
+        <item name="colorOnSecondary">@color/moon_theme_light_onSecondary</item>
+        <item name="colorSecondaryContainer">@color/moon_theme_light_secondaryContainer</item>
+        <item name="colorOnSecondaryContainer">@color/moon_theme_light_onSecondaryContainer</item>
+        <item name="colorTertiary">@color/moon_theme_light_tertiary</item>
+        <item name="colorOnTertiary">@color/moon_theme_light_onTertiary</item>
+        <item name="colorTertiaryContainer">@color/moon_theme_light_tertiaryContainer</item>
+        <item name="colorOnTertiaryContainer">@color/moon_theme_light_onTertiaryContainer</item>
+        <item name="colorError">@color/moon_theme_light_error</item>
+        <item name="colorErrorContainer">@color/moon_theme_light_errorContainer</item>
+        <item name="colorOnError">@color/moon_theme_light_onError</item>
+        <item name="colorOnErrorContainer">@color/moon_theme_light_onErrorContainer</item>
+        <item name="android:colorBackground">@color/moon_theme_light_background</item>
+        <item name="colorOnBackground">@color/moon_theme_light_onBackground</item>
+        <item name="colorSurface">@color/moon_theme_light_surface</item>
+        <item name="colorOnSurface">@color/moon_theme_light_onSurface</item>
+        <item name="colorSurfaceVariant">@color/moon_theme_light_surfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/moon_theme_light_onSurfaceVariant</item>
+        <item name="colorOutline">@color/moon_theme_light_outline</item>
+        <item name="colorOnSurfaceInverse">@color/moon_theme_light_inverseOnSurface</item>
+        <item name="colorSurfaceInverse">@color/moon_theme_light_inverseSurface</item>
+        <item name="colorPrimaryInverse">@color/moon_theme_light_inversePrimary</item>
     </style>
     <style name="MyAppBarStyle" parent="@style/Widget.Material3.BottomAppBar">
         <item name="backgroundTint">@color/my_color</item>
