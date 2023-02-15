@@ -128,4 +128,7 @@
     <color name="moon_theme_dark_surfaceTint">#5BD5FA</color>
     <color name="moon_theme_dark_outlineVariant">#40484C</color>
     <color name="moon_theme_dark_scrim">#000000</color>
+
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorAccent40Alfa">#6603DAC5</color>
 </resources>

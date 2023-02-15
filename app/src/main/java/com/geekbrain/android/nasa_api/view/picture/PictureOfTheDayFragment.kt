@@ -33,7 +33,7 @@ class PictureOfTheDayFragment : Fragment() {
     // onDestroyView.
     private val binding get() = _binding!!
 
-    val viewModel by viewModels<PictureOfTheDayViewModel>()
+    private val viewModel by viewModels<PictureOfTheDayViewModel>()
 
     companion object {
         fun newInstance() = PictureOfTheDayFragment()
@@ -45,7 +45,7 @@ class PictureOfTheDayFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         Log.i(TAG, "onCreateView: ")
-        
+
         _binding = FragmentPictureOfTheDayBinding.inflate(inflater, container, false)
         return binding.root
 
@@ -72,7 +72,7 @@ class PictureOfTheDayFragment : Fragment() {
             viewModel.sendRequest(selectedDay)
         }
 
-        binding.chipbeforeyesterday.setOnClickListener{
+        binding.chipbeforeyesterday.setOnClickListener {
             val selectedDay = getSelectedDay(DAYS.BEFORE_YESTERDAY)
             viewModel.sendRequest(selectedDay)
         }
@@ -94,12 +94,12 @@ class PictureOfTheDayFragment : Fragment() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when(item.itemId){
-            R.id.action_bar_favorite->{
+        when (item.itemId) {
+            R.id.action_bar_favorite -> {
 
             }
 
-            R.id.action_bar_settings ->{
+            R.id.action_bar_settings -> {
                 requireActivity().supportFragmentManager
                     .beginTransaction()
                     .hide(this)
@@ -108,7 +108,7 @@ class PictureOfTheDayFragment : Fragment() {
                     .commit()
             }
 
-            android.R.id.home ->{
+            android.R.id.home -> {
                 activity?.let {
                     BottomNavigationDrawerFragment().show(it.supportFragmentManager, "TAG")
                 }
@@ -122,26 +122,25 @@ class PictureOfTheDayFragment : Fragment() {
         when (responseAppState) {
             is AppState.Error -> {
                 binding.pictureOfTheDayImageView.dispose()
-                Toast.makeText(activity, responseAppState.error.toString(), Toast.LENGTH_LONG).show()
+                Toast.makeText(activity, responseAppState.error.toString(), Toast.LENGTH_LONG)
+                    .show()
             }
             AppState.Loading -> {
                 binding.pictureOfTheDayImageView.visibility = View.GONE
                 binding.explanationTextView.visibility = View.GONE
                 binding.mainFragmentLoadingLayout.visibility = View.VISIBLE
-                
+
             }
             is AppState.Success -> {
                 binding.mainFragmentLoadingLayout.visibility = View.GONE
                 binding.pictureOfTheDayImageView.visibility = View.VISIBLE
                 binding.explanationTextView.visibility = View.VISIBLE
-                binding.pictureOfTheDayImageView.load(responseAppState.pictureOfTheDayResponseData.url){
+                binding.pictureOfTheDayImageView.load(responseAppState.pictureOfTheDayResponseData.url) {
                     error(R.drawable.ic_load_error_vector)
                     placeholder(R.drawable.ic_hamburger_menu_bottom_bar)
                 }
                 binding.explanationTextView.text =
                     responseAppState.pictureOfTheDayResponseData.explanation
-
-                //TODO настроить загрузку изображения error() placeholder()
 
             }
         }
