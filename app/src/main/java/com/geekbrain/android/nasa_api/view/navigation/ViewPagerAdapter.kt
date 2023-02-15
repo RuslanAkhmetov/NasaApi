@@ -4,6 +4,8 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentStatePagerAdapter
 
+
+
 @Suppress("DEPRECATION")
 class ViewPagerAdapter(fragmentManager: FragmentManager): FragmentStatePagerAdapter(fragmentManager){
 
@@ -15,5 +17,14 @@ class ViewPagerAdapter(fragmentManager: FragmentManager): FragmentStatePagerAdap
 
     override fun getItem(position: Int): Fragment {
         return fragments[position]
+    }
+
+    override fun getPageTitle(position: Int): CharSequence {
+        return  when(position){
+            0 -> "Earth"
+            1 -> "Mars"
+            2 -> "Sun System"
+            else -> ""
+        }
     }
 }

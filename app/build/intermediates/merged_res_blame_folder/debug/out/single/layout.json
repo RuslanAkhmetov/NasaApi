@@ -8,10 +8,6 @@
         "source": "C:\\Users\\akhmr\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-7:\\layout\\bottom_navigation_layout.xml"
     },
     {
-        "merged": "com.geekbrain.android.nasa_api.app-mergeDebugResources-4:/layout/fragment_system.xml",
-        "source": "com.geekbrain.android.nasa_api.app-main-7:/layout/fragment_system.xml"
-    },
-    {
         "merged": "C:\\Users\\akhmr\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-mergeDebugResources-4:\\layout\\fragment_system.xml",
         "source": "C:\\Users\\akhmr\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-7:\\layout\\fragment_system.xml"
     },
@@ -20,16 +16,8 @@
         "source": "C:\\Users\\akhmr\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-7:\\layout\\content_main.xml"
     },
     {
-        "merged": "com.geekbrain.android.nasa_api.app-mergeDebugResources-4:/layout/fragment_mars.xml",
-        "source": "com.geekbrain.android.nasa_api.app-main-7:/layout/fragment_mars.xml"
-    },
-    {
         "merged": "C:\\Users\\akhmr\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-mergeDebugResources-4:\\layout\\activity_main.xml",
         "source": "C:\\Users\\akhmr\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-7:\\layout\\activity_main.xml"
-    },
-    {
-        "merged": "com.geekbrain.android.nasa_api.app-mergeDebugResources-4:/layout/fragment_earth.xml",
-        "source": "com.geekbrain.android.nasa_api.app-main-7:/layout/fragment_earth.xml"
     },
     {
         "merged": "C:\\Users\\akhmr\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-mergeDebugResources-4:\\layout\\activity_view_pager.xml",
@@ -50,5 +38,13 @@
     {
         "merged": "C:\\Users\\akhmr\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-mergeDebugResources-4:\\layout\\fragment_earth.xml",
         "source": "C:\\Users\\akhmr\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-7:\\layout\\fragment_earth.xml"
+    },
+    {
+        "merged": "com.geekbrain.android.nasa_api.app-mergeDebugResources-4:/layout/activity_view_pager.xml",
+        "source": "com.geekbrain.android.nasa_api.app-main-7:/layout/activity_view_pager.xml"
+    },
+    {
+        "merged": "com.geekbrain.android.nasa_api.app-mergeDebugResources-4:/layout/fragment_picture_of_the_day.xml",
+        "source": "com.geekbrain.android.nasa_api.app-main-7:/layout/fragment_picture_of_the_day.xml"
     }
 ]

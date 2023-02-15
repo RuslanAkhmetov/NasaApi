@@ -2877,6 +2877,7 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable background
 drawable bg_earth
 drawable bg_mars
 drawable bg_system
@@ -3451,6 +3452,7 @@ id submenuarrow
 id submit_area
 id supportScrollUp
 id tabMode
+id tablayout
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
 id tag_accessibility_heading

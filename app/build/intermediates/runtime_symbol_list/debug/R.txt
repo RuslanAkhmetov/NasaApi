@@ -2876,6 +2876,7 @@ int drawable abc_textfield_search_material 0x7f080076
 int drawable abc_vector_test 0x7f080077
 int drawable avd_hide_password 0x7f080078
 int drawable avd_show_password 0x7f080079
+int drawable background 0x7f0800f2
 int drawable bg_earth 0x7f08007a
 int drawable bg_mars 0x7f08007b
 int drawable bg_system 0x7f08007c
@@ -3450,6 +3451,7 @@ int id submenuarrow 0x7f0a01c1
 int id submit_area 0x7f0a01c2
 int id supportScrollUp 0x7f0a01c3
 int id tabMode 0x7f0a01c4
+int id tablayout 0x7f0a020a
 int id tag_accessibility_actions 0x7f0a01c5
 int id tag_accessibility_clickable_spans 0x7f0a01c6
 int id tag_accessibility_heading 0x7f0a01c7
