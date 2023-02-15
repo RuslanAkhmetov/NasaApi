@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.geekbrain.android.nasa_api.app-mergeDebugResources-44:/values-v29/values-v29.xml",
+            "outputFile": "com.geekbrain.android.nasa_api.app-mergeDebugResources-3:/values-v29/values-v29.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\1\\AndroidStudioProjects\\NasaApi\\app\\src\\main\\res\\values-v29\\themes.xml",
+                    "source": "B:\\AndroidStudioProjects\\NasaApi\\app\\src\\main\\res\\values-v29\\themes.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

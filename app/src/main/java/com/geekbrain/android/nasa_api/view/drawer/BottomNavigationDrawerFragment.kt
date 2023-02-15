@@ -36,15 +36,15 @@ class BottomNavigationDrawerFragment : BottomSheetDialogFragment() {
         binding.navigationView.setNavigationItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
                 R.id.action_theme_moon -> {
-                    sharedPreferences.edit()?.putInt(THEME, R.style.MoonTheme)
+                    sharedPreferences.edit()?.putInt(THEME, R.style.MoonTheme)?.apply()
                     Log.i(TAG, "onViewCreated: ${R.style.MoonTheme}")
-                    Log.i(TAG, "onViewCreated: in Bundle ${sharedPreferences?.getInt(THEME, -1)?.toString()}")
+                    Log.i(TAG, "onViewCreated: in Bundle ${sharedPreferences.getInt(THEME, -1).toString()}")
                     //activity?.setTheme(R.style.MoonTheme)
                 } //Toast.makeText(context, "1", Toast.LENGTH_LONG).show()
                 R.id.action_theme_mars -> {
-                    sharedPreferences?.edit()?.putInt(THEME, R.style.MarsTheme)
+                    sharedPreferences.edit()?.putInt(THEME, R.style.MarsTheme)?.apply()
                     Log.i(TAG, "onViewCreated: ${R.style.MarsTheme}")
-                    Log.i(TAG, "onViewCreated: in Bundle ${sharedPreferences?.getInt(THEME, -1)?.toString()}")
+                    Log.i(TAG, "onViewCreated: in Bundle ${sharedPreferences.getInt(THEME, -1).toString()}")
                     //activity?.setTheme(R.style.MarsTheme)
                 }
             }

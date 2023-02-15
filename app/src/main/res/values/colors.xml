@@ -5,6 +5,7 @@
     <color name="color_gray">#668E8A8A</color>
     <color name="my_color">#2E468E</color>
     <color name="mars_seed">#c700e0</color>
+
     <color name="mars_theme_light_primary">#F44336</color>
     <color name="mars_theme_light_onPrimary">#FFFFFF</color>
     <color name="mars_theme_light_primaryContainer">#FFD6FC</color>
@@ -65,6 +66,7 @@
     <color name="mars_theme_dark_surfaceTint">#FCAAFF</color>
     <color name="mars_theme_dark_outlineVariant">#4D444C</color>
     <color name="mars_theme_dark_scrim">#000000</color>
+
     <color name="moon_seed">#a4cddd</color>
     <color name="moon_theme_light_primary">#00677F</color>
     <color name="moon_theme_light_onPrimary">#FFFFFF</color>

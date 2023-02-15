@@ -231,6 +231,7 @@
         <item name="myColor">#1E7320</item>
     </style>
     <style name="MarsTheme" parent="Base.Theme.Nasa_api">
+        <item name="textAppearanceLabelLarge">@style/MyTextAppearanceBody2</item>
         <item name="colorPrimary">@color/mars_theme_light_primary</item>
         <item name="colorOnPrimary">@color/mars_theme_light_onPrimary</item>
         <item name="colorPrimaryContainer">@color/mars_theme_light_primaryContainer</item>

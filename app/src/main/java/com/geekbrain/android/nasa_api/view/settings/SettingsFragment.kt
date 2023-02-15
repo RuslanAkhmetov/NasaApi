@@ -33,6 +33,7 @@ class SettingsFragment : Fragment() {
     ): View? {
 
         _binding = FragmentSettingsBinding.inflate(inflater, container, false)
+
         return binding.root
 
     }

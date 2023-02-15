@@ -1,10 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "com.geekbrain.android.nasa_api.app-mergeDebugResources-44:/values-en-rIN/values-en-rIN.xml",
+            "outputFile": "com.geekbrain.android.nasa_api.app-mergeDebugResources-3:/values-en-rIN/values-en-rIN.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\1\\.gradle\\caches\\transforms-3\\5d469c2e3400197681f459dcf6caccdf\\transformed\\appcompat-1.6.0\\res\\values-en-rIN\\values-en-rIN.xml",
+                    "source": "C:\\Users\\akhmr\\.gradle\\caches\\transforms-3\\b4e66e66b71c1541ec208d8dd4bcf2b6\\transformed\\navigation-ui-2.5.3\\res\\values-en-rIN\\values-en-rIN.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,161",
+                        "endColumns": "105,116",
+                        "endOffsets": "156,273"
+                    },
+                    "to": {
+                        "startLines": "29,30",
+                        "startColumns": "4,4",
+                        "startOffsets": "2762,2868",
+                        "endColumns": "105,116",
+                        "endOffsets": "2863,2980"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\akhmr\\.gradle\\caches\\transforms-3\\5d469c2e3400197681f459dcf6caccdf\\transformed\\appcompat-1.6.0\\res\\values-en-rIN\\values-en-rIN.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\1\\.gradle\\caches\\transforms-3\\9baae2a0a064870b9506522ab355f7bf\\transformed\\core-1.9.0\\res\\values-en-rIN\\values-en-rIN.xml",
+                    "source": "C:\\Users\\akhmr\\.gradle\\caches\\transforms-3\\9baae2a0a064870b9506522ab355f7bf\\transformed\\core-1.9.0\\res\\values-en-rIN\\values-en-rIN.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -35,23 +52,6 @@
                         "startOffsets": "3068",
                         "endColumns": "100",
                         "endOffsets": "3164"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\1\\.gradle\\caches\\transforms-3\\b4e66e66b71c1541ec208d8dd4bcf2b6\\transformed\\navigation-ui-2.5.3\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,161",
-                        "endColumns": "105,116",
-                        "endOffsets": "156,273"
-                    },
-                    "to": {
-                        "startLines": "29,30",
-                        "startColumns": "4,4",
-                        "startOffsets": "2762,2868",
-                        "endColumns": "105,116",
-                        "endOffsets": "2863,2980"
                     }
                 }
             ]
