@@ -108,16 +108,16 @@
         "source": "C:\\Users\\akhmr\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-7:\\drawable-v24\\ic_archive.xml"
     },
     {
-        "merged": "com.geekbrain.android.nasa_api.app-merged_res-5:/drawable-v24_background.jpg.flat",
-        "source": "com.geekbrain.android.nasa_api.app-main-7:/drawable-v24/background.jpg"
-    },
-    {
         "merged": "C:\\Users\\akhmr\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-merged_res-5:\\drawable-v24_ic_send.xml.flat",
         "source": "C:\\Users\\akhmr\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-7:\\drawable-v24\\ic_send.xml"
     },
     {
         "merged": "C:\\Users\\akhmr\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-merged_res-5:\\drawable_image.jpg.flat",
         "source": "C:\\Users\\akhmr\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-7:\\drawable\\image.jpg"
+    },
+    {
+        "merged": "C:\\Users\\akhmr\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-merged_res-5:\\drawable-v24_background.jpg.flat",
+        "source": "C:\\Users\\akhmr\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-7:\\drawable-v24\\background.jpg"
     },
     {
         "merged": "C:\\Users\\akhmr\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-merged_res-5:\\layout_fragment_picture_of_the_day.xml.flat",
@@ -166,10 +166,6 @@
     {
         "merged": "C:\\Users\\akhmr\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-merged_res-5:\\drawable-v24_ic_launcher_foreground.xml.flat",
         "source": "C:\\Users\\akhmr\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-7:\\drawable-v24\\ic_launcher_foreground.xml"
-    },
-    {
-        "merged": "com.geekbrain.android.nasa_api.app-merged_res-5:/layout_fragment_picture_of_the_day.xml.flat",
-        "source": "com.geekbrain.android.nasa_api.app-main-7:/layout/fragment_picture_of_the_day.xml"
     },
     {
         "merged": "C:\\Users\\akhmr\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-merged_res-5:\\mipmap-mdpi_ic_launcher_round.webp.flat",
