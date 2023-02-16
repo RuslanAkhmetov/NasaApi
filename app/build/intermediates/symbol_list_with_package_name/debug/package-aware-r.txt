@@ -2900,6 +2900,7 @@ drawable ic_arrow_back_black_24
 drawable ic_back_fab
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
+drawable ic_earth
 drawable ic_favourite_menu
 drawable ic_hamburger_menu_bottom_bar
 drawable ic_keyboard_black_24dp
@@ -2909,6 +2910,7 @@ drawable ic_load_error_vector
 drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
 drawable ic_m3_chip_close
+drawable ic_mars
 drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
@@ -2919,6 +2921,7 @@ drawable ic_search
 drawable ic_search_black_24
 drawable ic_send
 drawable ic_settings_menu
+drawable ic_system
 drawable ic_wikipedia
 drawable image
 drawable m3_appbar_background
@@ -3072,6 +3075,9 @@ id action_mode_close_button
 id action_text
 id action_theme_mars
 id action_theme_moon
+id action_view_earth
+id action_view_mars
+id action_view_system
 id actions
 id activity_chooser_view_content
 id add
@@ -3100,6 +3106,7 @@ id bestChoice
 id blocking
 id bottom
 id bottomAppBar
+id bottom_navigation_view
 id bounce
 id bounceBoth
 id bounceEnd
@@ -3629,6 +3636,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_bottom_bar
 layout activity_main
 layout activity_view_pager
 layout bottom_navigation_layout
@@ -3717,6 +3725,7 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 menu menu_bottom_navigation
+menu menu_bottom_navigation_view
 menu menu_main
 mipmap ic_launcher
 mipmap ic_launcher_round

@@ -6,7 +6,6 @@ import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.annotation.RequiresApi
 import com.geekbrain.android.nasa_api.databinding.FragmentSettingsBinding
-import java.util.*
 
 
 class SettingsFragment : Fragment() {
@@ -41,7 +40,6 @@ class SettingsFragment : Fragment() {
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
     }
 
 

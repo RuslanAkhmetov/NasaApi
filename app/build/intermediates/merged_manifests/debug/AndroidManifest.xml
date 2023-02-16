@@ -41,6 +41,10 @@
         <activity
             android:name="com.geekbrain.android.nasa_api.view.navigation.ViewPagerActivity"
             android:exported="true" >
+        </activity>
+        <activity
+            android:name="com.geekbrain.android.nasa_api.view.navigation.BottomBarActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

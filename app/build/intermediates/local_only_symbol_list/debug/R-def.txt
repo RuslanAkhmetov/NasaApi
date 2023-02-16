@@ -142,16 +142,19 @@ drawable bg_mars
 drawable bg_system
 drawable ic_archive
 drawable ic_back_fab
+drawable ic_earth
 drawable ic_favourite_menu
 drawable ic_hamburger_menu_bottom_bar
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_load_error_vector
+drawable ic_mars
 drawable ic_no_photo_vector
 drawable ic_plus_fab
 drawable ic_search
 drawable ic_send
 drawable ic_settings_menu
+drawable ic_system
 drawable ic_wikipedia
 drawable image
 drawable my_selector_background_chip
@@ -163,7 +166,11 @@ id action_bar_favorite
 id action_bar_settings
 id action_theme_mars
 id action_theme_moon
+id action_view_earth
+id action_view_mars
+id action_view_system
 id bottomAppBar
+id bottom_navigation_view
 id chipGroup
 id chipbeforeyesterday
 id chiptoday
@@ -181,6 +188,7 @@ id navigation_view
 id pictureOfTheDayImageView
 id tablayout
 id view_pager
+layout activity_bottom_bar
 layout activity_main
 layout activity_view_pager
 layout bottom_navigation_layout
@@ -192,6 +200,7 @@ layout fragment_settings
 layout fragment_system
 layout loading_layout
 menu menu_bottom_navigation
+menu menu_bottom_navigation_view
 menu menu_main
 mipmap ic_launcher
 mipmap ic_launcher_round
