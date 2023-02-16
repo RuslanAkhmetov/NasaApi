@@ -57,4 +57,8 @@
     <string name="blue">Blue</string>
     <string name="moon_theme">Moon Theme</string>
     <string name="mars_theme">Mars Theme</string>
+    <string name="earth">Earth</string>
+    <string name="marscuriosity">MarsCuriosity</string>
+    <string name="epic">EPIC</string>
+    <string name="apod">APOD</string>
 </resources>

@@ -8,7 +8,7 @@ import androidx.viewpager2.adapter.FragmentStateAdapter
 @Suppress("DEPRECATION")
 class ViewPager2Adapter(fa: FragmentActivity): FragmentStateAdapter(fa){
 
-    private val fragments= arrayOf( MarsFragment(), SystemFragment())
+    private val fragments= arrayOf( MarsCuriosityFragment(), SystemFragment())
 
 
     override fun getItemCount(): Int {

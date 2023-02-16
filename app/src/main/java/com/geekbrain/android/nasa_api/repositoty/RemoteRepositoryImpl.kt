@@ -29,4 +29,9 @@ class RemoteRepositoryImpl : RemoteRepository {
         logging.setLevel(HttpLoggingInterceptor.Level.BASIC)
         return retrofit.create(EPICAPI::class.java)
     }
+
+    fun getMarsCuriosityAPI(): MarsCuriosityAPI{
+        logging.setLevel(HttpLoggingInterceptor.Level.BASIC)
+        return  retrofit.create(MarsCuriosityAPI::class.java)
+    }
 }

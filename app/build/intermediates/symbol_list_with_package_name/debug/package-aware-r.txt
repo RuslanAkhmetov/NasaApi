@@ -2935,6 +2935,7 @@ drawable m3_tabs_background
 drawable m3_tabs_line_indicator
 drawable m3_tabs_rounded_line_indicator
 drawable m3_tabs_transparent_background
+drawable mars_curiosity
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -3196,6 +3197,7 @@ id end
 id endToStart
 id enterAlways
 id enterAlwaysCollapsed
+id epic_image_view
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -3216,6 +3218,7 @@ id flip
 id floating
 id forever
 id fragment_container_view_tag
+id frameLayout
 id frost
 id fullscreen_header
 id ghost_view
@@ -3266,6 +3269,7 @@ id ltr
 id m3_side_sheet
 id mainFragmentLoadingLayout
 id marquee
+id mars_curiosity_image_view
 id masked
 id match_constraint
 id match_parent
@@ -3659,7 +3663,9 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_earth
+layout fragment_epic
 layout fragment_mars
+layout fragment_mars_curiosity
 layout fragment_picture_of_the_day
 layout fragment_settings
 layout fragment_system
@@ -3761,6 +3767,7 @@ string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string action_settings
 string androidx_startup
+string apod
 string app_name
 string appbar_scrolling_view_behavior
 string before_yesterday
@@ -3775,6 +3782,8 @@ string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
 string clear_text_end_icon_content_description
+string earth
+string epic
 string error_a11y_label
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
@@ -3800,6 +3809,7 @@ string m3_sys_motion_easing_standard
 string m3_sys_motion_easing_standard_accelerate
 string m3_sys_motion_easing_standard_decelerate
 string mars_theme
+string marscuriosity
 string material_clock_display_divider
 string material_clock_toggle_content_description
 string material_hour_24h_suffix

@@ -12,7 +12,6 @@ import androidx.annotation.RequiresApi
 import androidx.fragment.app.viewModels
 import coil.dispose
 import coil.load
-import com.geekbrain.android.nasa_api.MainActivity
 import com.geekbrain.android.nasa_api.R
 import com.geekbrain.android.nasa_api.databinding.FragmentPictureOfTheDayBinding
 import com.geekbrain.android.nasa_api.utils.DAYS
@@ -63,8 +62,6 @@ class PictureOfTheDayFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-/*        setHasOptionsMenu(true)*/
-
         viewModel.getLiveData().observe(
             viewLifecycleOwner
         ) { renderDateFromNasa(it) }
@@ -95,8 +92,6 @@ class PictureOfTheDayFragment : Fragment() {
             })
         }
 
-        //(requireActivity() as MainActivity).setSupportActionBar(binding.bottomAppBar)
-        //setHasOptionsMenu(true)
 
     }
 

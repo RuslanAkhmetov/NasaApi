@@ -18,8 +18,8 @@ class BottomBarActivity : AppCompatActivity() {
         binding.bottomNavigationView.setOnItemSelectedListener {
             when (it.itemId) {
                 R.id.action_view_earth -> {navigateTo(EarthFragment())}
-                R.id.action_view_mars -> {navigateTo(MarsFragment())}
-                R.id.action_view_system -> {navigateTo(SystemFragment())}
+                R.id.action_view_mars -> {navigateTo(MarsCuriosityFragment())}
+                R.id.action_view_system -> {navigateTo(EPICFragment())}
                 else -> {}
             }
             true

@@ -9,7 +9,7 @@ import androidx.fragment.app.FragmentStatePagerAdapter
 @Suppress("DEPRECATION")
 class ViewPagerAdapter(fragmentManager: FragmentManager): FragmentStatePagerAdapter(fragmentManager){
 
-    private val fragments= arrayOf(EarthFragment(), MarsFragment(), SystemFragment())
+    private val fragments= arrayOf(EarthFragment(), MarsCuriosityFragment(), SystemFragment())
 
     override fun getCount(): Int {
         return fragments.size
