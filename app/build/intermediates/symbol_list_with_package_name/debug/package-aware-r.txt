@@ -3115,6 +3115,7 @@ id buttonPanel
 id cache_measures
 id callMeasure
 id cancel_button
+id cardView
 id carryVelocity
 id center
 id centerCrop
@@ -4217,10 +4218,14 @@ style MaterialAlertDialog_MaterialComponents_Title_Panel_CenterStacked
 style MaterialAlertDialog_MaterialComponents_Title_Text
 style MaterialAlertDialog_MaterialComponents_Title_Text_CenterStacked
 style MoonTheme
+style MyActiveIndicatorStyle
 style MyAppBarStyle
+style MyBottomNavigationView
+style MyCardViewStyle
 style MyChipStyle
 style MyFirstTheme
 style MySecondTheme
+style MyShapeAppearanceMediumComponent
 style MyShapeAppearanceSmallComponent
 style MyTabLayoutStyle
 style MyTextAppearanceBody2

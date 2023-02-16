@@ -171,6 +171,7 @@ id action_view_mars
 id action_view_system
 id bottomAppBar
 id bottom_navigation_view
+id cardView
 id chipGroup
 id chipbeforeyesterday
 id chiptoday
@@ -231,10 +232,14 @@ style BlueTheme
 style GreenTheme
 style MarsTheme
 style MoonTheme
+style MyActiveIndicatorStyle
 style MyAppBarStyle
+style MyBottomNavigationView
+style MyCardViewStyle
 style MyChipStyle
 style MyFirstTheme
 style MySecondTheme
+style MyShapeAppearanceMediumComponent
 style MyShapeAppearanceSmallComponent
 style MyTabLayoutStyle
 style MyTextAppearanceBody2

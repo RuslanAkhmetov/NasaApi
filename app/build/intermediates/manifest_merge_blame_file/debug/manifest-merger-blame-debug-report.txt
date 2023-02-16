@@ -26,7 +26,7 @@
 17-->[androidx.core:core:1.9.0] C:\Users\1\.gradle\caches\transforms-3\9baae2a0a064870b9506522ab355f7bf\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
 18
 19    <application
-19-->C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:7:5-53:19
+19-->C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:7:5-54:19
 20        android:name="com.geekbrain.android.nasa_api.NasaApp"
 20-->C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:8:9-31
 21        android:allowBackup="true"
@@ -73,64 +73,66 @@
 43-->C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:32:13-36
 44        </activity>
 45        <activity
-45-->C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:38:9-48:20
+45-->C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:38:9-49:20
 46            android:name="com.geekbrain.android.nasa_api.view.navigation.BottomBarActivity"
 46-->C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:39:13-62
-47            android:exported="true" >
+47            android:exported="true"
 47-->C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:40:13-36
-48            <intent-filter>
-48-->C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:41:13-45:29
-49                <action android:name="android.intent.action.MAIN" />
-49-->C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:42:17-69
-49-->C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:42:25-66
-50
-51                <category android:name="android.intent.category.LAUNCHER" />
-51-->C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:44:17-77
-51-->C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:44:27-74
-52            </intent-filter>
-53        </activity>
-54
-55        <meta-data
-55-->C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:50:9-52:57
-56            android:name="preloaded_fonts"
-56-->C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:51:13-43
-57            android:resource="@array/preloaded_fonts" />
-57-->C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:52:13-54
-58
-59        <uses-library
-59-->[androidx.window:window:1.0.0] C:\Users\1\.gradle\caches\transforms-3\59cc7bfaee96798b7702f2d6d4e8e0bd\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
-60            android:name="androidx.window.extensions"
-60-->[androidx.window:window:1.0.0] C:\Users\1\.gradle\caches\transforms-3\59cc7bfaee96798b7702f2d6d4e8e0bd\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
-61            android:required="false" />
-61-->[androidx.window:window:1.0.0] C:\Users\1\.gradle\caches\transforms-3\59cc7bfaee96798b7702f2d6d4e8e0bd\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
-62        <uses-library
-62-->[androidx.window:window:1.0.0] C:\Users\1\.gradle\caches\transforms-3\59cc7bfaee96798b7702f2d6d4e8e0bd\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
-63            android:name="androidx.window.sidecar"
-63-->[androidx.window:window:1.0.0] C:\Users\1\.gradle\caches\transforms-3\59cc7bfaee96798b7702f2d6d4e8e0bd\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
-64            android:required="false" />
-64-->[androidx.window:window:1.0.0] C:\Users\1\.gradle\caches\transforms-3\59cc7bfaee96798b7702f2d6d4e8e0bd\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
-65
-66        <provider
-66-->[androidx.emoji2:emoji2:1.2.0] C:\Users\1\.gradle\caches\transforms-3\848773e611bbde5d3ec0ec3e63d01c98\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-67            android:name="androidx.startup.InitializationProvider"
-67-->[androidx.emoji2:emoji2:1.2.0] C:\Users\1\.gradle\caches\transforms-3\848773e611bbde5d3ec0ec3e63d01c98\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-68            android:authorities="com.geekbrain.android.nasa_api.androidx-startup"
-68-->[androidx.emoji2:emoji2:1.2.0] C:\Users\1\.gradle\caches\transforms-3\848773e611bbde5d3ec0ec3e63d01c98\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-69            android:exported="false" >
-69-->[androidx.emoji2:emoji2:1.2.0] C:\Users\1\.gradle\caches\transforms-3\848773e611bbde5d3ec0ec3e63d01c98\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-70            <meta-data
-70-->[androidx.emoji2:emoji2:1.2.0] C:\Users\1\.gradle\caches\transforms-3\848773e611bbde5d3ec0ec3e63d01c98\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-71                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-71-->[androidx.emoji2:emoji2:1.2.0] C:\Users\1\.gradle\caches\transforms-3\848773e611bbde5d3ec0ec3e63d01c98\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-72                android:value="androidx.startup" />
-72-->[androidx.emoji2:emoji2:1.2.0] C:\Users\1\.gradle\caches\transforms-3\848773e611bbde5d3ec0ec3e63d01c98\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-73            <meta-data
-73-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\1\.gradle\caches\transforms-3\a4f0fb44e9b56370f8c2ed23c9d5d030\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-74                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-74-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\1\.gradle\caches\transforms-3\a4f0fb44e9b56370f8c2ed23c9d5d030\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-75                android:value="androidx.startup" />
-75-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\1\.gradle\caches\transforms-3\a4f0fb44e9b56370f8c2ed23c9d5d030\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-76        </provider>
-77    </application>
-78
-79</manifest>
+48            android:theme="@style/Theme.Nasa_api" >
+48-->C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:41:13-50
+49            <intent-filter>
+49-->C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:42:13-46:29
+50                <action android:name="android.intent.action.MAIN" />
+50-->C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:43:17-69
+50-->C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:43:25-66
+51
+52                <category android:name="android.intent.category.LAUNCHER" />
+52-->C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:45:17-77
+52-->C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:45:27-74
+53            </intent-filter>
+54        </activity>
+55
+56        <meta-data
+56-->C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:51:9-53:57
+57            android:name="preloaded_fonts"
+57-->C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:52:13-43
+58            android:resource="@array/preloaded_fonts" />
+58-->C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:53:13-54
+59
+60        <uses-library
+60-->[androidx.window:window:1.0.0] C:\Users\1\.gradle\caches\transforms-3\59cc7bfaee96798b7702f2d6d4e8e0bd\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+61            android:name="androidx.window.extensions"
+61-->[androidx.window:window:1.0.0] C:\Users\1\.gradle\caches\transforms-3\59cc7bfaee96798b7702f2d6d4e8e0bd\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+62            android:required="false" />
+62-->[androidx.window:window:1.0.0] C:\Users\1\.gradle\caches\transforms-3\59cc7bfaee96798b7702f2d6d4e8e0bd\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+63        <uses-library
+63-->[androidx.window:window:1.0.0] C:\Users\1\.gradle\caches\transforms-3\59cc7bfaee96798b7702f2d6d4e8e0bd\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+64            android:name="androidx.window.sidecar"
+64-->[androidx.window:window:1.0.0] C:\Users\1\.gradle\caches\transforms-3\59cc7bfaee96798b7702f2d6d4e8e0bd\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+65            android:required="false" />
+65-->[androidx.window:window:1.0.0] C:\Users\1\.gradle\caches\transforms-3\59cc7bfaee96798b7702f2d6d4e8e0bd\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+66
+67        <provider
+67-->[androidx.emoji2:emoji2:1.2.0] C:\Users\1\.gradle\caches\transforms-3\848773e611bbde5d3ec0ec3e63d01c98\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+68            android:name="androidx.startup.InitializationProvider"
+68-->[androidx.emoji2:emoji2:1.2.0] C:\Users\1\.gradle\caches\transforms-3\848773e611bbde5d3ec0ec3e63d01c98\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+69            android:authorities="com.geekbrain.android.nasa_api.androidx-startup"
+69-->[androidx.emoji2:emoji2:1.2.0] C:\Users\1\.gradle\caches\transforms-3\848773e611bbde5d3ec0ec3e63d01c98\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+70            android:exported="false" >
+70-->[androidx.emoji2:emoji2:1.2.0] C:\Users\1\.gradle\caches\transforms-3\848773e611bbde5d3ec0ec3e63d01c98\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+71            <meta-data
+71-->[androidx.emoji2:emoji2:1.2.0] C:\Users\1\.gradle\caches\transforms-3\848773e611bbde5d3ec0ec3e63d01c98\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+72                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+72-->[androidx.emoji2:emoji2:1.2.0] C:\Users\1\.gradle\caches\transforms-3\848773e611bbde5d3ec0ec3e63d01c98\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+73                android:value="androidx.startup" />
+73-->[androidx.emoji2:emoji2:1.2.0] C:\Users\1\.gradle\caches\transforms-3\848773e611bbde5d3ec0ec3e63d01c98\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+74            <meta-data
+74-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\1\.gradle\caches\transforms-3\a4f0fb44e9b56370f8c2ed23c9d5d030\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+75                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+75-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\1\.gradle\caches\transforms-3\a4f0fb44e9b56370f8c2ed23c9d5d030\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+76                android:value="androidx.startup" />
+76-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\1\.gradle\caches\transforms-3\a4f0fb44e9b56370f8c2ed23c9d5d030\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+77        </provider>
+78    </application>
+79
+80</manifest>

@@ -8,8 +8,8 @@
         <item name="windowNoTitle">true</item>
 
 
-        <item name="myColor">@color/my_color</item>
-        <item name="myColor2">#FF0101</item>
+<!--        <item name="myColor">@color/my_color</item>
+        <item name="myColor2">#FF0101</item>-->
 
         <item name="chipStyle">@style/MyChipStyle</item>
         <item name="textInputStyle">@style/MyTextInputStyle</item>
@@ -18,10 +18,28 @@
         <item name="shapeAppearanceSmallComponent">@style/MyShapeAppearanceSmallComponent</item>
         <item name="bottomAppBarStyle">@style/MyAppBarStyle</item>
         <item name="tabStyle">@style/MyTabLayoutStyle</item>
+        <item name="bottomNavigationStyle">@style/MyBottomNavigationView</item>
+        <item name="materialCardViewStyle">@style/MyCardViewStyle</item>
         <!-- <item name="textAppearanceLabelLarge">@style/MyTextAppearanceBody2</item>-->
 
     </style>
 
+    <style name="MyBottomNavigationView" parent="Widget.Material3.BottomNavigationView">
+        <item name="itemActiveIndicatorStyle">@style/MyActiveIndicatorStyle</item>
+    </style>
+    
+    <style name="MyCardViewStyle" parent="Widget.Material3.CardView.Elevated">
+        <item name="shapeAppearance">@style/MyShapeAppearanceMediumComponent</item>
+    </style>
+
+    <style name="MyActiveIndicatorStyle" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:width">@dimen/m3_bottom_nav_item_active_indicator_width</item>
+        <item name="android:height">@dimen/m3_bottom_nav_item_active_indicator_height</item>
+        <item name="marginHorizontal">@dimen/m3_bottom_nav_item_active_indicator_margin_horizontal</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.Material3.Corner.None</item>
+        <item name="android:color">?attr/colorPrimary</item>
+    </style>
+    
     <style name="MarsTheme" parent="Base.Theme.Nasa_api">
         <item name="textAppearanceLabelLarge">@style/MyTextAppearanceBody2</item>
         <item name="colorPrimary">@color/mars_theme_light_primary</item>
@@ -83,7 +101,7 @@
 
     <style name="MyTabLayoutStyle" parent="@style/Widget.Material3.TabLayout">
         <item name="tabIndicatorFullWidth">false</item>
-        <item name="tabIndicatorColor">?myColor2</item>
+
     </style>
 
     <style name="MyAppBarStyle" parent="@style/Widget.Material3.BottomAppBar">
@@ -93,6 +111,11 @@
 
     <style name="MyShapeAppearanceSmallComponent" parent="ShapeAppearance.Material3.SmallComponent">
         <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="MyShapeAppearanceMediumComponent" >
+        <item name="cornerFamily">cut</item>
         <item name="cornerSize">50%</item>
     </style>
 
@@ -135,4 +158,5 @@
     </style>
 
     <style name="Theme.Nasa_api" parent="Base.Theme.Nasa_api" />
+
 </resources>

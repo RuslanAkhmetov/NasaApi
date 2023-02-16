@@ -44,7 +44,8 @@
         </activity>
         <activity
             android:name="com.geekbrain.android.nasa_api.view.navigation.BottomBarActivity"
-            android:exported="true" >
+            android:exported="true"
+            android:theme="@style/Theme.Nasa_api" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

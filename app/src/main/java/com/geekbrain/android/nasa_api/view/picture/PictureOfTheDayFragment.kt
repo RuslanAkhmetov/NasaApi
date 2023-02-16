@@ -21,6 +21,7 @@ import com.geekbrain.android.nasa_api.view.settings.SettingsFragment
 import com.geekbrain.android.nasa_api.viewmodel.AppState
 import com.geekbrain.android.nasa_api.viewmodel.PictureOfTheDayViewModel
 import com.geekbrain.android.nasa_api.utils.getSelectedDay
+import java.util.*
 
 
 class PictureOfTheDayFragment : Fragment() {
@@ -35,9 +36,16 @@ class PictureOfTheDayFragment : Fragment() {
 
     private val viewModel by viewModels<PictureOfTheDayViewModel>()
 
-    companion object {
-        fun newInstance() = PictureOfTheDayFragment()
+    private var selectedDay = ""
 
+    companion object {
+
+        fun newInstance() = PictureOfTheDayFragment()
+        fun newInstance(day: DAYS): PictureOfTheDayFragment {
+            val fragment = newInstance()
+            fragment.selectedDay = getSelectedDay(day)
+            return fragment
+        }
     }
 
     override fun onCreateView(
@@ -61,7 +69,11 @@ class PictureOfTheDayFragment : Fragment() {
             viewLifecycleOwner
         ) { renderDateFromNasa(it) }
 
-        viewModel.sendRequest()
+        if (selectedDay == "") {
+            viewModel.sendRequest()
+        } else {
+            viewModel.sendRequest(selectedDay)
+        }
 
         binding.chiptoday.setOnClickListener {
             viewModel.sendRequest()
@@ -83,8 +95,8 @@ class PictureOfTheDayFragment : Fragment() {
             })
         }
 
-        (requireActivity() as MainActivity).setSupportActionBar(binding.bottomAppBar)
-        setHasOptionsMenu(true)
+        //(requireActivity() as MainActivity).setSupportActionBar(binding.bottomAppBar)
+        //setHasOptionsMenu(true)
 
     }
 

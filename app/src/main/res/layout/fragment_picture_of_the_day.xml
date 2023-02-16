@@ -26,6 +26,7 @@
                 android:id="@+id/chipGroup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:visibility="gone"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:singleSelection="true">
@@ -54,6 +55,7 @@
                 android:id="@+id/inputLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:visibility="gone"
                 android:hint="@string/hint"
                 android:padding="@dimen/padding_5dp"
                 app:counterEnabled="true"
@@ -114,6 +116,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
+        android:visibility="gone"
         app:hideOnScroll="true"
         app:layout_scrollFlags="scroll|enterAlways"
         app:navigationIcon="@drawable/ic_hamburger_menu_bottom_bar" />
@@ -122,6 +125,7 @@
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:visibility="gone"
         android:contentDescription="@string/picture_of_the_day"
         app:layout_anchor="@id/bottomAppBar"
         app:srcCompat="@drawable/ic_plus_fab" />

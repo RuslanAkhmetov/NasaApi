@@ -24,4 +24,9 @@ class RemoteRepositoryImpl : RemoteRepository {
         logging.setLevel(HttpLoggingInterceptor.Level.BASIC)
         return retrofit.create(PictureOfTheDayAPI::class.java)
     }
+
+    fun getEPICAPI(): EPICAPI{
+        logging.setLevel(HttpLoggingInterceptor.Level.BASIC)
+        return retrofit.create(EPICAPI::class.java)
+    }
 }

@@ -20,11 +20,8 @@ class ViewPagerAdapter(fragmentManager: FragmentManager): FragmentStatePagerAdap
     }
 
     override fun getPageTitle(position: Int): CharSequence {
-        return  when(position){
-            0 -> "Earth"
-            1 -> "Mars"
-            2 -> "Sun System"
-            else -> ""
-        }
+        return fragments[position].myTag
+        //return fragments[position].tag.toString()
+
     }
 }

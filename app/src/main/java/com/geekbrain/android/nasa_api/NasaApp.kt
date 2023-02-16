@@ -15,7 +15,7 @@ class NasaApp : Application(){
         super.onCreate()
         sharedPreferences = PreferenceManager
             .getDefaultSharedPreferences(applicationContext)
-        //DynamicColors.applyToActivitiesIfAvailable(this)
+            //DynamicColors.applyToActivitiesIfAvailable(this)
     }
 
 
