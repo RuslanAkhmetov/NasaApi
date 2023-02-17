@@ -13,4 +13,9 @@
         android:icon="@drawable/ic_system"
         android:title="@string/epic" />
 
+    <item
+        android:id="@+id/action_layout"
+        android:icon="@drawable/ic_system"
+        android:title = "@string/layout" />
+
 </menu>

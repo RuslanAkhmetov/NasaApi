@@ -147,6 +147,7 @@
     <color name="moon_theme_light_tertiaryContainer">#E0E0FF</color>
     <color name="my_color">#2E468E</color>
     <color name="white">#FFFFFFFF</color>
+    <dimen name="app_bar_height">300dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="padding_5dp">5dp</dimen>
     <string name="action_settings">Settings</string>
@@ -160,6 +161,7 @@
     <string name="first_fragment_label">First Fragment</string>
     <string name="green">Green</string>
     <string name="hint">Wiki search</string>
+    <string name="layout">Layout</string>
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
         volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus

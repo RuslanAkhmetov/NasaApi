@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.geekbrain.android.nasa_api.R
 import com.geekbrain.android.nasa_api.databinding.ActivityBottomBarBinding
+import com.geekbrain.android.nasa_api.view.layout.behaviors.LayoutFragment
 import com.google.android.material.badge.BadgeDrawable
 
 class BottomBarActivity : AppCompatActivity() {
@@ -20,6 +21,7 @@ class BottomBarActivity : AppCompatActivity() {
                 R.id.action_view_earth -> {navigateTo(EarthFragment())}
                 R.id.action_view_mars -> {navigateTo(MarsCuriosityFragment())}
                 R.id.action_view_system -> {navigateTo(EPICFragment())}
+                R.id.action_layout -> {navigateTo(LayoutFragment())}
                 else -> {}
             }
             true

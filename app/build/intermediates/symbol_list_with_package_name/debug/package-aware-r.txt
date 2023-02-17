@@ -2168,6 +2168,7 @@ dimen abc_text_size_subhead_material
 dimen abc_text_size_subtitle_material_toolbar
 dimen abc_text_size_title_material
 dimen abc_text_size_title_material_toolbar
+dimen app_bar_height
 dimen appcompat_dialog_background_inset
 dimen cardview_compat_inset_shadow
 dimen cardview_default_elevation
@@ -3068,6 +3069,7 @@ id action_container
 id action_context_bar
 id action_divider
 id action_image
+id action_layout
 id action_menu_divider
 id action_menu_presenter
 id action_mode_bar
@@ -3092,6 +3094,7 @@ id animateToEnd
 id animateToStart
 id antiClockwise
 id anticipate
+id appBar
 id arc
 id asConfigured
 id async
@@ -3107,6 +3110,7 @@ id bestChoice
 id blocking
 id bottom
 id bottomAppBar
+id bottomSheetContainer
 id bottom_navigation_view
 id bounce
 id bounceBoth
@@ -3203,6 +3207,7 @@ id expand_activities_button
 id expanded_menu
 id explanationTextView
 id fab
+id fabbtn
 id fade
 id fill
 id fill_horizontal
@@ -3499,6 +3504,8 @@ id title
 id titleDividerNoCustom
 id title_template
 id toggle
+id toolbar
+id toolbarLayout
 id top
 id topPanel
 id touch_outside
@@ -3662,6 +3669,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_coordinator
 layout fragment_earth
 layout fragment_epic
 layout fragment_mars
@@ -3796,6 +3804,7 @@ string hide_bottom_view_on_scroll_behavior
 string hint
 string icon_content_description
 string item_view_role_description
+string layout
 string lorem_ipsum
 string m3_sys_motion_easing_emphasized
 string m3_sys_motion_easing_emphasized_accelerate
