@@ -28,6 +28,7 @@ class MarsCuriosityFragment: SpaceFragment() {
 
 
     companion object {
+        val rnd = Random(12)
         fun newInstance() = MarsCuriosityFragment()
     }
 
@@ -64,13 +65,19 @@ class MarsCuriosityFragment: SpaceFragment() {
             is AppStateMarsCuriosity.Success -> {
                 binding.mainFragmentLoadingLayout.visibility = View.GONE
                 binding.marsCuriosityImageView.visibility = View.VISIBLE
-                val number = Random(10)
+
+                val number = rnd
                     .nextInt(0..appStateMarsCuriosity.marsCuriosityResponse.photos.size)
-                Log.i(TAG, "renderDataFromNasa: randomNumber = $number")
-                Log.i(TAG, "renderDataFromNasa: ${appStateMarsCuriosity.marsCuriosityResponse.photos[0].imgSrc}")
+                Log.i(TAG, "renderDataFromNasa: imageRandomNumber = $number")
+
+                var imageSource = appStateMarsCuriosity.marsCuriosityResponse.photos[number].imgSrc
+                if(imageSource.contains("http://")){
+                    imageSource = imageSource.replace("http", "https")
+                }
+                Log.i(TAG, "renderDataFromNasa: $imageSource")
+
                 binding.marsCuriosityImageView
-                    .load(R.drawable.mars_curiosity){                                //Найти кспособ конвертировать jfif файлы
-                        Log.i(TAG, "renderDataFromNasa: ")
+                    .load(imageSource){                              
                         error(R.drawable.ic_load_error_vector)
                         placeholder(R.drawable.ic_no_photo_vector)
                     }

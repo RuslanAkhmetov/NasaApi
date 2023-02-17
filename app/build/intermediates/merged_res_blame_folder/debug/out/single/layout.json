@@ -1,54 +1,54 @@
 [
     {
-        "merged": "com.geekbrain.android.nasa_api.app-mergeDebugResources-4:/layout/fragment_system.xml",
-        "source": "com.geekbrain.android.nasa_api.app-main-7:/layout/fragment_system.xml"
+        "merged": "com.geekbrain.android.nasa_api.app-mergeDebugResources-45:/layout/fragment_picture_of_the_day.xml",
+        "source": "com.geekbrain.android.nasa_api.app-main-48:/layout/fragment_picture_of_the_day.xml"
     },
     {
-        "merged": "com.geekbrain.android.nasa_api.app-mergeDebugResources-4:/layout/activity_bottom_bar.xml",
-        "source": "com.geekbrain.android.nasa_api.app-main-7:/layout/activity_bottom_bar.xml"
+        "merged": "com.geekbrain.android.nasa_api.app-mergeDebugResources-45:/layout/fragment_mars_curiosity.xml",
+        "source": "com.geekbrain.android.nasa_api.app-main-48:/layout/fragment_mars_curiosity.xml"
     },
     {
-        "merged": "com.geekbrain.android.nasa_api.app-mergeDebugResources-4:/layout/content_main.xml",
-        "source": "com.geekbrain.android.nasa_api.app-main-7:/layout/content_main.xml"
+        "merged": "com.geekbrain.android.nasa_api.app-mergeDebugResources-45:/layout/fragment_system.xml",
+        "source": "com.geekbrain.android.nasa_api.app-main-48:/layout/fragment_system.xml"
     },
     {
-        "merged": "com.geekbrain.android.nasa_api.app-mergeDebugResources-4:/layout/bottom_navigation_layout.xml",
-        "source": "com.geekbrain.android.nasa_api.app-main-7:/layout/bottom_navigation_layout.xml"
+        "merged": "com.geekbrain.android.nasa_api.app-mergeDebugResources-45:/layout/fragment_settings.xml",
+        "source": "com.geekbrain.android.nasa_api.app-main-48:/layout/fragment_settings.xml"
     },
     {
-        "merged": "com.geekbrain.android.nasa_api.app-mergeDebugResources-4:/layout/fragment_settings.xml",
-        "source": "com.geekbrain.android.nasa_api.app-main-7:/layout/fragment_settings.xml"
+        "merged": "com.geekbrain.android.nasa_api.app-mergeDebugResources-45:/layout/activity_bottom_bar.xml",
+        "source": "com.geekbrain.android.nasa_api.app-main-48:/layout/activity_bottom_bar.xml"
     },
     {
-        "merged": "com.geekbrain.android.nasa_api.app-mergeDebugResources-4:/layout/fragment_mars.xml",
-        "source": "com.geekbrain.android.nasa_api.app-main-7:/layout/fragment_mars.xml"
+        "merged": "com.geekbrain.android.nasa_api.app-mergeDebugResources-45:/layout/activity_main.xml",
+        "source": "com.geekbrain.android.nasa_api.app-main-48:/layout/activity_main.xml"
     },
     {
-        "merged": "com.geekbrain.android.nasa_api.app-mergeDebugResources-4:/layout/fragment_earth.xml",
-        "source": "com.geekbrain.android.nasa_api.app-main-7:/layout/fragment_earth.xml"
+        "merged": "com.geekbrain.android.nasa_api.app-mergeDebugResources-45:/layout/activity_view_pager.xml",
+        "source": "com.geekbrain.android.nasa_api.app-main-48:/layout/activity_view_pager.xml"
     },
     {
-        "merged": "com.geekbrain.android.nasa_api.app-mergeDebugResources-4:/layout/fragment_mars_curiosity.xml",
-        "source": "com.geekbrain.android.nasa_api.app-main-7:/layout/fragment_mars_curiosity.xml"
+        "merged": "com.geekbrain.android.nasa_api.app-mergeDebugResources-45:/layout/fragment_mars.xml",
+        "source": "com.geekbrain.android.nasa_api.app-main-48:/layout/fragment_mars.xml"
     },
     {
-        "merged": "com.geekbrain.android.nasa_api.app-mergeDebugResources-4:/layout/loading_layout.xml",
-        "source": "com.geekbrain.android.nasa_api.app-main-7:/layout/loading_layout.xml"
+        "merged": "com.geekbrain.android.nasa_api.app-mergeDebugResources-45:/layout/loading_layout.xml",
+        "source": "com.geekbrain.android.nasa_api.app-main-48:/layout/loading_layout.xml"
     },
     {
-        "merged": "com.geekbrain.android.nasa_api.app-mergeDebugResources-4:/layout/fragment_epic.xml",
-        "source": "com.geekbrain.android.nasa_api.app-main-7:/layout/fragment_epic.xml"
+        "merged": "com.geekbrain.android.nasa_api.app-mergeDebugResources-45:/layout/content_main.xml",
+        "source": "com.geekbrain.android.nasa_api.app-main-48:/layout/content_main.xml"
     },
     {
-        "merged": "com.geekbrain.android.nasa_api.app-mergeDebugResources-4:/layout/activity_view_pager.xml",
-        "source": "com.geekbrain.android.nasa_api.app-main-7:/layout/activity_view_pager.xml"
+        "merged": "com.geekbrain.android.nasa_api.app-mergeDebugResources-45:/layout/fragment_earth.xml",
+        "source": "com.geekbrain.android.nasa_api.app-main-48:/layout/fragment_earth.xml"
     },
     {
-        "merged": "com.geekbrain.android.nasa_api.app-mergeDebugResources-4:/layout/fragment_picture_of_the_day.xml",
-        "source": "com.geekbrain.android.nasa_api.app-main-7:/layout/fragment_picture_of_the_day.xml"
+        "merged": "com.geekbrain.android.nasa_api.app-mergeDebugResources-45:/layout/bottom_navigation_layout.xml",
+        "source": "com.geekbrain.android.nasa_api.app-main-48:/layout/bottom_navigation_layout.xml"
     },
     {
-        "merged": "com.geekbrain.android.nasa_api.app-mergeDebugResources-4:/layout/activity_main.xml",
-        "source": "com.geekbrain.android.nasa_api.app-main-7:/layout/activity_main.xml"
+        "merged": "com.geekbrain.android.nasa_api.app-mergeDebugResources-45:/layout/fragment_epic.xml",
+        "source": "com.geekbrain.android.nasa_api.app-main-48:/layout/fragment_epic.xml"
     }
 ]

@@ -29,6 +29,7 @@ class EPICViewModel(
             val epic = response.EPICResponseData[0]
             val date = epic.date.subSequence(0,10).toString().replace('-', '/')
             val image = epic.image
+
             val format = "jpg"
             url = String.format("%s%s/%s/%s.%s", baseURL, date, format, image, format )
 
