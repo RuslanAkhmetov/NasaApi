@@ -39,7 +39,6 @@ class MarsCuriosityFragment: SpaceFragment() {
     ): View? {
         _binding = FragmentMarsCuriosityBinding.inflate(inflater, container, false)
 
-
         return binding.root
 
     }
@@ -77,7 +76,7 @@ class MarsCuriosityFragment: SpaceFragment() {
                 Log.i(TAG, "renderDataFromNasa: $imageSource")
 
                 binding.marsCuriosityImageView
-                    .load(imageSource){                              
+                    .load(imageSource){
                         error(R.drawable.ic_load_error_vector)
                         placeholder(R.drawable.ic_no_photo_vector)
                     }
