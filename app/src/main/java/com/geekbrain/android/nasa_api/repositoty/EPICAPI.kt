@@ -8,7 +8,6 @@ private const val Earth_Polychromatic_Imaging_Camera = "EPIC/api/natural/images"
 
 interface EPICAPI {
 
-
     @GET(Earth_Polychromatic_Imaging_Camera)
     fun getEPIC(@Query("api_key") apiKey: String): Call<EPICResponse>
 

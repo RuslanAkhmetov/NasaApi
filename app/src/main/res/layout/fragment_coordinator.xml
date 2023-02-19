@@ -28,9 +28,23 @@
                 app:layout_collapseMode="pin"
                 />
 
+
+
         </com.google.android.material.appbar.CollapsingToolbarLayout>
 
+
     </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appBarTextView"
+        android:padding="@dimen/padding_5dp"
+        android:layout_margin="@dimen/appMargin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/application"
+        app:layout_behavior=".view.layout.behaviors.TextBehavior"
+        android:layout_gravity="bottom"/>
+
     
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"

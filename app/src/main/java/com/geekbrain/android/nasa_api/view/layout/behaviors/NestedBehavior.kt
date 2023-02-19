@@ -10,6 +10,8 @@ import com.google.android.material.appbar.AppBarLayout
 class NestedBehavior (context: Context, attributeSet: AttributeSet? = null)
     : CoordinatorLayout.Behavior<NestedScrollView>(context, attributeSet) {
 
+    private val TAG = "NestedBehavior"
+
     override fun layoutDependsOn(
         parent: CoordinatorLayout,
         child: NestedScrollView,
@@ -25,6 +27,7 @@ class NestedBehavior (context: Context, attributeSet: AttributeSet? = null)
     ): Boolean {
         if(dependency is AppBarLayout)
             child.y = dependency.y + dependency.height
+
         return super.onDependentViewChanged(parent, child, dependency)
     }
 }

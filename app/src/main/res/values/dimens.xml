@@ -2,4 +2,5 @@
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="padding_5dp">5dp</dimen>
     <dimen name="app_bar_height">300dp</dimen>
+    <dimen name="appMargin">10dp</dimen>
 </resources>

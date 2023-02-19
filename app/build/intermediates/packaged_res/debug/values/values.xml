@@ -147,12 +147,14 @@
     <color name="moon_theme_light_tertiaryContainer">#E0E0FF</color>
     <color name="my_color">#2E468E</color>
     <color name="white">#FFFFFFFF</color>
+    <dimen name="appMargin">10dp</dimen>
     <dimen name="app_bar_height">300dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="padding_5dp">5dp</dimen>
     <string name="action_settings">Settings</string>
     <string name="apod">APOD</string>
     <string name="app_name">Nasa Picture of the day</string>
+    <string name="application">Application</string>
     <string name="before_yesterday">Before yesterday</string>
     <string name="blue">Blue</string>
     <string name="earth">Earth</string>
