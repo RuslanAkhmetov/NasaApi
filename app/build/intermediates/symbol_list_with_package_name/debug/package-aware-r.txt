@@ -2168,6 +2168,7 @@ dimen abc_text_size_subhead_material
 dimen abc_text_size_subtitle_material_toolbar
 dimen abc_text_size_title_material
 dimen abc_text_size_title_material_toolbar
+dimen appMargin
 dimen app_bar_height
 dimen appcompat_dialog_background_inset
 dimen cardview_compat_inset_shadow
@@ -3075,6 +3076,7 @@ id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
+id action_motion
 id action_text
 id action_theme_mars
 id action_theme_moon
@@ -3095,6 +3097,7 @@ id animateToStart
 id antiClockwise
 id anticipate
 id appBar
+id appBarTextView
 id arc
 id asConfigured
 id async
@@ -3116,6 +3119,9 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btn1
+id btn2
+id btn3
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3234,6 +3240,12 @@ id graph_wrap
 id group_divider
 id grouping
 id groups
+id guideline1
+id guideline2
+id guideline3
+id guideline4
+id guideline5
+id guideline6
 id header_title
 id hideable
 id home
@@ -3674,6 +3686,8 @@ layout fragment_earth
 layout fragment_epic
 layout fragment_mars
 layout fragment_mars_curiosity
+layout fragment_motion_end
+layout fragment_motion_start
 layout fragment_picture_of_the_day
 layout fragment_settings
 layout fragment_system
@@ -3778,6 +3792,7 @@ string androidx_startup
 string apod
 string app_name
 string appbar_scrolling_view_behavior
+string application
 string before_yesterday
 string blue
 string bottom_sheet_behavior
@@ -5212,3 +5227,4 @@ styleable ViewTransition android_id SharedValue SharedValueId clearsTag duration
 styleable include constraintSet
 xml backup_rules
 xml data_extraction_rules
+xml fragment_motion_scene

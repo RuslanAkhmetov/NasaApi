@@ -18,4 +18,9 @@
         android:icon="@drawable/ic_system"
         android:title = "@string/layout" />
 
+    <item
+        android:id="@+id/action_motion"
+        android:icon="@drawable/ic_system"
+        android:title = "@string/layout" />
+
 </menu>

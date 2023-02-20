@@ -134,6 +134,7 @@ color moon_theme_light_tertiary
 color moon_theme_light_tertiaryContainer
 color my_color
 color white
+dimen appMargin
 dimen app_bar_height
 dimen fab_margin
 dimen padding_5dp
@@ -167,15 +168,20 @@ id FirstFragment
 id action_bar_favorite
 id action_bar_settings
 id action_layout
+id action_motion
 id action_theme_mars
 id action_theme_moon
 id action_view_earth
 id action_view_mars
 id action_view_system
 id appBar
+id appBarTextView
 id bottomAppBar
 id bottomSheetContainer
 id bottom_navigation_view
+id btn1
+id btn2
+id btn3
 id cardView
 id chipGroup
 id chipbeforeyesterday
@@ -187,6 +193,12 @@ id explanationTextView
 id fab
 id fabbtn
 id frameLayout
+id guideline1
+id guideline2
+id guideline3
+id guideline4
+id guideline5
+id guideline6
 id input
 id inputLayout
 id loadingLayout
@@ -210,6 +222,8 @@ layout fragment_earth
 layout fragment_epic
 layout fragment_mars
 layout fragment_mars_curiosity
+layout fragment_motion_end
+layout fragment_motion_start
 layout fragment_picture_of_the_day
 layout fragment_settings
 layout fragment_system
@@ -223,6 +237,7 @@ navigation nav_graph
 string action_settings
 string apod
 string app_name
+string application
 string before_yesterday
 string blue
 string earth
@@ -268,3 +283,4 @@ style RedTheme
 style Theme.Nasa_api
 xml backup_rules
 xml data_extraction_rules
+xml fragment_motion_scene
