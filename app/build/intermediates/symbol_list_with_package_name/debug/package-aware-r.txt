@@ -3686,6 +3686,7 @@ layout fragment_earth
 layout fragment_epic
 layout fragment_mars
 layout fragment_mars_curiosity
+layout fragment_motion
 layout fragment_motion_end
 layout fragment_motion_start
 layout fragment_picture_of_the_day

@@ -3685,6 +3685,7 @@ int layout fragment_earth 0x7f0d0032
 int layout fragment_epic 0x7f0d0033
 int layout fragment_mars 0x7f0d0034
 int layout fragment_mars_curiosity 0x7f0d0035
+int layout fragment_motion 0x7f0d0079
 int layout fragment_motion_end 0x7f0d0077
 int layout fragment_motion_start 0x7f0d0078
 int layout fragment_picture_of_the_day 0x7f0d0036
