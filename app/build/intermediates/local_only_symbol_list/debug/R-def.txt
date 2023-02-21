@@ -183,7 +183,6 @@ id bottom_navigation_view
 id btn1
 id btn2
 id btn3
-id button
 id cardView
 id chipGroup
 id chipbeforeyesterday
@@ -211,9 +210,9 @@ id nav_graph
 id nav_host_fragment_content_main
 id navigation_view
 id pictureOfTheDayImageView
+id recycler_view
 id start
 id tablayout
-id text
 id toolbar
 id toolbarLayout
 id transitions_container
@@ -269,6 +268,7 @@ string picture_of_the_day_request
 string previous
 string red
 string second_fragment_label
+string tap_on_me
 string today
 string transitions_example
 string wiki_search

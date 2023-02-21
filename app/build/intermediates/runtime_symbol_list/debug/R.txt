@@ -3122,7 +3122,6 @@ int id bounceStart 0x7f0a006f
 int id btn1 0x7f0a021b
 int id btn2 0x7f0a021c
 int id btn3 0x7f0a021d
-int id button 0x7f0a0224
 int id buttonPanel 0x7f0a0070
 int id cache_measures 0x7f0a0071
 int id callMeasure 0x7f0a0072
@@ -3396,6 +3395,7 @@ int id progress_horizontal 0x7f0a0177
 int id radio 0x7f0a0178
 int id ratio 0x7f0a0179
 int id rectangles 0x7f0a017a
+int id recycler_view 0x7f0a0226
 int id reverseSawtooth 0x7f0a017b
 int id right 0x7f0a017c
 int id rightToLeft 0x7f0a017d
@@ -3947,6 +3947,7 @@ int string second_fragment_label 0x7f1300af
 int string side_sheet_accessibility_pane_title 0x7f1300b0
 int string side_sheet_behavior 0x7f1300b1
 int string status_bar_notification_info_overflow 0x7f1300b2
+int string tap_on_me 0x7f1300ba
 int string today 0x7f1300b3
 int string transitions_example 0x7f1300b9
 int string wiki_search 0x7f1300b4

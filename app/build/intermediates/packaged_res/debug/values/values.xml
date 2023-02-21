@@ -213,6 +213,7 @@
     <string name="previous">Previous</string>
     <string name="red">Red</string>
     <string name="second_fragment_label">Second Fragment</string>
+    <string name="tap_on_me">TAP ON ME</string>
     <string name="today">Today</string>
     <string name="transitions_example">Transitions example</string>
     <string name="wiki_search">Wiki search</string>

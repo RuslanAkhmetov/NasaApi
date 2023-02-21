@@ -1,15 +1,18 @@
 package com.geekbrain.android.nasa_api.view.animation
 
+import android.graphics.Rect
 import android.os.Bundle
 import android.util.Log
+import android.view.Gravity
+import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
+import android.widget.Adapter
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.ui.AppBarConfiguration
-import androidx.transition.ChangeBounds
-import androidx.transition.Fade
-import androidx.transition.Slide
-import androidx.transition.TransitionManager
-import androidx.transition.TransitionSet
+import androidx.recyclerview.widget.RecyclerView
+import androidx.transition.*
+import com.geekbrain.android.nasa_api.R
 import com.geekbrain.android.nasa_api.databinding.ActivityAnimationBinding
 
 class AnimationActivity: AppCompatActivity() {
@@ -24,26 +27,50 @@ class AnimationActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityAnimationBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        Log.i(TAG, "onCreate: ")
 
-        binding.button.setOnClickListener {
-            val myAutoTransition  = TransitionSet()
-            myAutoTransition.ordering = TransitionSet.ORDERING_SEQUENTIAL
-            val slide = Slide()
-            slide.duration = 1000
-            val changeBounds = ChangeBounds()
-            changeBounds.duration = 1000
-            myAutoTransition.addTransition(slide)
-            myAutoTransition.addTransition(changeBounds)
-            TransitionManager.beginDelayedTransition(binding.transitionsContainer, myAutoTransition)
-            isFlag = !isFlag
+        binding.recyclerView.adapter = Adapter()
 
-            binding.text.visibility = if(isFlag) View.VISIBLE else View.GONE
+    }
+
+
+
+    inner class Adapter: RecyclerView.Adapter<RecyclerView.ViewHolder>(){
+        override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
+            return MyViewHolder(
+                LayoutInflater.from(parent.context).inflate(
+                    R.layout.animation_explode_list_item,
+                    parent,
+                    false
+                ) as View
+            )
         }
 
+        override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
+            holder.itemView.setOnClickListener {
+                val viewRect = Rect()
+                it.getGlobalVisibleRect(viewRect)
+
+                val explode = Explode()
+                explode.duration = 1000
+                explode.epicenterCallback = object : Transition.EpicenterCallback(){
+
+                    override fun onGetEpicenter(transition: Transition): Rect {
+                        return viewRect
+                    }
+                }
+                TransitionManager.beginDelayedTransition(binding.transitionsContainer, explode)
+                binding.recyclerView.adapter = null
+
+            }
+        }
+
+        override fun getItemCount(): Int {
+            return 32
+        }
+
+         inner class MyViewHolder(view: View): RecyclerView.ViewHolder(view)
+
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
-    }
+
 }

@@ -3123,7 +3123,6 @@ id bounceStart
 id btn1
 id btn2
 id btn3
-id button
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3397,6 +3396,7 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id recycler_view
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3948,6 +3948,7 @@ string second_fragment_label
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string status_bar_notification_info_overflow
+string tap_on_me
 string today
 string transitions_example
 string wiki_search
