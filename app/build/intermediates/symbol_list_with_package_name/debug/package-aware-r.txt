@@ -2897,6 +2897,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable earth
 drawable ic_100tb
 drawable ic_archive
 drawable ic_arrow_back_black_24
@@ -3259,6 +3260,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id image_view
 id immediateStop
 id included
 id indeterminate
@@ -3396,7 +3398,6 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
-id recycler_view
 id reverseSawtooth
 id right
 id rightToLeft

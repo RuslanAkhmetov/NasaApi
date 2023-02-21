@@ -2896,6 +2896,7 @@ int drawable design_ic_visibility 0x7f080087
 int drawable design_ic_visibility_off 0x7f080088
 int drawable design_password_eye 0x7f080089
 int drawable design_snackbar_background 0x7f08008a
+int drawable earth 0x7f0800f7
 int drawable ic_100tb 0x7f08008b
 int drawable ic_archive 0x7f08008c
 int drawable ic_arrow_back_black_24 0x7f08008d
@@ -3258,6 +3259,7 @@ int id ifRoom 0x7f0a00ee
 int id ignore 0x7f0a00ef
 int id ignoreRequest 0x7f0a00f0
 int id image 0x7f0a00f1
+int id image_view 0x7f0a0227
 int id immediateStop 0x7f0a00f2
 int id included 0x7f0a00f3
 int id indeterminate 0x7f0a00f4
@@ -3395,7 +3397,6 @@ int id progress_horizontal 0x7f0a0177
 int id radio 0x7f0a0178
 int id ratio 0x7f0a0179
 int id rectangles 0x7f0a017a
-int id recycler_view 0x7f0a0226
 int id reverseSawtooth 0x7f0a017b
 int id right 0x7f0a017c
 int id rightToLeft 0x7f0a017d

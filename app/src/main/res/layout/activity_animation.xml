@@ -8,17 +8,11 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <androidx.recyclerview.widget.RecyclerView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/recycler_view"
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-        app:spanCount="4"
-        />
+        android:layout_height="wrap_content"
 
-
-
+        app:srcCompat="@drawable/earth"/>
 
 </LinearLayout>
