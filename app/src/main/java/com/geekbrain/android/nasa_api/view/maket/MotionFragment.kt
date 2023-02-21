@@ -1,4 +1,4 @@
-package com.geekbrain.android.nasa_api.view.layout.behaviors
+package com.geekbrain.android.nasa_api.view.maket
 
 import android.os.Bundle
 import android.view.LayoutInflater

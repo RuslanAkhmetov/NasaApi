@@ -63,4 +63,8 @@
     <string name="apod">APOD</string>
     <string name="layout">Layout</string>
     <string name="application">Application</string>
+    <string name="motion">Motion</string>
+    <string name="animate">Animate</string>
+    <string name="transitions_example">Transitions example</string>
+    <string name="tap_on_me">TAP ON ME</string>
 </resources>

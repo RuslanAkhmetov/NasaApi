@@ -6,7 +6,7 @@ import androidx.fragment.app.Fragment
 import com.geekbrain.android.nasa_api.R
 import com.geekbrain.android.nasa_api.databinding.ActivityBottomBarBinding
 import com.geekbrain.android.nasa_api.view.layout.behaviors.LayoutFragment
-import com.geekbrain.android.nasa_api.view.layout.behaviors.MotionFragment
+import com.geekbrain.android.nasa_api.view.maket.MotionFragment
 import com.google.android.material.badge.BadgeDrawable
 
 class BottomBarActivity : AppCompatActivity() {

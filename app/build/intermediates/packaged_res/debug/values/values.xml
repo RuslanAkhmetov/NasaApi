@@ -147,11 +147,13 @@
     <color name="moon_theme_light_tertiaryContainer">#E0E0FF</color>
     <color name="my_color">#2E468E</color>
     <color name="white">#FFFFFFFF</color>
+    <dimen name="animation_margin">16dp</dimen>
     <dimen name="appMargin">10dp</dimen>
     <dimen name="app_bar_height">300dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="padding_5dp">5dp</dimen>
     <string name="action_settings">Settings</string>
+    <string name="animate">Animate</string>
     <string name="apod">APOD</string>
     <string name="app_name">Nasa Picture of the day</string>
     <string name="application">Application</string>
@@ -203,6 +205,7 @@
     <string name="mars_theme">Mars Theme</string>
     <string name="marscuriosity">MarsCuriosity</string>
     <string name="moon_theme">Moon Theme</string>
+    <string name="motion">Motion</string>
     <string name="nasapictureoftheday">NasaPictureOfTheDay</string>
     <string name="next">Next</string>
     <string name="picture_of_the_day">Picture of the day</string>
@@ -211,6 +214,7 @@
     <string name="red">Red</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="today">Today</string>
+    <string name="transitions_example">Transitions example</string>
     <string name="wiki_search">Wiki search</string>
     <string name="yesterday">Yesterday</string>
     <style name="Base.Theme.Nasa_api" parent="Theme.Material3.DynamicColors.DayNight">

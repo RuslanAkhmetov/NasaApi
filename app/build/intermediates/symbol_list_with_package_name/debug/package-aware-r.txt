@@ -2168,6 +2168,7 @@ dimen abc_text_size_subhead_material
 dimen abc_text_size_subtitle_material_toolbar
 dimen abc_text_size_title_material
 dimen abc_text_size_title_material_toolbar
+dimen animation_margin
 dimen appMargin
 dimen app_bar_height
 dimen appcompat_dialog_background_inset
@@ -3122,6 +3123,7 @@ id bounceStart
 id btn1
 id btn2
 id btn3
+id button
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3528,6 +3530,7 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
+id transitions_container
 id triangle
 id unchecked
 id uniform
@@ -3660,9 +3663,11 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_animation
 layout activity_bottom_bar
 layout activity_main
 layout activity_view_pager
+layout animation_explode_list_item
 layout bottom_navigation_layout
 layout content_main
 layout custom_dialog
@@ -3790,6 +3795,7 @@ string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string action_settings
 string androidx_startup
+string animate
 string apod
 string app_name
 string appbar_scrolling_view_behavior
@@ -3858,6 +3864,7 @@ string material_timepicker_pm
 string material_timepicker_select_time
 string material_timepicker_text_input_mode_description
 string moon_theme
+string motion
 string mtrl_badge_numberless_content_description
 string mtrl_checkbox_button_icon_path_checked
 string mtrl_checkbox_button_icon_path_group_name
@@ -3942,6 +3949,7 @@ string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string status_bar_notification_info_overflow
 string today
+string transitions_example
 string wiki_search
 string yesterday
 style AlertDialog_AppCompat

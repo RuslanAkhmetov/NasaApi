@@ -1,9 +1,5 @@
 [
     {
-        "merged": "com.geekbrain.android.nasa_api.app-mergeDebugResources-45:/layout/fragment_motion.xml",
-        "source": "com.geekbrain.android.nasa_api.app-main-48:/layout/fragment_motion.xml"
-    },
-    {
         "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-mergeDebugResources-45:\\layout\\loading_layout.xml",
         "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\layout\\loading_layout.xml"
     },
@@ -28,12 +24,20 @@
         "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\layout\\fragment_system.xml"
     },
     {
+        "merged": "com.geekbrain.android.nasa_api.app-mergeDebugResources-45:/layout/animation_explode_list_item.xml",
+        "source": "com.geekbrain.android.nasa_api.app-main-48:/layout/animation_explode_list_item.xml"
+    },
+    {
         "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-mergeDebugResources-45:\\layout\\fragment_picture_of_the_day.xml",
         "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\layout\\fragment_picture_of_the_day.xml"
     },
     {
         "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-mergeDebugResources-45:\\layout\\activity_view_pager.xml",
         "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\layout\\activity_view_pager.xml"
+    },
+    {
+        "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-mergeDebugResources-45:\\layout\\fragment_motion.xml",
+        "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\layout\\fragment_motion.xml"
     },
     {
         "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-mergeDebugResources-45:\\layout\\activity_bottom_bar.xml",
@@ -62,6 +66,10 @@
     {
         "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-mergeDebugResources-45:\\layout\\fragment_coordinator.xml",
         "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\layout\\fragment_coordinator.xml"
+    },
+    {
+        "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-mergeDebugResources-45:\\layout\\activity_animation.xml",
+        "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\layout\\activity_animation.xml"
     },
     {
         "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-mergeDebugResources-45:\\layout\\fragment_motion_start.xml",

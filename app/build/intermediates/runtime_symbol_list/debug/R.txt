@@ -2167,6 +2167,7 @@ int dimen abc_text_size_subhead_material 0x7f07004d
 int dimen abc_text_size_subtitle_material_toolbar 0x7f07004e
 int dimen abc_text_size_title_material 0x7f07004f
 int dimen abc_text_size_title_material_toolbar 0x7f070050
+int dimen animation_margin 0x7f0702c7
 int dimen appMargin 0x7f0702c6
 int dimen app_bar_height 0x7f070051
 int dimen appcompat_dialog_background_inset 0x7f070052
@@ -3121,6 +3122,7 @@ int id bounceStart 0x7f0a006f
 int id btn1 0x7f0a021b
 int id btn2 0x7f0a021c
 int id btn3 0x7f0a021d
+int id button 0x7f0a0224
 int id buttonPanel 0x7f0a0070
 int id cache_measures 0x7f0a0071
 int id callMeasure 0x7f0a0072
@@ -3527,6 +3529,7 @@ int id transition_layout_save 0x7f0a01fc
 int id transition_position 0x7f0a01fd
 int id transition_scene_layoutid_cache 0x7f0a01fe
 int id transition_transform 0x7f0a01ff
+int id transitions_container 0x7f0a0225
 int id triangle 0x7f0a0200
 int id unchecked 0x7f0a0201
 int id uniform 0x7f0a0202
@@ -3659,9 +3662,11 @@ int layout abc_search_dropdown_item_icons_2line 0x7f0d0018
 int layout abc_search_view 0x7f0d0019
 int layout abc_select_dialog_material 0x7f0d001a
 int layout abc_tooltip 0x7f0d001b
+int layout activity_animation 0x7f0d007a
 int layout activity_bottom_bar 0x7f0d001c
 int layout activity_main 0x7f0d001d
 int layout activity_view_pager 0x7f0d001e
+int layout animation_explode_list_item 0x7f0d007b
 int layout bottom_navigation_layout 0x7f0d001f
 int layout content_main 0x7f0d0020
 int layout custom_dialog 0x7f0d0021
@@ -3789,6 +3794,7 @@ int string abc_shareactionprovider_share_with_application 0x7f130019
 int string abc_toolbar_collapse_description 0x7f13001a
 int string action_settings 0x7f13001b
 int string androidx_startup 0x7f13001c
+int string animate 0x7f1300b7
 int string apod 0x7f13001d
 int string app_name 0x7f13001e
 int string appbar_scrolling_view_behavior 0x7f13001f
@@ -3857,6 +3863,7 @@ int string material_timepicker_pm 0x7f13005c
 int string material_timepicker_select_time 0x7f13005d
 int string material_timepicker_text_input_mode_description 0x7f13005e
 int string moon_theme 0x7f13005f
+int string motion 0x7f1300b8
 int string mtrl_badge_numberless_content_description 0x7f130060
 int string mtrl_checkbox_button_icon_path_checked 0x7f130061
 int string mtrl_checkbox_button_icon_path_group_name 0x7f130062
@@ -3941,6 +3948,7 @@ int string side_sheet_accessibility_pane_title 0x7f1300b0
 int string side_sheet_behavior 0x7f1300b1
 int string status_bar_notification_info_overflow 0x7f1300b2
 int string today 0x7f1300b3
+int string transitions_example 0x7f1300b9
 int string wiki_search 0x7f1300b4
 int string yesterday 0x7f1300b5
 int style AlertDialog_AppCompat 0x7f140000

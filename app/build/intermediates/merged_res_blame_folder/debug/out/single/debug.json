@@ -108,6 +108,10 @@
         "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\layout\\fragment_coordinator.xml"
     },
     {
+        "merged": "com.geekbrain.android.nasa_api.app-merged_res-46:/layout_animation_explode_list_item.xml.flat",
+        "source": "com.geekbrain.android.nasa_api.app-main-48:/layout/animation_explode_list_item.xml"
+    },
+    {
         "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-merged_res-46:\\font_aladin.xml.flat",
         "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\font\\aladin.xml"
     },
@@ -200,6 +204,10 @@
         "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\drawable-v24\\background.jpg"
     },
     {
+        "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-merged_res-46:\\layout_activity_animation.xml.flat",
+        "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\layout\\activity_animation.xml"
+    },
+    {
         "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-merged_res-46:\\mipmap-xhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\mipmap-xhdpi\\ic_launcher.webp"
     },
@@ -238,10 +246,6 @@
     {
         "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-merged_res-46:\\drawable-v24_swipe_indicator_passive.xml.flat",
         "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\drawable-v24\\swipe_indicator_passive.xml"
-    },
-    {
-        "merged": "com.geekbrain.android.nasa_api.app-merged_res-46:/xml_fragment_motion_scene.xml.flat",
-        "source": "com.geekbrain.android.nasa_api.app-main-48:/xml/fragment_motion_scene.xml"
     },
     {
         "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-merged_res-46:\\drawable-v24_ic_hamburger_menu_bottom_bar.xml.flat",
