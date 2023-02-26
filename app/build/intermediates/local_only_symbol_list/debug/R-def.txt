@@ -139,6 +139,7 @@ dimen appMargin
 dimen app_bar_height
 dimen fab_margin
 dimen padding_5dp
+dimen shuffle_margin
 drawable background
 drawable bg_earth
 drawable bg_mars
@@ -184,6 +185,7 @@ id bottom_navigation_view
 id btn1
 id btn2
 id btn3
+id button
 id cardView
 id chipGroup
 id chipbeforeyesterday
@@ -202,7 +204,6 @@ id guideline3
 id guideline4
 id guideline5
 id guideline6
-id image_view
 id input
 id inputLayout
 id loadingLayout
@@ -269,6 +270,7 @@ string picture_of_the_day_request
 string previous
 string red
 string second_fragment_label
+string shuffle
 string tap_on_me
 string today
 string transitions_example

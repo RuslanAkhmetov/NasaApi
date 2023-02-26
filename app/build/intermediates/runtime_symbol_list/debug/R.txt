@@ -2789,6 +2789,7 @@ int dimen notification_subtext_size 0x7f0702b9
 int dimen notification_top_pad 0x7f0702ba
 int dimen notification_top_pad_large_text 0x7f0702bb
 int dimen padding_5dp 0x7f0702bc
+int dimen shuffle_margin 0x7f0702c8
 int dimen sliding_pane_detail_pane_width 0x7f0702bd
 int dimen tooltip_corner_radius 0x7f0702be
 int dimen tooltip_horizontal_padding 0x7f0702bf
@@ -3123,6 +3124,7 @@ int id bounceStart 0x7f0a006f
 int id btn1 0x7f0a021b
 int id btn2 0x7f0a021c
 int id btn3 0x7f0a021d
+int id button 0x7f0a0224
 int id buttonPanel 0x7f0a0070
 int id cache_measures 0x7f0a0071
 int id callMeasure 0x7f0a0072
@@ -3259,7 +3261,6 @@ int id ifRoom 0x7f0a00ee
 int id ignore 0x7f0a00ef
 int id ignoreRequest 0x7f0a00f0
 int id image 0x7f0a00f1
-int id image_view 0x7f0a0227
 int id immediateStop 0x7f0a00f2
 int id included 0x7f0a00f3
 int id indeterminate 0x7f0a00f4
@@ -3945,6 +3946,7 @@ int string searchbar_scrolling_view_behavior 0x7f1300ac
 int string searchview_clear_text_content_description 0x7f1300ad
 int string searchview_navigation_content_description 0x7f1300ae
 int string second_fragment_label 0x7f1300af
+int string shuffle 0x7f1300bb
 int string side_sheet_accessibility_pane_title 0x7f1300b0
 int string side_sheet_behavior 0x7f1300b1
 int string status_bar_notification_info_overflow 0x7f1300b2

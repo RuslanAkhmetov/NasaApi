@@ -2790,6 +2790,7 @@ dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
 dimen padding_5dp
+dimen shuffle_margin
 dimen sliding_pane_detail_pane_width
 dimen tooltip_corner_radius
 dimen tooltip_horizontal_padding
@@ -3124,6 +3125,7 @@ id bounceStart
 id btn1
 id btn2
 id btn3
+id button
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3260,7 +3262,6 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
-id image_view
 id immediateStop
 id included
 id indeterminate
@@ -3946,6 +3947,7 @@ string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description
 string searchview_navigation_content_description
 string second_fragment_label
+string shuffle
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string status_bar_notification_info_overflow
