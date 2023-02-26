@@ -3125,7 +3125,6 @@ id bounceStart
 id btn1
 id btn2
 id btn3
-id button
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3375,6 +3374,8 @@ id notification_main_column_container
 id off
 id on
 id onInterceptTouchReturnSwipe
+id option_one_container
+id option_two_container
 id outline
 id outward
 id overshoot
@@ -3391,6 +3392,7 @@ id peekHeight
 id percent
 id pictureOfTheDayImageView
 id pin
+id plus_imageview
 id position
 id postLayout
 id pressed
@@ -3532,7 +3534,7 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
-id transitions_container
+id transparent_background
 id triangle
 id unchecked
 id uniform

@@ -185,7 +185,6 @@ id bottom_navigation_view
 id btn1
 id btn2
 id btn3
-id button
 id cardView
 id chipGroup
 id chipbeforeyesterday
@@ -212,12 +211,15 @@ id mars_curiosity_image_view
 id nav_graph
 id nav_host_fragment_content_main
 id navigation_view
+id option_one_container
+id option_two_container
 id pictureOfTheDayImageView
+id plus_imageview
 id start
 id tablayout
 id toolbar
 id toolbarLayout
-id transitions_container
+id transparent_background
 id view_pager
 layout activity_animation
 layout activity_bottom_bar

@@ -3124,7 +3124,6 @@ int id bounceStart 0x7f0a006f
 int id btn1 0x7f0a021b
 int id btn2 0x7f0a021c
 int id btn3 0x7f0a021d
-int id button 0x7f0a0224
 int id buttonPanel 0x7f0a0070
 int id cache_measures 0x7f0a0071
 int id callMeasure 0x7f0a0072
@@ -3374,6 +3373,8 @@ int id notification_main_column_container 0x7f0a015f
 int id off 0x7f0a0160
 int id on 0x7f0a0161
 int id onInterceptTouchReturnSwipe 0x7f0a0162
+int id option_one_container 0x7f0a0228
+int id option_two_container 0x7f0a0229
 int id outline 0x7f0a0163
 int id outward 0x7f0a0164
 int id overshoot 0x7f0a0165
@@ -3390,6 +3391,7 @@ int id peekHeight 0x7f0a016f
 int id percent 0x7f0a0170
 int id pictureOfTheDayImageView 0x7f0a0171
 int id pin 0x7f0a0172
+int id plus_imageview 0x7f0a022a
 int id position 0x7f0a0173
 int id postLayout 0x7f0a0174
 int id pressed 0x7f0a0175
@@ -3531,7 +3533,7 @@ int id transition_layout_save 0x7f0a01fc
 int id transition_position 0x7f0a01fd
 int id transition_scene_layoutid_cache 0x7f0a01fe
 int id transition_transform 0x7f0a01ff
-int id transitions_container 0x7f0a0225
+int id transparent_background 0x7f0a022b
 int id triangle 0x7f0a0200
 int id unchecked 0x7f0a0201
 int id uniform 0x7f0a0202
