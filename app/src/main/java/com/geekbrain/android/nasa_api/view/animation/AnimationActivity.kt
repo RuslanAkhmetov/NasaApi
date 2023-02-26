@@ -21,8 +21,9 @@ class AnimationActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityAnimationStartBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         val constraintSetStart = ConstraintSet()
-        constraintSetStart.clone(binding.constraintContainer)
+        constraintSetStart.clone(this, R.layout.activity_animation_start)
         val constraintSetEnd = ConstraintSet()
         constraintSetEnd.clone(this, R.layout.activity_animation_end)
 
@@ -39,6 +40,7 @@ class AnimationActivity : AppCompatActivity() {
             if(isFlag){
                 constraintSetStart.applyTo(binding.constraintContainer)
             } else{
+                constraintSetEnd.applyTo(binding.constraintContainer)
 
             }
         }
