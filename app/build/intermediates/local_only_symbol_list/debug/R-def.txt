@@ -164,6 +164,7 @@ drawable ic_system
 drawable ic_wikipedia
 drawable image
 drawable mars_curiosity
+drawable mars_photo
 drawable my_selector_background_chip
 drawable swipe_indicator_active
 drawable swipe_indicator_passive
@@ -180,6 +181,7 @@ id action_view_mars
 id action_view_system
 id appBar
 id appBarTextView
+id backgroundImage
 id bottomAppBar
 id bottomSheetContainer
 id bottom_navigation_view
@@ -191,7 +193,10 @@ id chipGroup
 id chipbeforeyesterday
 id chiptoday
 id chipyesterday
+id constraint_container
 id container
+id date
+id description
 id end
 id epic_image_view
 id explanationTextView
@@ -213,17 +218,15 @@ id mars_curiosity_image_view
 id nav_graph
 id nav_host_fragment_content_main
 id navigation_view
-id option_one_container
-id option_two_container
 id pictureOfTheDayImageView
-id plus_imageview
-id scroll_view
 id start
 id tablayout
+id tap
+id title
 id toolbarLayout
-id transparent_background
 id view_pager
-layout activity_animation
+layout activity_animation_end
+layout activity_animation_start
 layout activity_bottom_bar
 layout activity_main
 layout activity_view_pager
@@ -255,6 +258,7 @@ string app_name
 string application
 string before_yesterday
 string blue
+string danielson_crater
 string earth
 string epic
 string fayvourite

@@ -1,28 +1,46 @@
 package com.geekbrain.android.nasa_api.view.animation
 
 import android.os.Bundle
+import androidx.transition.TransitionManager
+import android.view.animation.AnticipateOvershootInterpolator
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.WindowCompat
-import com.geekbrain.android.nasa_api.databinding.ActivityAnimationBinding
+import androidx.constraintlayout.widget.ConstraintSet
+import androidx.transition.ChangeBounds
+import com.geekbrain.android.nasa_api.R
+import com.geekbrain.android.nasa_api.databinding.ActivityAnimationStartBinding
 
 class AnimationActivity : AppCompatActivity() {
     private val duration = 2000L
-    private lateinit var binding: ActivityAnimationBinding
+    private lateinit var binding: ActivityAnimationStartBinding
 
     private val TAG = "AnimationActivity"
 
     private var isFlag = true
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        WindowCompat.setDecorFitsSystemWindows(window, false)
         super.onCreate(savedInstanceState)
-        binding = ActivityAnimationBinding.inflate(layoutInflater)
+        binding = ActivityAnimationStartBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        val constraintSetStart = ConstraintSet()
+        constraintSetStart.clone(binding.constraintContainer)
+        val constraintSetEnd = ConstraintSet()
+        constraintSetEnd.clone(this, R.layout.activity_animation_end)
 
+        binding.tap.setOnClickListener{
+            isFlag = !isFlag
 
+            val transition = ChangeBounds()
+            transition.interpolator = AnticipateOvershootInterpolator(1.0f)
+            transition.duration = 1200
+            TransitionManager.beginDelayedTransition(binding.constraintContainer,
+                transition)
 
-        binding.scrollView.setOnScrollChangeListener{v, scrollX, scrollY, oldScrollX, oldScrollY ->
-            binding.header.isSelected = binding.scrollView.canScrollVertically(-1)
+            constraintSetEnd.applyTo(binding.constraintContainer)
+            if(isFlag){
+                constraintSetStart.applyTo(binding.constraintContainer)
+            } else{
+
+            }
         }
 
 
