@@ -1,8 +1,8 @@
 package com.geekbrain.android.nasa_api.view.animation
 
 import android.os.Bundle
-import android.widget.ImageView
-import android.widget.LinearLayout
+import android.view.Gravity
+import android.widget.FrameLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.transition.*
 import com.geekbrain.android.nasa_api.databinding.ActivityAnimationBinding
@@ -12,7 +12,7 @@ class AnimationActivity : AppCompatActivity() {
 
     private val TAG = "AnimationActivity"
 
-    private var isFlag = false
+    private var isFlag = true
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -20,27 +20,23 @@ class AnimationActivity : AppCompatActivity() {
         binding = ActivityAnimationBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.imageView.setOnClickListener { image ->
+        binding.button.setOnClickListener { image ->
             isFlag = !isFlag
 
-            val transitionSet = TransitionSet()
-            val changeImageTransform = ChangeImageTransform()
             val changeBounds = ChangeBounds()
+            changeBounds.duration = 2000L
+            changeBounds.setPathMotion(ArcMotion())
 
-            transitionSet.addTransition(changeBounds)
-            transitionSet.addTransition(changeImageTransform)
-            transitionSet.duration = 2000
-
-            TransitionManager.beginDelayedTransition(binding.root, transitionSet)
-
-            val params = image.layoutParams as LinearLayout.LayoutParams
+            TransitionManager.beginDelayedTransition(binding.root, changeBounds)
+            val params = image.layoutParams as FrameLayout.LayoutParams
             if (isFlag) {
-                params.height = LinearLayout.LayoutParams.MATCH_PARENT
-                (image as ImageView).scaleType = ImageView.ScaleType.CENTER_CROP
+                params.gravity = Gravity.TOP or Gravity.START
+
             } else {
-                params.height = LinearLayout.LayoutParams.WRAP_CONTENT
-                (image as ImageView).scaleType = ImageView.ScaleType.CENTER_INSIDE
+                params.gravity = Gravity.BOTTOM or Gravity.END
+
             }
+            binding.button.layoutParams = params
         }
 
     }
