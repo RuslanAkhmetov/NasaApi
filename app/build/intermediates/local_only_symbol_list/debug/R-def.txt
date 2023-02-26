@@ -1,5 +1,6 @@
 R_DEF: Internal format may change without notice
 local
+animator toolbar_elevation
 array com_google_android_gms_fonts_certs
 array com_google_android_gms_fonts_certs_dev
 array com_google_android_gms_fonts_certs_prod
@@ -203,6 +204,7 @@ id guideline3
 id guideline4
 id guideline5
 id guideline6
+id header
 id input
 id inputLayout
 id loadingLayout
@@ -215,9 +217,9 @@ id option_one_container
 id option_two_container
 id pictureOfTheDayImageView
 id plus_imageview
+id scroll_view
 id start
 id tablayout
-id toolbar
 id toolbarLayout
 id transparent_background
 id view_pager

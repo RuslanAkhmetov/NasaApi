@@ -82,6 +82,7 @@ animator nav_default_enter_anim
 animator nav_default_exit_anim
 animator nav_default_pop_enter_anim
 animator nav_default_pop_exit_anim
+animator toolbar_elevation
 array com_google_android_gms_fonts_certs
 array com_google_android_gms_fonts_certs_dev
 array com_google_android_gms_fonts_certs_prod
@@ -3249,6 +3250,7 @@ id guideline3
 id guideline4
 id guideline5
 id guideline6
+id header
 id header_title
 id hideable
 id home
@@ -3418,6 +3420,7 @@ id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
+id scroll_view
 id scrollable
 id search_badge
 id search_bar
@@ -3522,7 +3525,6 @@ id title
 id titleDividerNoCustom
 id title_template
 id toggle
-id toolbar
 id toolbarLayout
 id top
 id topPanel

@@ -81,6 +81,7 @@ int animator nav_default_enter_anim 0x7f020021
 int animator nav_default_exit_anim 0x7f020022
 int animator nav_default_pop_enter_anim 0x7f020023
 int animator nav_default_pop_exit_anim 0x7f020024
+int animator toolbar_elevation 0x7f020025
 int array com_google_android_gms_fonts_certs 0x7f030000
 int array com_google_android_gms_fonts_certs_dev 0x7f030001
 int array com_google_android_gms_fonts_certs_prod 0x7f030002
@@ -3248,6 +3249,7 @@ int id guideline3 0x7f0a0220
 int id guideline4 0x7f0a0221
 int id guideline5 0x7f0a0222
 int id guideline6 0x7f0a0223
+int id header 0x7f0a022d
 int id header_title 0x7f0a00e6
 int id hideable 0x7f0a00e7
 int id home 0x7f0a00e8
@@ -3417,6 +3419,7 @@ int id scroll 0x7f0a0188
 int id scrollIndicatorDown 0x7f0a0189
 int id scrollIndicatorUp 0x7f0a018a
 int id scrollView 0x7f0a018b
+int id scroll_view 0x7f0a022c
 int id scrollable 0x7f0a018c
 int id search_badge 0x7f0a018d
 int id search_bar 0x7f0a018e
@@ -3521,7 +3524,6 @@ int id title 0x7f0a01f0
 int id titleDividerNoCustom 0x7f0a01f1
 int id title_template 0x7f0a01f2
 int id toggle 0x7f0a01f3
-int id toolbar 0x7f0a01f4
 int id toolbarLayout 0x7f0a01f5
 int id top 0x7f0a01f6
 int id topPanel 0x7f0a01f7
