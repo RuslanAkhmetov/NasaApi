@@ -22,27 +22,28 @@ class AnimationActivity : AppCompatActivity() {
         binding = ActivityAnimationStartBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val constraintSetStart = ConstraintSet()
-        constraintSetStart.clone(this, R.layout.activity_animation_start)
-        val constraintSetEnd = ConstraintSet()
-        constraintSetEnd.clone(this, R.layout.activity_animation_end)
+        val constraintSet = ConstraintSet()
+        constraintSet.clone(this, R.layout.activity_animation_start)
+        /*val constraintSetEnd = ConstraintSet()
+        constraintSetEnd.clone(this, R.layout.activity_animation_end)*/
 
         binding.tap.setOnClickListener{
             isFlag = !isFlag
 
             val transition = ChangeBounds()
             transition.interpolator = AnticipateOvershootInterpolator(1.0f)
-            transition.duration = 1200
+            transition.duration = duration
             TransitionManager.beginDelayedTransition(binding.constraintContainer,
                 transition)
 
-            constraintSetEnd.applyTo(binding.constraintContainer)
+           /* constraintSetEnd.applyTo(binding.constraintContainer)*/
             if(isFlag){
-                constraintSetStart.applyTo(binding.constraintContainer)
+                constraintSet.connect(R.id.title, ConstraintSet.RIGHT, R.id.backgroundImage, ConstraintSet.RIGHT) // applyTo(binding.constraintContainer)
+                //constraintSet.clear(R.id.title, ConstraintSet.RIGHT) // еще один способ
             } else{
-                constraintSetEnd.applyTo(binding.constraintContainer)
-
+                constraintSet.connect(R.id.title, ConstraintSet.RIGHT, R.id.backgroundImage, ConstraintSet.LEFT)
             }
+            constraintSet.applyTo(binding.constraintContainer)
         }
 
 
