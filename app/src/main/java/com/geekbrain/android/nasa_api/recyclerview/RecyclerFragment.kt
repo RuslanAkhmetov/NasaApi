@@ -22,17 +22,17 @@ class RecyclerFragment: Fragment() {
     ): View? {
         binding = FragmentRecyclerBinding.inflate(inflater, container,false)
         val planets = arrayListOf(
-            PlanetList( TYPE_HEADER,"Заголовок"),
-            PlanetList(TYPE_EARTH, "Earth"),
-            PlanetList( TYPE_EARTH,"Earth"),
-            PlanetList( TYPE_EARTH,"Earth"),
-            PlanetList( TYPE_EARTH,"Earth"),
-            PlanetList( TYPE_EARTH,"Earth"),
-            PlanetList( TYPE_MARS,"Mars", ""),
-            PlanetList( TYPE_EARTH,"Earth"),
-            PlanetList( TYPE_EARTH,"Earth"),
-            PlanetList( TYPE_EARTH,"Earth"),
-            PlanetList( TYPE_MARS,"Mars", null)
+            Planet( TYPE_HEADER,"Заголовок"),
+            Planet(TYPE_EARTH, "Earth"),
+            Planet( TYPE_EARTH,"Earth"),
+            Planet( TYPE_EARTH,"Earth"),
+            Planet( TYPE_EARTH,"Earth"),
+            Planet( TYPE_EARTH,"Earth", "Blue Planet"),
+            Planet( TYPE_MARS,"Mars", ""),
+            Planet( TYPE_EARTH,"Earth"),
+            Planet( TYPE_EARTH,"Earth"),
+            Planet( TYPE_EARTH,"Earth"),
+            Planet( TYPE_MARS,"Mars", null)
         )
         binding.recyclerView.adapter = RecyclerAdapter(planets)
         return binding.root

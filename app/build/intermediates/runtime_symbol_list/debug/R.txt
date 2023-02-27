@@ -3365,6 +3365,7 @@ int id mtrl_picker_text_input_range_start 0x7f0a0155
 int id mtrl_picker_title_text 0x7f0a0156
 int id mtrl_view_tag_bottom_padding 0x7f0a0157
 int id multiply 0x7f0a0158
+int id name 0x7f0a0239
 int id nav_controller_view_tag 0x7f0a0159
 int id nav_graph 0x7f0a015a
 int id nav_host_fragment_container 0x7f0a015b

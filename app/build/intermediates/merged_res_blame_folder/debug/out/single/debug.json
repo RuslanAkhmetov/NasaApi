@@ -28,10 +28,6 @@
         "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\layout\\fragment_motion.xml"
     },
     {
-        "merged": "com.geekbrain.android.nasa_api.app-merged_res-46:/layout_fragment_recycler.xml.flat",
-        "source": "com.geekbrain.android.nasa_api.app-main-48:/layout/fragment_recycler.xml"
-    },
-    {
         "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-merged_res-46:\\layout_fragment_mars.xml.flat",
         "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\layout\\fragment_mars.xml"
     },
@@ -148,6 +144,10 @@
         "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "com.geekbrain.android.nasa_api.app-merged_res-46:/layout_recycler_item_earth.xml.flat",
+        "source": "com.geekbrain.android.nasa_api.app-main-48:/layout/recycler_item_earth.xml"
+    },
+    {
         "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-merged_res-46:\\drawable-v24_ic_send.xml.flat",
         "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\drawable-v24\\ic_send.xml"
     },
@@ -168,8 +168,16 @@
         "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\font\\aladin.xml"
     },
     {
+        "merged": "com.geekbrain.android.nasa_api.app-merged_res-46:/layout_recycler_item_header.xml.flat",
+        "source": "com.geekbrain.android.nasa_api.app-main-48:/layout/recycler_item_header.xml"
+    },
+    {
         "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-merged_res-46:\\xml_backup_rules.xml.flat",
         "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "com.geekbrain.android.nasa_api.app-merged_res-46:/layout_recycler_item_mars.xml.flat",
+        "source": "com.geekbrain.android.nasa_api.app-main-48:/layout/recycler_item_mars.xml"
     },
     {
         "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-merged_res-46:\\drawable-v24_ic_favourite_menu.xml.flat",
