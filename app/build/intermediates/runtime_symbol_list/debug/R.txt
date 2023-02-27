@@ -3189,6 +3189,7 @@ int id default_activity_button 0x7f0a00a9
 int id deltaRelative 0x7f0a00aa
 int id dependency_ordering 0x7f0a00ab
 int id description 0x7f0a00ac
+int id descriptionTextView 0x7f0a0234
 int id design_bottom_sheet 0x7f0a00ad
 int id design_menu_item_action_area 0x7f0a00ae
 int id design_menu_item_action_area_stub 0x7f0a00af
@@ -3211,6 +3212,7 @@ int id dragRight 0x7f0a00bf
 int id dragStart 0x7f0a00c0
 int id dragUp 0x7f0a00c1
 int id dropdown_menu 0x7f0a00c2
+int id earthImageView 0x7f0a0235
 int id easeIn 0x7f0a00c3
 int id easeInOut 0x7f0a00c4
 int id easeOut 0x7f0a00c5
@@ -3302,6 +3304,7 @@ int id ltr 0x7f0a011a
 int id m3_side_sheet 0x7f0a011b
 int id mainFragmentLoadingLayout 0x7f0a011c
 int id marquee 0x7f0a011d
+int id marsImageView 0x7f0a0236
 int id mars_curiosity_image_view 0x7f0a011e
 int id masked 0x7f0a011f
 int id match_constraint 0x7f0a0120
@@ -3415,6 +3418,7 @@ int id progress_horizontal 0x7f0a018a
 int id radio 0x7f0a018b
 int id ratio 0x7f0a018c
 int id rectangles 0x7f0a018d
+int id recyclerView 0x7f0a0237
 int id reverseSawtooth 0x7f0a018e
 int id right 0x7f0a018f
 int id rightToLeft 0x7f0a0190
@@ -3566,6 +3570,7 @@ int id view_tree_view_model_store_owner 0x7f0a0221
 int id visible 0x7f0a0222
 int id visible_removing_fragment_view_tag 0x7f0a0223
 int id west 0x7f0a0224
+int id wikiImageView 0x7f0a0238
 int id withText 0x7f0a0225
 int id with_icon 0x7f0a0226
 int id withinBounds 0x7f0a0227
@@ -3712,6 +3717,7 @@ int layout fragment_mars 0x7f0d0037
 int layout fragment_mars_curiosity 0x7f0d0038
 int layout fragment_motion 0x7f0d0039
 int layout fragment_picture_of_the_day 0x7f0d003c
+int layout fragment_recycler 0x7f0d007d
 int layout fragment_settings 0x7f0d003d
 int layout fragment_system 0x7f0d003e
 int layout loading_layout 0x7f0d003f
@@ -3772,6 +3778,9 @@ int layout notification_template_custom_big 0x7f0d0075
 int layout notification_template_icon_group 0x7f0d0076
 int layout notification_template_part_chronometer 0x7f0d0077
 int layout notification_template_part_time 0x7f0d0078
+int layout recycler_item_earth 0x7f0d007e
+int layout recycler_item_header 0x7f0d007f
+int layout recycler_item_mars 0x7f0d0080
 int layout select_dialog_item_material 0x7f0d0079
 int layout select_dialog_multichoice_material 0x7f0d007a
 int layout select_dialog_singlechoice_material 0x7f0d007b
@@ -3811,6 +3820,7 @@ int string abc_shareactionprovider_share_with 0x7f130018
 int string abc_shareactionprovider_share_with_application 0x7f130019
 int string abc_toolbar_collapse_description 0x7f13001a
 int string action_settings 0x7f13001b
+int string additional_text 0x7f1300c3
 int string androidx_startup 0x7f13001c
 int string animate 0x7f13001d
 int string animation 0x7f1300c2
@@ -3833,6 +3843,7 @@ int string clear_text_end_icon_content_description 0x7f13002d
 int string clockwise_circle 0x7f13002e
 int string danielson_crater 0x7f13002f
 int string earth 0x7f130030
+int string earth_item 0x7f1300c4
 int string epic 0x7f130031
 int string error_a11y_label 0x7f130032
 int string error_icon_content_description 0x7f130033

@@ -189,6 +189,7 @@ id action_view_system
 id appBar
 id appBarTextView
 id backgroundImage
+id barrier
 id bottomAppBar
 id bottomSheetContainer
 id bottom_navigation_view
@@ -204,6 +205,8 @@ id constraint_container
 id container
 id date
 id description
+id descriptionTextView
+id earthImageView
 id end
 id epic_image_view
 id explanationTextView
@@ -222,6 +225,7 @@ id input
 id inputLayout
 id loadingLayout
 id mainFragmentLoadingLayout
+id marsImageView
 id mars_curiosity_image_view
 id mid
 id nav_graph
@@ -231,6 +235,7 @@ id paused
 id pictureOfTheDayImageView
 id play
 id play_pause_circle
+id recyclerView
 id start
 id tabLayout2
 id tablayout
@@ -238,6 +243,7 @@ id tap
 id title
 id toolbarLayout
 id view_pager
+id wikiImageView
 layout activity_animation_end
 layout activity_animation_start
 layout activity_bottom_bar
@@ -253,9 +259,13 @@ layout fragment_mars
 layout fragment_mars_curiosity
 layout fragment_motion
 layout fragment_picture_of_the_day
+layout fragment_recycler
 layout fragment_settings
 layout fragment_system
 layout loading_layout
+layout recycler_item_earth
+layout recycler_item_header
+layout recycler_item_mars
 menu menu_bottom_navigation
 menu menu_bottom_navigation_view
 menu menu_main
@@ -263,6 +273,7 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 navigation nav_graph
 string action_settings
+string additional_text
 string animate
 string animation
 string apod
@@ -273,6 +284,7 @@ string blue
 string clockwise_circle
 string danielson_crater
 string earth
+string earth_item
 string epic
 string fayvourite
 string first_fragment_label

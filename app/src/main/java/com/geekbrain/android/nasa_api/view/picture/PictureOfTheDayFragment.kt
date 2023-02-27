@@ -17,6 +17,7 @@ import coil.dispose
 import coil.load
 import com.geekbrain.android.nasa_api.R
 import com.geekbrain.android.nasa_api.databinding.FragmentPictureOfTheDayBinding
+import com.geekbrain.android.nasa_api.recyclerview.RecyclerFragment
 import com.geekbrain.android.nasa_api.view.drawer.BottomNavigationDrawerFragment
 import com.geekbrain.android.nasa_api.view.picture.utils.DAYS
 import com.geekbrain.android.nasa_api.view.picture.utils.getSelectedDay
@@ -121,6 +122,11 @@ class PictureOfTheDayFragment : Fragment() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.action_bar_favorite -> {
+                requireActivity().supportFragmentManager
+                    .beginTransaction()
+                    .add(R.id.container, RecyclerFragment.newInstance())
+                    .addToBackStack("")
+                    .commit()
 
             }
 
