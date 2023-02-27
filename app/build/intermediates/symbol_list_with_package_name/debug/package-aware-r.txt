@@ -2894,6 +2894,8 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable circle_pause_vector
+drawable circle_play_vector
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -2904,6 +2906,8 @@ drawable ic_100tb
 drawable ic_archive
 drawable ic_arrow_back_black_24
 drawable ic_back_fab
+drawable ic_baseline_animation_24
+drawable ic_baseline_auto_awesome_motion_24
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
 drawable ic_earth
@@ -3004,6 +3008,9 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable pause_to_play
+drawable play_pause_circle
+drawable play_to_pause
 drawable swipe_indicator_active
 drawable swipe_indicator_passive
 drawable test_level_drawable
@@ -3249,12 +3256,12 @@ id graph_wrap
 id group_divider
 id grouping
 id groups
-id guideline1
-id guideline2
-id guideline3
-id guideline4
-id guideline5
-id guideline6
+id guidelinefirsthorizontal
+id guidelinefirstvertical
+id guidelinesecondhorizontal
+id guidelinesecondvertical
+id guidelinethirdhorizontal
+id guidelinethirdvertical
 id header
 id header_title
 id hideable
@@ -3322,6 +3329,7 @@ id material_timepicker_view
 id material_value_index
 id matrix
 id message
+id mid
 id middle
 id mini
 id month_grid
@@ -3393,10 +3401,13 @@ id parent_matrix
 id password_toggle
 id path
 id pathRelative
+id paused
 id peekHeight
 id percent
 id pictureOfTheDayImageView
 id pin
+id play
+id play_pause_circle
 id position
 id postLayout
 id pressed
@@ -3490,6 +3501,7 @@ id stretch
 id submenuarrow
 id submit_area
 id supportScrollUp
+id tabLayout2
 id tabMode
 id tablayout
 id tag_accessibility_actions
@@ -3700,8 +3712,6 @@ layout fragment_epic
 layout fragment_mars
 layout fragment_mars_curiosity
 layout fragment_motion
-layout fragment_motion_end
-layout fragment_motion_start
 layout fragment_picture_of_the_day
 layout fragment_settings
 layout fragment_system
@@ -3804,6 +3814,7 @@ string abc_toolbar_collapse_description
 string action_settings
 string androidx_startup
 string animate
+string animation
 string apod
 string app_name
 string appbar_scrolling_view_behavior
@@ -3820,6 +3831,7 @@ string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
 string clear_text_end_icon_content_description
+string clockwise_circle
 string danielson_crater
 string earth
 string epic
@@ -3833,6 +3845,7 @@ string first_fragment_label
 string green
 string hide_bottom_view_on_scroll_behavior
 string hint
+string home
 string icon_content_description
 string item_view_role_description
 string layout
@@ -3945,6 +3958,9 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string pause_left
+string pause_right
+string pause_right_play
 string picture_of_the_day
 string picture_of_the_day_request
 string previous

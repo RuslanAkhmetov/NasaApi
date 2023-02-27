@@ -15,6 +15,5 @@ class MotionFragment: Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         return inflater.inflate(R.layout.fragment_motion, container, false)
-
     }
 }

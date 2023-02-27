@@ -29,7 +29,7 @@ class BottomBarActivity : AppCompatActivity() {
             true
         }
 
-        binding.bottomNavigationView.selectedItemId = R.id.action_motion
+        binding.bottomNavigationView.selectedItemId = R.id.action_view_earth
 
 
         val badge =binding.bottomNavigationView.getOrCreateBadge(R.id.action_view_system)

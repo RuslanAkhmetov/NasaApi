@@ -4,29 +4,32 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
+import android.transition.TransitionManager
 import android.util.Log
 import android.view.*
-import androidx.fragment.app.Fragment
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.annotation.RequiresApi
+import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import coil.dispose
 import coil.load
 import com.geekbrain.android.nasa_api.R
 import com.geekbrain.android.nasa_api.databinding.FragmentPictureOfTheDayBinding
-import com.geekbrain.android.nasa_api.utils.DAYS
 import com.geekbrain.android.nasa_api.view.drawer.BottomNavigationDrawerFragment
+import com.geekbrain.android.nasa_api.view.picture.utils.DAYS
+import com.geekbrain.android.nasa_api.view.picture.utils.getSelectedDay
 import com.geekbrain.android.nasa_api.view.settings.SettingsFragment
 import com.geekbrain.android.nasa_api.viewmodel.AppState
 import com.geekbrain.android.nasa_api.viewmodel.PictureOfTheDayViewModel
-import com.geekbrain.android.nasa_api.utils.getSelectedDay
-import java.util.*
 
 
 class PictureOfTheDayFragment : Fragment() {
 
     private val TAG = "pictureOfTheDayFragment"
 
+    private var isExpanded = false
     private var _binding: FragmentPictureOfTheDayBinding? = null
 
     // This property is only valid between onCreateView and
@@ -38,7 +41,6 @@ class PictureOfTheDayFragment : Fragment() {
     private var selectedDay = ""
 
     companion object {
-
         fun newInstance() = PictureOfTheDayFragment()
         fun newInstance(day: DAYS): PictureOfTheDayFragment {
             val fragment = newInstance()
@@ -54,6 +56,7 @@ class PictureOfTheDayFragment : Fragment() {
         Log.i(TAG, "onCreateView: ")
 
         _binding = FragmentPictureOfTheDayBinding.inflate(inflater, container, false)
+        setHasOptionsMenu(true)
         return binding.root
 
     }
@@ -93,6 +96,21 @@ class PictureOfTheDayFragment : Fragment() {
         }
 
 
+        binding.pictureOfTheDayImageView.setOnClickListener{
+            isExpanded = !isExpanded
+            TransitionManager.beginDelayedTransition(binding.root)
+            val params = it.layoutParams as ConstraintLayout.LayoutParams
+
+            if(isExpanded){
+                params.height = ConstraintLayout.LayoutParams.MATCH_PARENT
+                (it as ImageView).scaleType = ImageView.ScaleType.CENTER_CROP
+            } else{
+                params.height = ConstraintLayout.LayoutParams.WRAP_CONTENT
+                (it as ImageView).scaleType = ImageView.ScaleType.CENTER_INSIDE
+            }
+        }
+
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
@@ -109,7 +127,7 @@ class PictureOfTheDayFragment : Fragment() {
             R.id.action_bar_settings -> {
                 requireActivity().supportFragmentManager
                     .beginTransaction()
-                    .hide(this)
+//                    .hide(this)
                     .add(R.id.container, SettingsFragment.newInstance())
                     .addToBackStack("")
                     .commit()

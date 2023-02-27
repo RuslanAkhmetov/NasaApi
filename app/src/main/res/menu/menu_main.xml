@@ -13,4 +13,11 @@
         android:icon="@drawable/ic_settings_menu"
         android:title="@string/action_settings"
         app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_back_fab"
+        android:title="@string/home"
+        app:showAsAction="ifRoom" />
+
 </menu>

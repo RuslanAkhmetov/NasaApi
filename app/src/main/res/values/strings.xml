@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Nasa Picture of the day</string>
+    <string name="app_name">Nasa</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
@@ -7,6 +7,12 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
     <string name="picture_of_the_day_request">planetary/apod</string>
+
+    <string name="pause_left">M26,23 V41</string>
+    <string name="pause_right">M37,23 L37,32 L37,41</string>
+    <string name="pause_right_play">M26,23 L41,32 L27,41</string>
+    <string name="clockwise_circle">M32,8 A24,24 0 1 1 31.99,8 z</string>
+
 
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
@@ -69,4 +75,6 @@
     <string name="tap_on_me">TAP ON ME</string>
     <string name="shuffle">SHUFFLE</string>
     <string name="danielson_crater">На фото видно камни и песок в кратере Даниэлсона (диаметр кратера около 67 км), расположенного на юго-востоке области Arabia Terra.</string>
+    <string name="home">Home</string>
+    <string name="animation">Animation</string>
 </resources>

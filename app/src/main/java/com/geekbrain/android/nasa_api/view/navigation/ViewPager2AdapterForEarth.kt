@@ -1,10 +1,9 @@
 package com.geekbrain.android.nasa_api.view.navigation
 
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import com.geekbrain.android.nasa_api.utils.DAYS
 import com.geekbrain.android.nasa_api.view.picture.PictureOfTheDayFragment
+import com.geekbrain.android.nasa_api.view.picture.utils.DAYS
 
 
 @Suppress("DEPRECATION")
