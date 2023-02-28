@@ -3424,6 +3424,8 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id recyclerActivityDiffUtilFAB
+id recyclerActivityFAB
 id recyclerView
 id removeItemImageView
 id reverseSawtooth

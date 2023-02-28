@@ -240,6 +240,8 @@ id paused
 id pictureOfTheDayImageView
 id play
 id play_pause_circle
+id recyclerActivityDiffUtilFAB
+id recyclerActivityFAB
 id recyclerView
 id removeItemImageView
 id start

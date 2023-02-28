@@ -1,14 +1,20 @@
 package com.geekbrain.android.nasa_api.recyclerview
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.core.content.ContextCompat
+import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.geekbrain.android.nasa_api.R
 import com.geekbrain.android.nasa_api.databinding.RecyclerItemEarthBinding
 import com.geekbrain.android.nasa_api.databinding.RecyclerItemHeaderBinding
 import com.geekbrain.android.nasa_api.databinding.RecyclerItemMarsBinding
+import com.geekbrain.android.nasa_api.recyclerview.diffutil.Change
+import com.geekbrain.android.nasa_api.recyclerview.diffutil.DiffUtilCallback
+import com.geekbrain.android.nasa_api.recyclerview.diffutil.createCombinePayload
 
 class RecyclerAdapter(
     private var listPlanet: MutableList<Pair<Planet, Boolean>>,
@@ -17,8 +23,16 @@ class RecyclerAdapter(
 ) :
     RecyclerView.Adapter<RecyclerAdapter.BaseViewHolder>(), ItemTouchHelperAdapter{
 
+    private val TAG = "RecyclerAdapter"
+
     override fun getItemViewType(position: Int): Int {
         return listPlanet[position].first.type
+    }
+
+    fun setListPlanetForDiffUtil(newListPlanet: MutableList<Pair<Planet, Boolean>>) {
+        val diffAccount = DiffUtil.calculateDiff(DiffUtilCallback(listPlanet, newListPlanet))
+        diffAccount.dispatchUpdatesTo(this)
+        listPlanet = newListPlanet
     }
 
     fun setListPlanetRemove(newListPlanet: MutableList<Pair<Planet, Boolean>>, position: Int) {
@@ -51,8 +65,25 @@ class RecyclerAdapter(
 
     override fun onBindViewHolder(holder: BaseViewHolder, position: Int) {
         holder.bind(listPlanet[position])
+    }
 
-
+    override fun onBindViewHolder(
+        holder: BaseViewHolder,
+        position: Int,
+        payloads: MutableList<Any>
+    ) {
+        if (payloads.isEmpty()) {
+            super.onBindViewHolder(holder, position, payloads)
+        } else {
+            val createCombinePayloads = createCombinePayload(payloads as List<Change<Pair<Planet, Boolean>>>)
+            Log.i(TAG, "onBindViewHolder new: ${createCombinePayloads.newData.first.name}")
+            Log.i(TAG, "onBindViewHolder old: ${createCombinePayloads.oldData.first.name}")
+            Log.i(TAG, "onBindViewHolder isThe same: ${{createCombinePayloads.oldData.first.name.toString()} == {createCombinePayloads.newData.first.name.toString()}}")
+            //if (createCombinePayloads.newData.first.name != createCombinePayloads.oldData.first.name)   // в данном случае это лишнее
+                holder.itemView.findViewById<TextView>(R.id.name).text =
+                    createCombinePayloads.newData.first.name
+            //}
+        }
     }
 
     override fun getItemCount(): Int {
