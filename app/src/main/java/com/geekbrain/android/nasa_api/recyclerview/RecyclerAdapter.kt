@@ -8,10 +8,10 @@ import com.geekbrain.android.nasa_api.databinding.RecyclerItemEarthBinding
 import com.geekbrain.android.nasa_api.databinding.RecyclerItemHeaderBinding
 import com.geekbrain.android.nasa_api.databinding.RecyclerItemMarsBinding
 
-class RecyclerAdapter(val listData: List<Planet>) :
+class RecyclerAdapter(val listPlanet: List<Planet>) :
     RecyclerView.Adapter<RecyclerAdapter.BaseViewHolder>() {
     override fun getItemViewType(position: Int): Int {
-        return listData[position].type
+        return listPlanet[position].type
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BaseViewHolder {
@@ -33,23 +33,13 @@ class RecyclerAdapter(val listData: List<Planet>) :
     }
 
     override fun onBindViewHolder(holder: BaseViewHolder, position: Int) {
-        holder.bind(listData[position])
+        holder.bind(listPlanet[position])
 
-        /*when(getItemViewType(position)){
-            TYPE_EARTH->{
-                (holder as EarthViewHolder).bind(listData[position])
-            }
-            TYPE_MARS->{
-                (holder as MarsViewHolder).bind(listData[position])
-            }
-            else->{
-                (holder as HeaderViewHolder).bind(listData[position])
-            }
-        }*/
+
     }
 
     override fun getItemCount(): Int {
-        return listData.size
+        return listPlanet.size
     }
 
     abstract class BaseViewHolder(view: View):
