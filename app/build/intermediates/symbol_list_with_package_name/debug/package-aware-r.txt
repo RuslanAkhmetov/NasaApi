@@ -3098,6 +3098,7 @@ id action_view_system
 id actions
 id activity_chooser_view_content
 id add
+id addItemImageView
 id alertTitle
 id aligned
 id all
@@ -3306,6 +3307,7 @@ id m3_side_sheet
 id mainFragmentLoadingLayout
 id marquee
 id marsImageView
+id marsTextView
 id mars_curiosity_image_view
 id masked
 id match_constraint
@@ -3342,6 +3344,8 @@ id month_navigation_next
 id month_navigation_previous
 id month_title
 id motion_base
+id moveItemDown
+id moveItemUp
 id mtrl_anchor_parent
 id mtrl_calendar_day_selector_frame
 id mtrl_calendar_days_of_week
@@ -3421,6 +3425,7 @@ id radio
 id ratio
 id rectangles
 id recyclerView
+id removeItemImageView
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3873,6 +3878,7 @@ string m3_sys_motion_easing_linear
 string m3_sys_motion_easing_standard
 string m3_sys_motion_easing_standard_accelerate
 string m3_sys_motion_easing_standard_decelerate
+string mars
 string mars_theme
 string marscuriosity
 string material_clock_display_divider

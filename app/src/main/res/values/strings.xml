@@ -79,4 +79,5 @@
     <string name="animation">Animation</string>
     <string name="earth_item">Земля</string>
     <string name="additional_text">Дополнительный текст</string>
+    <string name="mars">Марс</string>
 </resources>

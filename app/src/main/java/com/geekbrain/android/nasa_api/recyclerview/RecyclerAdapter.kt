@@ -9,7 +9,7 @@ import com.geekbrain.android.nasa_api.databinding.RecyclerItemHeaderBinding
 import com.geekbrain.android.nasa_api.databinding.RecyclerItemMarsBinding
 
 class RecyclerAdapter(
-    private var listPlanet: List<Planet>,
+    private var listPlanet: MutableList<Planet>,
     val callbackAdd: AddItem,
     val callbackRemove: RemoveItem
 ) :
@@ -19,23 +19,23 @@ class RecyclerAdapter(
         return listPlanet[position].type
     }
 
-    fun setListPlanetRemove(newListPlanet: List<Planet>, position: Int) {
+    fun setListPlanetRemove(newListPlanet: MutableList<Planet>, position: Int) {
         listPlanet = newListPlanet
         notifyItemRemoved(position)
     }
 
-    fun setListPlanetAdd(newListPlanet: List<Planet>, position: Int) {
+    fun setListPlanetAdd(newListPlanet: MutableList<Planet>, position: Int) {
         listPlanet = newListPlanet
         notifyItemInserted(position)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BaseViewHolder {
         return when (viewType) {
-            TYPE_EARTH -> {
+            Planet.TYPE_EARTH-> {
                 val binding = RecyclerItemEarthBinding.inflate(LayoutInflater.from(parent.context))
                 EarthViewHolder(binding)
             }
-            TYPE_MARS -> {
+            Planet.TYPE_MARS -> {
                 val binding = RecyclerItemMarsBinding.inflate(LayoutInflater.from(parent.context))
                 MarsViewHolder(binding)
             }
@@ -72,6 +72,25 @@ class RecyclerAdapter(
 
             binding.removeItemImageView.setOnClickListener {
                 callbackRemove.remove(layoutPosition)
+            }
+
+            binding.moveItemUp.setOnClickListener{
+                if (layoutPosition > 0 &&
+                    getItemViewType(layoutPosition-1) != Planet.TYPE_HEADER) {
+                    listPlanet.removeAt(layoutPosition).apply {
+                        listPlanet.add(layoutPosition - 1, this)
+                    }
+                    notifyItemMoved(layoutPosition, layoutPosition - 1)
+                }
+            }
+
+            binding.moveItemDown.setOnClickListener{
+                if(layoutPosition < listPlanet.size) {
+                    listPlanet.removeAt(layoutPosition).apply {
+                        listPlanet.add(layoutPosition + 1, this)
+                    }
+                    notifyItemMoved(layoutPosition, layoutPosition + 1)
+                }
             }
         }
     }

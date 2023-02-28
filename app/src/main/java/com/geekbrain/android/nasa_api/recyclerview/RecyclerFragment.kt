@@ -11,17 +11,17 @@ class RecyclerFragment: Fragment() {
     private lateinit var binding:FragmentRecyclerBinding
 
     private val planets = arrayListOf(
-        Planet( TYPE_HEADER,"Заголовок"),
-        Planet(TYPE_EARTH, "Earth"),
-        Planet( TYPE_EARTH,"Earth"),
-        Planet( TYPE_EARTH,"Earth"),
-        Planet( TYPE_EARTH,"Earth"),
-        Planet( TYPE_EARTH,"Earth", "Blue Planet"),
-        Planet( TYPE_MARS,"Mars", ""),
-        Planet( TYPE_EARTH,"Earth"),
-        Planet( TYPE_EARTH,"Earth"),
-        Planet( TYPE_EARTH,"Earth"),
-        Planet( TYPE_MARS,"Mars", null)
+        Planet( Planet.TYPE_HEADER,"Заголовок"),
+        Planet(Planet.TYPE_EARTH, "Earth"),
+        Planet( Planet.TYPE_EARTH,"Earth"),
+        Planet( Planet.TYPE_EARTH,"Earth"),
+        Planet( Planet.TYPE_EARTH,"Earth"),
+        Planet( Planet.TYPE_EARTH,"Earth", "Blue Planet"),
+        Planet( Planet.TYPE_MARS,"Mars", ""),
+        Planet( Planet.TYPE_EARTH,"Earth"),
+        Planet( Planet.TYPE_EARTH,"Earth"),
+        Planet( Planet.TYPE_EARTH,"Earth"),
+        Planet( Planet.TYPE_MARS,"Mars", null)
     )
 
     lateinit var adapter: RecyclerAdapter
@@ -42,7 +42,7 @@ class RecyclerFragment: Fragment() {
 
     val callbackAdd = object : AddItem{
         override fun add(position: Int) {
-            planets.add(position, Planet(TYPE_MARS, "Mars(New)"))
+            planets.add(position, Planet(Planet.TYPE_MARS, "Mars(New)"))
             adapter.setListPlanetAdd(planets, position)
         }
     }

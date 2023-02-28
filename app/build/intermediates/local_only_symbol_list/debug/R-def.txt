@@ -186,6 +186,7 @@ id action_theme_moon
 id action_view_earth
 id action_view_mars
 id action_view_system
+id addItemImageView
 id appBar
 id appBarTextView
 id backgroundImage
@@ -226,8 +227,11 @@ id inputLayout
 id loadingLayout
 id mainFragmentLoadingLayout
 id marsImageView
+id marsTextView
 id mars_curiosity_image_view
 id mid
+id moveItemDown
+id moveItemUp
 id name
 id nav_graph
 id nav_host_fragment_content_main
@@ -237,6 +241,7 @@ id pictureOfTheDayImageView
 id play
 id play_pause_circle
 id recyclerView
+id removeItemImageView
 id start
 id tabLayout2
 id tablayout
@@ -294,6 +299,7 @@ string hint
 string home
 string layout
 string lorem_ipsum
+string mars
 string mars_theme
 string marscuriosity
 string moon_theme
