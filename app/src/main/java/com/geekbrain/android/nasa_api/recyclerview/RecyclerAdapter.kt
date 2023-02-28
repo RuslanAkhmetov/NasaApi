@@ -60,15 +60,23 @@ class RecyclerAdapter(
     }
 
     abstract class BaseViewHolder(view: View) :
-        RecyclerView.ViewHolder(view) {
+        RecyclerView.ViewHolder(view), ItemTouchHelperViewHolder {
         abstract fun bind(planet: Pair<Planet, Boolean>)
+
+        override fun onItemSelect() {
+            itemView.setBackgroundColor(
+                ContextCompat.getColor(itemView.context, R.color.colorAccent))
+        }
+
+        override fun onItemClear() {
+            itemView.setBackgroundColor(0)
+        }
     }
 
     inner class MarsViewHolder(val binding: RecyclerItemMarsBinding) :
         BaseViewHolder(binding.root), ItemTouchHelperViewHolder {
         override fun bind(planet: Pair<Planet, Boolean>) {
             binding.name.text = planet.first.name
-            //binding.marsDescriptionTextView.text = planet.first.someDescription
 
             binding.marsDescriptionTextView.visibility = if (listPlanet[layoutPosition].second){
                 View.VISIBLE
@@ -112,14 +120,6 @@ class RecyclerAdapter(
             }
         }
 
-        override fun onItemSelect() {
-            binding.root.setBackgroundColor(
-                ContextCompat.getColor(binding.root.context, R.color.colorAccent))
-        }
-
-        override fun onItemClear() {
-            binding.root.setBackgroundColor(0)
-        }
     }
 
     class EarthViewHolder(val binding: RecyclerItemEarthBinding) :
@@ -128,6 +128,7 @@ class RecyclerAdapter(
             binding.name.text = planet.first.name
             binding.descriptionTextView.text = planet.first.someDescription
         }
+
     }
 
     class HeaderViewHolder(val binding: RecyclerItemHeaderBinding) :

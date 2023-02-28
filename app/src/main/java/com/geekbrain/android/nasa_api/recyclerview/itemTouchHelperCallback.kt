@@ -28,15 +28,17 @@ class ItemTouchHelperCallback(private val callback: ItemTouchHelperAdapter)
     }
 
     override fun clearView(recyclerView: RecyclerView, viewHolder: RecyclerView.ViewHolder) {
-        if (viewHolder?.itemViewType == Planet.TYPE_MARS){
-            (viewHolder as RecyclerAdapter.MarsViewHolder).onItemClear()
+        viewHolder?.let {
+            (it as RecyclerAdapter.BaseViewHolder).onItemClear()
         }
+
         super.clearView(recyclerView, viewHolder)
     }
 
     override fun onSelectedChanged(viewHolder: RecyclerView.ViewHolder?, actionState: Int) {
-        if (viewHolder?.itemViewType == Planet.TYPE_MARS){
-            (viewHolder as RecyclerAdapter.MarsViewHolder).onItemSelect()
+        viewHolder?.let {
+            (it as RecyclerAdapter.BaseViewHolder).onItemSelect()
         }
+
     }
 }
