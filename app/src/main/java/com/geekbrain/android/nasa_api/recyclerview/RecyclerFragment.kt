@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.ItemTouchHelper
 import com.geekbrain.android.nasa_api.databinding.FragmentRecyclerBinding
 
 class RecyclerFragment : Fragment() {
@@ -38,6 +39,8 @@ class RecyclerFragment : Fragment() {
         binding = FragmentRecyclerBinding.inflate(inflater, container, false)
         adapter = RecyclerAdapter(planets, callbackAdd, callbackRemove)
         binding.recyclerView.adapter = adapter
+        ItemTouchHelper(ItemTouchHelperCallback(adapter))
+            .attachToRecyclerView(binding.recyclerView)
         return binding.root
     }
 

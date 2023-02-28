@@ -3,7 +3,9 @@ package com.geekbrain.android.nasa_api.recyclerview
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
+import com.geekbrain.android.nasa_api.R
 import com.geekbrain.android.nasa_api.databinding.RecyclerItemEarthBinding
 import com.geekbrain.android.nasa_api.databinding.RecyclerItemHeaderBinding
 import com.geekbrain.android.nasa_api.databinding.RecyclerItemMarsBinding
@@ -13,7 +15,7 @@ class RecyclerAdapter(
     val callbackAdd: AddItem,
     val callbackRemove: RemoveItem
 ) :
-    RecyclerView.Adapter<RecyclerAdapter.BaseViewHolder>() {
+    RecyclerView.Adapter<RecyclerAdapter.BaseViewHolder>(), ItemTouchHelperAdapter{
 
     override fun getItemViewType(position: Int): Int {
         return listPlanet[position].first.type
@@ -63,7 +65,7 @@ class RecyclerAdapter(
     }
 
     inner class MarsViewHolder(val binding: RecyclerItemMarsBinding) :
-        BaseViewHolder(binding.root) {
+        BaseViewHolder(binding.root), ItemTouchHelperViewHolder {
         override fun bind(planet: Pair<Planet, Boolean>) {
             binding.name.text = planet.first.name
             //binding.marsDescriptionTextView.text = planet.first.someDescription
@@ -109,6 +111,15 @@ class RecyclerAdapter(
                 }
             }
         }
+
+        override fun onItemSelect() {
+            binding.root.setBackgroundColor(
+                ContextCompat.getColor(binding.root.context, R.color.colorAccent))
+        }
+
+        override fun onItemClear() {
+            binding.root.setBackgroundColor(0)
+        }
     }
 
     class EarthViewHolder(val binding: RecyclerItemEarthBinding) :
@@ -125,4 +136,17 @@ class RecyclerAdapter(
             binding.name.text = planet.first.name
         }
     }
+
+    override fun onItemMove(fromPosition: Int, toPosition: Int) {
+       listPlanet.removeAt(fromPosition).apply {
+           listPlanet.add(toPosition, this)
+       }
+        notifyItemMoved(fromPosition, toPosition)
+    }
+
+    override fun onItemDismiss(position: Int) {
+        callbackRemove.remove(position)
+    }
+
+
 }
