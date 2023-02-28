@@ -7,24 +7,25 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.geekbrain.android.nasa_api.databinding.FragmentRecyclerBinding
 
-class RecyclerFragment: Fragment() {
-    private lateinit var binding:FragmentRecyclerBinding
+class RecyclerFragment : Fragment() {
+    private lateinit var binding: FragmentRecyclerBinding
 
     private val planets = arrayListOf(
-        Planet( Planet.TYPE_HEADER,"Заголовок"),
-        Planet(Planet.TYPE_EARTH, "Earth"),
-        Planet( Planet.TYPE_EARTH,"Earth"),
-        Planet( Planet.TYPE_EARTH,"Earth"),
-        Planet( Planet.TYPE_EARTH,"Earth"),
-        Planet( Planet.TYPE_EARTH,"Earth", "Blue Planet"),
-        Planet( Planet.TYPE_MARS,"Mars", ""),
-        Planet( Planet.TYPE_EARTH,"Earth"),
-        Planet( Planet.TYPE_EARTH,"Earth"),
-        Planet( Planet.TYPE_EARTH,"Earth"),
-        Planet( Planet.TYPE_MARS,"Mars", null)
+        Pair(Planet(Planet.TYPE_HEADER, "Заголовок"), false),
+        Pair(Planet(Planet.TYPE_EARTH, "Earth"), false),
+        Pair(Planet(Planet.TYPE_EARTH, "Earth"), false),
+        Pair(Planet(Planet.TYPE_EARTH, "Earth"), false),
+        Pair(Planet(Planet.TYPE_EARTH, "Earth"), false),
+        Pair(Planet(Planet.TYPE_EARTH, "Earth", "Blue Planet"), false),
+        Pair(Planet(Planet.TYPE_MARS, "Mars", ""), false),
+        Pair(Planet(Planet.TYPE_EARTH, "Earth"), false),
+        Pair(Planet(Planet.TYPE_EARTH, "Earth"), false),
+        Pair(Planet(Planet.TYPE_EARTH, "Earth"), false),
+        Pair(Planet(Planet.TYPE_MARS, "Mars", null), false),
     )
 
     lateinit var adapter: RecyclerAdapter
+
     companion object {
         fun newInstance() = RecyclerFragment()
     }
@@ -34,26 +35,25 @@ class RecyclerFragment: Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentRecyclerBinding.inflate(inflater, container,false)
-        adapter = RecyclerAdapter(planets, callbackAdd, callbackRemove )
+        binding = FragmentRecyclerBinding.inflate(inflater, container, false)
+        adapter = RecyclerAdapter(planets, callbackAdd, callbackRemove)
         binding.recyclerView.adapter = adapter
         return binding.root
     }
 
-    val callbackAdd = object : AddItem{
+    val callbackAdd = object : AddItem {
         override fun add(position: Int) {
-            planets.add(position, Planet(Planet.TYPE_MARS, "Mars(New)"))
+            planets.add(position, Pair(Planet(Planet.TYPE_MARS, "Mars(New)"),false))
             adapter.setListPlanetAdd(planets, position)
         }
     }
 
-    val callbackRemove = object : RemoveItem{
+    val callbackRemove = object : RemoveItem {
         override fun remove(position: Int) {
             planets.removeAt(position)
             adapter.setListPlanetRemove(planets, position)
 
         }
-
     }
 
 

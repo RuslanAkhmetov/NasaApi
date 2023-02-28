@@ -9,22 +9,22 @@ import com.geekbrain.android.nasa_api.databinding.RecyclerItemHeaderBinding
 import com.geekbrain.android.nasa_api.databinding.RecyclerItemMarsBinding
 
 class RecyclerAdapter(
-    private var listPlanet: MutableList<Planet>,
+    private var listPlanet: MutableList<Pair<Planet, Boolean>>,
     val callbackAdd: AddItem,
     val callbackRemove: RemoveItem
 ) :
     RecyclerView.Adapter<RecyclerAdapter.BaseViewHolder>() {
 
     override fun getItemViewType(position: Int): Int {
-        return listPlanet[position].type
+        return listPlanet[position].first.type
     }
 
-    fun setListPlanetRemove(newListPlanet: MutableList<Planet>, position: Int) {
+    fun setListPlanetRemove(newListPlanet: MutableList<Pair<Planet, Boolean>>, position: Int) {
         listPlanet = newListPlanet
         notifyItemRemoved(position)
     }
 
-    fun setListPlanetAdd(newListPlanet: MutableList<Planet>, position: Int) {
+    fun setListPlanetAdd(newListPlanet: MutableList<Pair<Planet, Boolean>>, position: Int) {
         listPlanet = newListPlanet
         notifyItemInserted(position)
     }
@@ -59,13 +59,29 @@ class RecyclerAdapter(
 
     abstract class BaseViewHolder(view: View) :
         RecyclerView.ViewHolder(view) {
-        abstract fun bind(planet: Planet)
+        abstract fun bind(planet: Pair<Planet, Boolean>)
     }
 
     inner class MarsViewHolder(val binding: RecyclerItemMarsBinding) :
         BaseViewHolder(binding.root) {
-        override fun bind(planet: Planet) {
-            binding.name.text = planet.name
+        override fun bind(planet: Pair<Planet, Boolean>) {
+            binding.name.text = planet.first.name
+            //binding.marsDescriptionTextView.text = planet.first.someDescription
+
+            binding.marsDescriptionTextView.visibility = if (listPlanet[layoutPosition].second){
+                View.VISIBLE
+            } else{
+                View.GONE
+            }
+
+            binding.marsImageView.setOnClickListener{
+                listPlanet[layoutPosition] = listPlanet[layoutPosition].let {
+                    it.first to !it.second
+                }
+
+                notifyItemChanged(layoutPosition)
+            }
+
             binding.addItemImageView.setOnClickListener {
                 callbackAdd.add(layoutPosition)
             }
@@ -97,16 +113,16 @@ class RecyclerAdapter(
 
     class EarthViewHolder(val binding: RecyclerItemEarthBinding) :
         BaseViewHolder(binding.root) {
-        override fun bind(planet: Planet) {
-            binding.name.text = planet.name
-            binding.descriptionTextView.text = planet.someDescription
+        override fun bind(planet: Pair<Planet, Boolean>) {
+            binding.name.text = planet.first.name
+            binding.descriptionTextView.text = planet.first.someDescription
         }
     }
 
     class HeaderViewHolder(val binding: RecyclerItemHeaderBinding) :
         BaseViewHolder(binding.root) {
-        override fun bind(planet: Planet) {
-            binding.name.text = planet.name
+        override fun bind(planet: Pair<Planet, Boolean>) {
+            binding.name.text = planet.first.name
         }
     }
 }

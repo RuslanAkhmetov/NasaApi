@@ -3305,8 +3305,8 @@ int id ltr 0x7f0a011a
 int id m3_side_sheet 0x7f0a011b
 int id mainFragmentLoadingLayout 0x7f0a011c
 int id marquee 0x7f0a011d
+int id marsDescriptionTextView 0x7f0a023f
 int id marsImageView 0x7f0a0236
-int id marsTextView 0x7f0a023c
 int id mars_curiosity_image_view 0x7f0a011e
 int id masked 0x7f0a011f
 int id match_constraint 0x7f0a0120
@@ -3878,6 +3878,7 @@ int string m3_sys_motion_easing_standard 0x7f130049
 int string m3_sys_motion_easing_standard_accelerate 0x7f13004a
 int string m3_sys_motion_easing_standard_decelerate 0x7f13004b
 int string mars 0x7f1300c5
+int string mars_description 0x7f1300c6
 int string mars_theme 0x7f13004c
 int string marscuriosity 0x7f13004d
 int string material_clock_display_divider 0x7f13004e

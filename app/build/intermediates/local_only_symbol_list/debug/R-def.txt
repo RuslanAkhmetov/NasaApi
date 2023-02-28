@@ -226,8 +226,8 @@ id input
 id inputLayout
 id loadingLayout
 id mainFragmentLoadingLayout
+id marsDescriptionTextView
 id marsImageView
-id marsTextView
 id mars_curiosity_image_view
 id mid
 id moveItemDown
@@ -300,6 +300,7 @@ string home
 string layout
 string lorem_ipsum
 string mars
+string mars_description
 string mars_theme
 string marscuriosity
 string moon_theme
