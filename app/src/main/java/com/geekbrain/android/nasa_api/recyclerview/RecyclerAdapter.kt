@@ -8,10 +8,25 @@ import com.geekbrain.android.nasa_api.databinding.RecyclerItemEarthBinding
 import com.geekbrain.android.nasa_api.databinding.RecyclerItemHeaderBinding
 import com.geekbrain.android.nasa_api.databinding.RecyclerItemMarsBinding
 
-class RecyclerAdapter(val listPlanet: List<Planet>) :
+class RecyclerAdapter(
+    private var listPlanet: List<Planet>,
+    val callbackAdd: AddItem,
+    val callbackRemove: RemoveItem
+) :
     RecyclerView.Adapter<RecyclerAdapter.BaseViewHolder>() {
+
     override fun getItemViewType(position: Int): Int {
         return listPlanet[position].type
+    }
+
+    fun setListPlanetRemove(newListPlanet: List<Planet>, position: Int) {
+        listPlanet = newListPlanet
+        notifyItemRemoved(position)
+    }
+
+    fun setListPlanetAdd(newListPlanet: List<Planet>, position: Int) {
+        listPlanet = newListPlanet
+        notifyItemInserted(position)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BaseViewHolder {
@@ -42,21 +57,28 @@ class RecyclerAdapter(val listPlanet: List<Planet>) :
         return listPlanet.size
     }
 
-    abstract class BaseViewHolder(view: View):
-            RecyclerView.ViewHolder(view){
-                abstract fun bind(data:Planet)
+    abstract class BaseViewHolder(view: View) :
+        RecyclerView.ViewHolder(view) {
+        abstract fun bind(planet: Planet)
+    }
+
+    inner class MarsViewHolder(val binding: RecyclerItemMarsBinding) :
+        BaseViewHolder(binding.root) {
+        override fun bind(planet: Planet) {
+            binding.name.text = planet.name
+            binding.addItemImageView.setOnClickListener {
+                callbackAdd.add(layoutPosition)
             }
 
-    class MarsViewHolder(val binding: RecyclerItemMarsBinding) : BaseViewHolder(binding.root) {
-        override fun bind(planet: Planet){
-            binding.name.text = planet.name
-
+            binding.removeItemImageView.setOnClickListener {
+                callbackRemove.remove(layoutPosition)
+            }
         }
     }
 
     class EarthViewHolder(val binding: RecyclerItemEarthBinding) :
         BaseViewHolder(binding.root) {
-        override fun bind(planet: Planet){
+        override fun bind(planet: Planet) {
             binding.name.text = planet.name
             binding.descriptionTextView.text = planet.someDescription
         }
@@ -64,7 +86,7 @@ class RecyclerAdapter(val listPlanet: List<Planet>) :
 
     class HeaderViewHolder(val binding: RecyclerItemHeaderBinding) :
         BaseViewHolder(binding.root) {
-        override fun bind(planet: Planet){
+        override fun bind(planet: Planet) {
             binding.name.text = planet.name
         }
     }

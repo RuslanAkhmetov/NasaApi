@@ -10,9 +10,23 @@ import com.geekbrain.android.nasa_api.databinding.FragmentRecyclerBinding
 class RecyclerFragment: Fragment() {
     private lateinit var binding:FragmentRecyclerBinding
 
+    private val planets = arrayListOf(
+        Planet( TYPE_HEADER,"Заголовок"),
+        Planet(TYPE_EARTH, "Earth"),
+        Planet( TYPE_EARTH,"Earth"),
+        Planet( TYPE_EARTH,"Earth"),
+        Planet( TYPE_EARTH,"Earth"),
+        Planet( TYPE_EARTH,"Earth", "Blue Planet"),
+        Planet( TYPE_MARS,"Mars", ""),
+        Planet( TYPE_EARTH,"Earth"),
+        Planet( TYPE_EARTH,"Earth"),
+        Planet( TYPE_EARTH,"Earth"),
+        Planet( TYPE_MARS,"Mars", null)
+    )
+
+    lateinit var adapter: RecyclerAdapter
     companion object {
         fun newInstance() = RecyclerFragment()
-
     }
 
     override fun onCreateView(
@@ -21,21 +35,26 @@ class RecyclerFragment: Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentRecyclerBinding.inflate(inflater, container,false)
-        val planets = arrayListOf(
-            Planet( TYPE_HEADER,"Заголовок"),
-            Planet(TYPE_EARTH, "Earth"),
-            Planet( TYPE_EARTH,"Earth"),
-            Planet( TYPE_EARTH,"Earth"),
-            Planet( TYPE_EARTH,"Earth"),
-            Planet( TYPE_EARTH,"Earth", "Blue Planet"),
-            Planet( TYPE_MARS,"Mars", ""),
-            Planet( TYPE_EARTH,"Earth"),
-            Planet( TYPE_EARTH,"Earth"),
-            Planet( TYPE_EARTH,"Earth"),
-            Planet( TYPE_MARS,"Mars", null)
-        )
-        binding.recyclerView.adapter = RecyclerAdapter(planets)
+        adapter = RecyclerAdapter(planets, callbackAdd, callbackRemove )
+        binding.recyclerView.adapter = adapter
         return binding.root
     }
+
+    val callbackAdd = object : AddItem{
+        override fun add(position: Int) {
+            planets.add(position, Planet(TYPE_MARS, "Mars(New)"))
+            adapter.setListPlanetAdd(planets, position)
+        }
+    }
+
+    val callbackRemove = object : RemoveItem{
+        override fun remove(position: Int) {
+            planets.removeAt(position)
+            adapter.setListPlanetRemove(planets, position)
+
+        }
+
+    }
+
 
 }
