@@ -139,8 +139,10 @@ dimen animation_margin
 dimen appMargin
 dimen app_bar_height
 dimen fab_margin
+dimen low_priopity_text_size
 dimen padding_5dp
 dimen shuffle_margin
+dimen usual_priority_text_size
 drawable background
 drawable bg_earth
 drawable bg_mars
@@ -152,6 +154,8 @@ drawable ic_archive
 drawable ic_back_fab
 drawable ic_baseline_animation_24
 drawable ic_baseline_auto_awesome_motion_24
+drawable ic_baseline_edit_24
+drawable ic_baseline_notes_24
 drawable ic_earth
 drawable ic_favourite_menu
 drawable ic_hamburger_menu_bottom_bar
@@ -186,7 +190,6 @@ id action_theme_moon
 id action_view_earth
 id action_view_mars
 id action_view_system
-id addItemImageView
 id appBar
 id appBarTextView
 id backgroundImage
@@ -207,7 +210,7 @@ id container
 id date
 id description
 id descriptionTextView
-id earthImageView
+id editItemImageView
 id end
 id epic_image_view
 id explanationTextView
@@ -226,8 +229,6 @@ id input
 id inputLayout
 id loadingLayout
 id mainFragmentLoadingLayout
-id marsDescriptionTextView
-id marsImageView
 id mars_curiosity_image_view
 id mid
 id moveItemDown
@@ -240,10 +241,9 @@ id paused
 id pictureOfTheDayImageView
 id play
 id play_pause_circle
-id recyclerActivityDiffUtilFAB
+id prioriry_label
 id recyclerActivityFAB
 id recyclerView
-id removeItemImageView
 id start
 id tabLayout2
 id tablayout
@@ -251,7 +251,6 @@ id tap
 id title
 id toolbarLayout
 id view_pager
-id wikiImageView
 layout activity_animation_end
 layout activity_animation_start
 layout activity_bottom_bar
@@ -271,9 +270,9 @@ layout fragment_recycler
 layout fragment_settings
 layout fragment_system
 layout loading_layout
-layout recycler_item_earth
 layout recycler_item_header
-layout recycler_item_mars
+layout recycler_item_note_low_priority
+layout recycler_item_usual_priority
 menu menu_bottom_navigation
 menu menu_bottom_navigation_view
 menu menu_main
@@ -301,6 +300,7 @@ string hint
 string home
 string layout
 string lorem_ipsum
+string low_prior_note
 string mars
 string mars_description
 string mars_theme
@@ -309,12 +309,15 @@ string moon_theme
 string motion
 string nasapictureoftheday
 string next
+string norm_prior_name
+string note_description
 string pause_left
 string pause_right
 string pause_right_play
 string picture_of_the_day
 string picture_of_the_day_request
 string previous
+string priority
 string red
 string second_fragment_label
 string shuffle

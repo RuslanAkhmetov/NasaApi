@@ -2249,6 +2249,7 @@ dimen hint_pressed_alpha_material_light
 dimen item_touch_helper_max_drag_scroll_per_frame
 dimen item_touch_helper_swipe_escape_max_velocity
 dimen item_touch_helper_swipe_escape_velocity
+dimen low_priopity_text_size
 dimen m3_alert_dialog_action_bottom_padding
 dimen m3_alert_dialog_action_top_padding
 dimen m3_alert_dialog_corner_size
@@ -2801,6 +2802,7 @@ dimen tooltip_precise_anchor_threshold
 dimen tooltip_vertical_padding
 dimen tooltip_y_offset_non_touch
 dimen tooltip_y_offset_touch
+dimen usual_priority_text_size
 drawable abc_ab_share_pack_mtrl_alpha
 drawable abc_action_bar_item_background_material
 drawable abc_btn_borderless_material
@@ -2908,6 +2910,8 @@ drawable ic_arrow_back_black_24
 drawable ic_back_fab
 drawable ic_baseline_animation_24
 drawable ic_baseline_auto_awesome_motion_24
+drawable ic_baseline_edit_24
+drawable ic_baseline_notes_24
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
 drawable ic_earth
@@ -3098,7 +3102,6 @@ id action_view_system
 id actions
 id activity_chooser_view_content
 id add
-id addItemImageView
 id alertTitle
 id aligned
 id all
@@ -3214,11 +3217,11 @@ id dragRight
 id dragStart
 id dragUp
 id dropdown_menu
-id earthImageView
 id easeIn
 id easeInOut
 id easeOut
 id east
+id editItemImageView
 id edit_query
 id elastic
 id embed
@@ -3306,8 +3309,6 @@ id ltr
 id m3_side_sheet
 id mainFragmentLoadingLayout
 id marquee
-id marsDescriptionTextView
-id marsImageView
 id mars_curiosity_image_view
 id masked
 id match_constraint
@@ -3419,15 +3420,14 @@ id play_pause_circle
 id position
 id postLayout
 id pressed
+id prioriry_label
 id progress_circular
 id progress_horizontal
 id radio
 id ratio
 id rectangles
-id recyclerActivityDiffUtilFAB
 id recyclerActivityFAB
 id recyclerView
-id removeItemImageView
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3579,7 +3579,6 @@ id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
 id west
-id wikiImageView
 id withText
 id with_icon
 id withinBounds
@@ -3787,9 +3786,9 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
-layout recycler_item_earth
 layout recycler_item_header
-layout recycler_item_mars
+layout recycler_item_note_low_priority
+layout recycler_item_usual_priority
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
@@ -3869,6 +3868,7 @@ string icon_content_description
 string item_view_role_description
 string layout
 string lorem_ipsum
+string low_prior_note
 string m3_sys_motion_easing_emphasized
 string m3_sys_motion_easing_emphasized_accelerate
 string m3_sys_motion_easing_emphasized_decelerate
@@ -3974,6 +3974,8 @@ string nasapictureoftheday
 string nav_app_bar_navigate_up_description
 string nav_app_bar_open_drawer_description
 string next
+string norm_prior_name
+string note_description
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
@@ -3985,6 +3987,7 @@ string pause_right_play
 string picture_of_the_day
 string picture_of_the_day_request
 string previous
+string priority
 string red
 string search_menu_title
 string searchbar_scrolling_view_behavior

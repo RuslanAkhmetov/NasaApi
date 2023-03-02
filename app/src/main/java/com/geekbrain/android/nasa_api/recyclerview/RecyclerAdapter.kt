@@ -1,23 +1,26 @@
 package com.geekbrain.android.nasa_api.recyclerview
 
-import android.util.Log
+import android.os.Build
+import android.text.Editable
+import android.text.TextWatcher
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.annotation.RequiresApi
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.geekbrain.android.nasa_api.R
-import com.geekbrain.android.nasa_api.databinding.RecyclerItemEarthBinding
 import com.geekbrain.android.nasa_api.databinding.RecyclerItemHeaderBinding
-import com.geekbrain.android.nasa_api.databinding.RecyclerItemMarsBinding
+import com.geekbrain.android.nasa_api.databinding.RecyclerItemNoteLowPriorityBinding
+import com.geekbrain.android.nasa_api.databinding.RecyclerItemUsualPriorityBinding
 import com.geekbrain.android.nasa_api.recyclerview.diffutil.Change
 import com.geekbrain.android.nasa_api.recyclerview.diffutil.DiffUtilCallback
 import com.geekbrain.android.nasa_api.recyclerview.diffutil.createCombinePayload
 
 class RecyclerAdapter(
-    private var listPlanet: MutableList<Pair<Planet, Boolean>>,
+    private var listNote: MutableList<Pair<Note, Boolean>>,
     val callbackAdd: AddItem,
     val callbackRemove: RemoveItem
 ) :
@@ -26,34 +29,38 @@ class RecyclerAdapter(
     private val TAG = "RecyclerAdapter"
 
     override fun getItemViewType(position: Int): Int {
-        return listPlanet[position].first.type
+        return listNote[position].first.priority
     }
 
-    fun setListPlanetForDiffUtil(newListPlanet: MutableList<Pair<Planet, Boolean>>) {
-        val diffAccount = DiffUtil.calculateDiff(DiffUtilCallback(listPlanet, newListPlanet))
+    fun setListNoteForDiffUtil(newListPlanet: MutableList<Pair<Note, Boolean>>) {
+        val diffAccount = DiffUtil.calculateDiff(DiffUtilCallback(listNote, newListPlanet))
         diffAccount.dispatchUpdatesTo(this)
-        listPlanet = newListPlanet
+        listNote = newListPlanet
     }
 
-    fun setListPlanetRemove(newListPlanet: MutableList<Pair<Planet, Boolean>>, position: Int) {
-        listPlanet = newListPlanet
+    fun setListNoteRemove(newListPlanet: MutableList<Pair<Note, Boolean>>, position: Int) {
+        listNote = newListPlanet
         notifyItemRemoved(position)
     }
 
-    fun setListPlanetAdd(newListPlanet: MutableList<Pair<Planet, Boolean>>, position: Int) {
-        listPlanet = newListPlanet
+    fun setListNoteAdd(newListPlanet: MutableList<Pair<Note, Boolean>>, position: Int) {
+        listNote = newListPlanet
         notifyItemInserted(position)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BaseViewHolder {
         return when (viewType) {
-            Planet.TYPE_EARTH-> {
-                val binding = RecyclerItemEarthBinding.inflate(LayoutInflater.from(parent.context))
-                EarthViewHolder(binding)
+            Note.PRIOR_LOW-> {
+                val binding = RecyclerItemNoteLowPriorityBinding.inflate(LayoutInflater.from(parent.context))
+                LowPriorityViewHolder(binding)
             }
-            Planet.TYPE_MARS -> {
-                val binding = RecyclerItemMarsBinding.inflate(LayoutInflater.from(parent.context))
-                MarsViewHolder(binding)
+            Note.PRIOR_NORM -> {
+                val binding = RecyclerItemUsualPriorityBinding.inflate(LayoutInflater.from(parent.context))
+                UsualPriorityViewHolder(binding)
+            }
+            Note.PRIOR_HEADER->{
+                val binding = RecyclerItemHeaderBinding.inflate(LayoutInflater.from(parent.context))
+                HeaderViewHolder(binding)
             }
             else -> {
                 val binding = RecyclerItemHeaderBinding.inflate(LayoutInflater.from(parent.context))
@@ -64,7 +71,7 @@ class RecyclerAdapter(
     }
 
     override fun onBindViewHolder(holder: BaseViewHolder, position: Int) {
-        holder.bind(listPlanet[position])
+        holder.bind(listNote[position])
     }
 
     override fun onBindViewHolder(
@@ -75,24 +82,19 @@ class RecyclerAdapter(
         if (payloads.isEmpty()) {
             super.onBindViewHolder(holder, position, payloads)
         } else {
-            val createCombinePayloads = createCombinePayload(payloads as List<Change<Pair<Planet, Boolean>>>)
-            Log.i(TAG, "onBindViewHolder new: ${createCombinePayloads.newData.first.name}")
-            Log.i(TAG, "onBindViewHolder old: ${createCombinePayloads.oldData.first.name}")
-            Log.i(TAG, "onBindViewHolder isThe same: ${{createCombinePayloads.oldData.first.name.toString()} == {createCombinePayloads.newData.first.name.toString()}}")
-            //if (createCombinePayloads.newData.first.name != createCombinePayloads.oldData.first.name)   // в данном случае это лишнее
+            val createCombinePayloads = createCombinePayload(payloads as List<Change<Pair<Note, Boolean>>>)
                 holder.itemView.findViewById<TextView>(R.id.name).text =
                     createCombinePayloads.newData.first.name
-            //}
         }
     }
 
     override fun getItemCount(): Int {
-        return listPlanet.size
+        return listNote.size
     }
 
     abstract class BaseViewHolder(view: View) :
         RecyclerView.ViewHolder(view), ItemTouchHelperViewHolder {
-        abstract fun bind(planet: Pair<Planet, Boolean>)
+        abstract fun bind(planet: Pair<Note, Boolean>)
 
         override fun onItemSelect() {
             itemView.setBackgroundColor(
@@ -104,74 +106,113 @@ class RecyclerAdapter(
         }
     }
 
-    inner class MarsViewHolder(val binding: RecyclerItemMarsBinding) :
+    inner class UsualPriorityViewHolder(val binding: RecyclerItemUsualPriorityBinding) :
         BaseViewHolder(binding.root), ItemTouchHelperViewHolder {
-        override fun bind(planet: Pair<Planet, Boolean>) {
-            binding.name.text = planet.first.name
+        @RequiresApi(Build.VERSION_CODES.O)
+        override fun bind(noteItem: Pair<Note, Boolean>) {
+            binding.name.text = noteItem.first.name
+            binding.descriptionTextView.text =
+                Editable.Factory.getInstance().newEditable(noteItem.first.noteDescription)
 
-            binding.marsDescriptionTextView.visibility = if (listPlanet[layoutPosition].second){
-                View.VISIBLE
-            } else{
-                View.GONE
-            }
-
-            binding.marsImageView.setOnClickListener{
-                listPlanet[layoutPosition] = listPlanet[layoutPosition].let {
+            binding.editItemImageView.setOnClickListener {
+                listNote[layoutPosition] = listNote[layoutPosition].let {
                     it.first to !it.second
                 }
+                if (listNote[layoutPosition].second) {
+                    binding.descriptionTextView.focusable = View.FOCUSABLE
+                } else{
+                    binding.descriptionTextView.focusable = View.NOT_FOCUSABLE
+                    notifyItemChanged(layoutPosition)
+                }
+            }
 
+            val textWatcher = object : TextWatcher {
+                override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+                }
+
+                override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                }
+
+                override fun afterTextChanged(s: Editable?) {
+                    listNote[layoutPosition] = listNote[layoutPosition].let {
+                        it.first.noteDescription = binding.descriptionTextView.text.toString()
+                        it.first to !it.second
+                    }
+
+                }
+            }
+
+            binding.descriptionTextView.addTextChangedListener(textWatcher)
+
+
+            binding.moveItemDown.setOnClickListener{
+                noteItem.first.priority = Note.PRIOR_LOW
                 notifyItemChanged(layoutPosition)
             }
 
-            binding.addItemImageView.setOnClickListener {
-                callbackAdd.add(layoutPosition)
-            }
 
-            binding.removeItemImageView.setOnClickListener {
-                callbackRemove.remove(layoutPosition)
-            }
-
-            binding.moveItemUp.setOnClickListener{
-                if (layoutPosition > 0 &&
-                    getItemViewType(layoutPosition-1) != Planet.TYPE_HEADER) {
-                    listPlanet.removeAt(layoutPosition).apply {
-                        listPlanet.add(layoutPosition - 1, this)
-                    }
-                    notifyItemMoved(layoutPosition, layoutPosition - 1)
-                }
-            }
-
-            binding.moveItemDown.setOnClickListener{
-                if(layoutPosition < listPlanet.size) {
-                    listPlanet.removeAt(layoutPosition).apply {
-                        listPlanet.add(layoutPosition + 1, this)
-                    }
-                    notifyItemMoved(layoutPosition, layoutPosition + 1)
-                }
-            }
         }
 
     }
 
-    class EarthViewHolder(val binding: RecyclerItemEarthBinding) :
-        BaseViewHolder(binding.root) {
-        override fun bind(planet: Pair<Planet, Boolean>) {
-            binding.name.text = planet.first.name
-            binding.descriptionTextView.text = planet.first.someDescription
+    inner class LowPriorityViewHolder(val binding: RecyclerItemNoteLowPriorityBinding) :
+        BaseViewHolder(binding.root), ItemTouchHelperViewHolder {
+        @RequiresApi(Build.VERSION_CODES.O)
+        override fun bind(noteItem: Pair<Note, Boolean>) {
+            binding.name.text = noteItem.first.name
+            binding.descriptionTextView.text =
+                Editable.Factory.getInstance().newEditable(noteItem.first.noteDescription)
+
+            binding.editItemImageView.setOnClickListener {
+                listNote[layoutPosition] = listNote[layoutPosition].let {
+                    it.first to !it.second
+                }
+                if (listNote[layoutPosition].second) {
+                    binding.descriptionTextView.focusable = View.FOCUSABLE
+                } else{
+                    binding.descriptionTextView.focusable = View.NOT_FOCUSABLE
+                    notifyItemChanged(layoutPosition)
+                }
+            }
+
+            val textWatcher = object : TextWatcher {
+                override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+                }
+
+                override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                }
+
+                override fun afterTextChanged(s: Editable?) {
+                    listNote[layoutPosition] = listNote[layoutPosition].let {
+                        it.first.noteDescription = binding.descriptionTextView.text.toString()
+                        it.first to !it.second
+                    }
+
+                }
+            }
+
+            binding.descriptionTextView.addTextChangedListener(textWatcher)
+
+            binding.moveItemUp.setOnClickListener{
+                    noteItem.first.priority = Note.PRIOR_NORM
+                    notifyItemChanged(layoutPosition)
+            }
+
+
         }
 
     }
 
     class HeaderViewHolder(val binding: RecyclerItemHeaderBinding) :
         BaseViewHolder(binding.root) {
-        override fun bind(planet: Pair<Planet, Boolean>) {
-            binding.name.text = planet.first.name
+        override fun bind(noteItem: Pair<Note, Boolean>) {
+            binding.name.text = noteItem.first.name
         }
     }
 
     override fun onItemMove(fromPosition: Int, toPosition: Int) {
-       listPlanet.removeAt(fromPosition).apply {
-           listPlanet.add(toPosition, this)
+       listNote.removeAt(fromPosition).apply {
+           listNote.add(toPosition, this)
        }
         notifyItemMoved(fromPosition, toPosition)
     }
@@ -182,3 +223,4 @@ class RecyclerAdapter(
 
 
 }
+

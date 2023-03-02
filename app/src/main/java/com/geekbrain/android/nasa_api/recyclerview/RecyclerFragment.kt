@@ -11,21 +11,16 @@ import com.geekbrain.android.nasa_api.databinding.FragmentRecyclerBinding
 class RecyclerFragment : Fragment() {
     private lateinit var binding: FragmentRecyclerBinding
 
-    private val planets = arrayListOf(
-        Pair(Planet(id = 0, Planet.TYPE_HEADER, "Заголовок"), false),
-        Pair(Planet(1, Planet.TYPE_EARTH, "Earth"), false),
-        Pair(Planet(2, Planet.TYPE_EARTH, "Earth"), false),
-        Pair(Planet(3, Planet.TYPE_EARTH, "Earth"), false),
-        Pair(Planet(4, Planet.TYPE_EARTH, "Earth"), false),
-        Pair(Planet(5, Planet.TYPE_EARTH, "Earth", "Blue Planet"), false),
-        Pair(Planet(6, Planet.TYPE_MARS, "Mars", ""), false),
-        Pair(Planet(7, Planet.TYPE_EARTH, "Earth"), false),
-        Pair(Planet(8, Planet.TYPE_EARTH, "Earth"), false),
-        Pair(Planet(9, Planet.TYPE_EARTH, "Earth"), false),
-        Pair(Planet(10, Planet.TYPE_MARS, "Mars", null), false),
+    private val notes = arrayListOf(
+        Pair(Note(id = 0, Note.PRIOR_HEADER, "To Do"), false),
+        Pair(Note(1, Note.PRIOR_NORM, "Feed", "Feed Dog"), false),
+        Pair(Note(2, Note.PRIOR_LOW, "Feed", "Feed Cat"), false),
+        Pair(Note(3, Note.PRIOR_LOW, "Feed", "Feed Fish"), false),
+        Pair(Note(id = 0, Note.PRIOR_HEADER, "Notes"), false),
+        Pair(Note(7, Note.PRIOR_LOW, "Weather", "Today is Shiny day"), false),
+        Pair(Note(8, Note.PRIOR_LOW, "Traffic", "Traffic jam"), false),
     )
 
-    private var isNewList = false
 
     lateinit var adapter: RecyclerAdapter
 
@@ -39,12 +34,13 @@ class RecyclerFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentRecyclerBinding.inflate(inflater, container, false)
-        adapter = RecyclerAdapter(planets, callbackAdd, callbackRemove)
+        adapter = RecyclerAdapter(notes, callbackAdd, callbackRemove)
         binding.recyclerView.adapter = adapter
         ItemTouchHelper(ItemTouchHelperCallback(adapter))
             .attachToRecyclerView(binding.recyclerView)
-        binding.recyclerActivityDiffUtilFAB.setOnClickListener{
-            changeAdapterData()
+
+        binding.recyclerActivityFAB.setOnClickListener{
+            callbackAdd.add(notes.size)
         }
 
         return binding.root
@@ -52,44 +48,16 @@ class RecyclerFragment : Fragment() {
 
     val callbackAdd = object : AddItem {
         override fun add(position: Int) {
-            planets.add(position, Pair(Planet(adapter.itemCount, Planet.TYPE_MARS, "Mars(New)"),false))
-            adapter.setListPlanetAdd(planets, position)
+            notes.add(position, Pair(Note(adapter.itemCount, Note.PRIOR_NORM, "TO DO(New)"),false))
+            adapter.setListNoteAdd(notes, position)
         }
     }
 
     val callbackRemove = object : RemoveItem {
         override fun remove(position: Int) {
-            planets.removeAt(position)
-            adapter.setListPlanetRemove(planets, position)
+            notes.removeAt(position)
+            adapter.setListNoteRemove(notes, position)
 
-        }
-    }
-
-    private fun changeAdapterData() {
-        adapter.setListPlanetForDiffUtil (createItemList(isNewList).map { it }.toMutableList())
-        isNewList=!isNewList
-    }
-
-    private fun createItemList(instanceNumber: Boolean): List<Pair<Planet, Boolean>> {
-        return when (instanceNumber) {
-            false -> listOf(
-                Pair(Planet(0, Planet.TYPE_HEADER, "Header"), false),
-                Pair(Planet(1, Planet.TYPE_MARS, "Mars", ""), false),
-                Pair(Planet(2, Planet.TYPE_MARS, "Mars", ""), false),
-                Pair(Planet(3, Planet.TYPE_MARS, "Mars", ""), false),
-                Pair(Planet(4, Planet.TYPE_MARS, "Mars", ""), false),
-                Pair(Planet(5, Planet.TYPE_MARS, "Mars", ""), false),
-                Pair(Planet(6, Planet.TYPE_MARS, "Mars", ""), false)
-            )
-            true -> listOf(
-                Pair(Planet(0, Planet.TYPE_HEADER, "Header"), false),
-                Pair(Planet(1, Planet.TYPE_MARS, "Mars", ""), false),
-                Pair(Planet(2, Planet.TYPE_MARS, "Jupiter", ""), false),
-                Pair(Planet(3, Planet.TYPE_MARS, "Mars", ""), false),
-                Pair(Planet(4, Planet.TYPE_MARS, "Neptune", ""), false),
-                Pair(Planet(5, Planet.TYPE_MARS, "Saturn", ""), false),
-                Pair(Planet(6, Planet.TYPE_MARS, "Mars", ""), false)
-            )
         }
     }
 

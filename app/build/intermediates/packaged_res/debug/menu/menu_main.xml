@@ -4,8 +4,8 @@
     tools:context="com.geekbrain.android.nasa_api.MainActivity">
     <item
         android:id="@+id/action_bar_favorite"
-        android:icon="@drawable/ic_favourite_menu"
-        android:title="@string/fayvourite"
+        android:icon="@drawable/ic_baseline_notes_24"
+        android:title="Notes"
         app:showAsAction="ifRoom" />
 
     <item

@@ -1,11 +1,11 @@
 package com.geekbrain.android.nasa_api.recyclerview.diffutil
 
 import androidx.recyclerview.widget.DiffUtil
-import com.geekbrain.android.nasa_api.recyclerview.Planet
+import com.geekbrain.android.nasa_api.recyclerview.Note
 
 class DiffUtilCallback(
-    private val oldItems: List<Pair<Planet,Boolean>>,
-    private val newItems: List<Pair<Planet,Boolean>>,
+    private val oldItems: List<Pair<Note,Boolean>>,
+    private val newItems: List<Pair<Note,Boolean>>,
 ): DiffUtil.Callback() {
     override fun getOldListSize(): Int {
         return oldItems.size

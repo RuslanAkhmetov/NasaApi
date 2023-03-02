@@ -5,4 +5,6 @@
     <dimen name="appMargin">10dp</dimen>
     <dimen name="animation_margin">16dp</dimen>
     <dimen name="shuffle_margin">16dp</dimen>
+    <dimen name="low_priopity_text_size">24sp</dimen>
+    <dimen name="usual_priority_text_size">28sp</dimen>
 </resources>
