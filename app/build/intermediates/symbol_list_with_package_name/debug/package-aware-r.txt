@@ -3847,6 +3847,7 @@ string bottomsheet_drag_handle_content_description
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
+string cicero
 string clear_text_end_icon_content_description
 string clockwise_circle
 string danielson_crater
@@ -3881,7 +3882,6 @@ string m3_sys_motion_easing_standard
 string m3_sys_motion_easing_standard_accelerate
 string m3_sys_motion_easing_standard_decelerate
 string mars
-string mars_description
 string mars_theme
 string marscuriosity
 string material_clock_display_divider
@@ -3976,6 +3976,7 @@ string nav_app_bar_open_drawer_description
 string next
 string norm_prior_name
 string note_description
+string notes
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through

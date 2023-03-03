@@ -8,8 +8,8 @@
         "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\layout\\activity_animation_start.xml"
     },
     {
-        "merged": "com.geekbrain.android.nasa_api.app-merged_res-46:/layout_recycler_item_note_low_priority.xml.flat",
-        "source": "com.geekbrain.android.nasa_api.app-main-48:/layout/recycler_item_note_low_priority.xml"
+        "merged": "com.geekbrain.android.nasa_api.app-merged_res-46:/layout_fragment_picture_of_the_day.xml.flat",
+        "source": "com.geekbrain.android.nasa_api.app-main-48:/layout/fragment_picture_of_the_day.xml"
     },
     {
         "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-merged_res-46:\\drawable-v24_mars_photo.png.flat",
@@ -70,10 +70,6 @@
     {
         "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-merged_res-46:\\layout_bottom_navigation_layout.xml.flat",
         "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\layout\\bottom_navigation_layout.xml"
-    },
-    {
-        "merged": "com.geekbrain.android.nasa_api.app-merged_res-46:/layout_recycler_item_usual_priority.xml.flat",
-        "source": "com.geekbrain.android.nasa_api.app-main-48:/layout/recycler_item_usual_priority.xml"
     },
     {
         "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-merged_res-46:\\drawable_ic_baseline_auto_awesome_motion_24.xml.flat",

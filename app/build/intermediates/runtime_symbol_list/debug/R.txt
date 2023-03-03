@@ -3846,6 +3846,7 @@ int string bottomsheet_drag_handle_content_description 0x7f13002b
 int string character_counter_content_description 0x7f13002c
 int string character_counter_overflowed_content_description 0x7f13002d
 int string character_counter_pattern 0x7f13002e
+int string cicero 0x7f1300cb
 int string clear_text_end_icon_content_description 0x7f13002f
 int string clockwise_circle 0x7f130030
 int string danielson_crater 0x7f130031
@@ -3880,7 +3881,6 @@ int string m3_sys_motion_easing_standard 0x7f13004d
 int string m3_sys_motion_easing_standard_accelerate 0x7f13004e
 int string m3_sys_motion_easing_standard_decelerate 0x7f13004f
 int string mars 0x7f130050
-int string mars_description 0x7f130051
 int string mars_theme 0x7f130052
 int string marscuriosity 0x7f130053
 int string material_clock_display_divider 0x7f130054
@@ -3975,6 +3975,7 @@ int string nav_app_bar_open_drawer_description 0x7f1300ac
 int string next 0x7f1300ad
 int string norm_prior_name 0x7f1300ae
 int string note_description 0x7f1300af
+int string notes 0x7f1300cc
 int string password_toggle_content_description 0x7f1300b0
 int string path_password_eye 0x7f1300b1
 int string path_password_eye_mask_strike_through 0x7f1300b2

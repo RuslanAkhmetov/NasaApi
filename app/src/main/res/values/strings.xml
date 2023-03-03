@@ -50,6 +50,17 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <string name="cicero">
+        Sed ut perspiciatis, unde omnis iste natus error sit voluptatem
+        accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo
+        inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim
+        ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia
+        consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro
+        quisquam est, qui dolorem ipsum, quia dolor sit amet consectetur adipisci[ng] velit,
+        sed quia non numquam [do] eius modi tempora inci[di]dunt, ut labore et dolore magnam
+        aliquam quaerat voluptatem.
+    </string>
+
     <string name="nasapictureoftheday">NasaPictureOfTheDay</string>
     <string name="hint">Wiki search</string>
     <string name="before_yesterday">Before yesterday</string>
@@ -74,7 +85,10 @@
     <string name="transitions_example">Transitions example</string>
     <string name="tap_on_me">TAP ON ME</string>
     <string name="shuffle">SHUFFLE</string>
-    <string name="danielson_crater">На фото видно камни и песок в кратере Даниэлсона (диаметр кратера около 67 км), расположенного на юго-востоке области Arabia Terra.</string>
+    <string name="danielson_crater">
+        На фото видно камни и песок в кратере Даниэлсона (диаметр кратера около 67 км),
+        расположенного на юго-востоке области Arabia Terra.
+    </string>
     <string name="home">Home</string>
     <string name="animation">Animation</string>
     <string name="earth_item">Земля</string>

@@ -4,6 +4,13 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
+import android.text.Spannable
+import android.text.SpannableString
+import android.text.SpannableStringBuilder
+import android.text.Spanned
+import android.text.style.BulletSpan
+import android.text.style.ForegroundColorSpan
+import android.text.style.ImageSpan
 import android.transition.TransitionManager
 import android.util.Log
 import android.view.*
@@ -11,16 +18,18 @@ import android.widget.ImageView
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.content.ContextCompat
+import androidx.core.graphics.drawable.toBitmap
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import coil.dispose
-import coil.load
 import com.geekbrain.android.nasa_api.R
 import com.geekbrain.android.nasa_api.databinding.FragmentPictureOfTheDayBinding
 import com.geekbrain.android.nasa_api.recyclerview.RecyclerFragment
 import com.geekbrain.android.nasa_api.view.drawer.BottomNavigationDrawerFragment
 import com.geekbrain.android.nasa_api.view.picture.utils.DAYS
 import com.geekbrain.android.nasa_api.view.picture.utils.getSelectedDay
+import com.geekbrain.android.nasa_api.view.picture.utils.indexesOf
 import com.geekbrain.android.nasa_api.view.settings.SettingsFragment
 import com.geekbrain.android.nasa_api.viewmodel.AppState
 import com.geekbrain.android.nasa_api.viewmodel.PictureOfTheDayViewModel
@@ -166,12 +175,73 @@ class PictureOfTheDayFragment : Fragment() {
                 binding.mainFragmentLoadingLayout.visibility = View.GONE
                 binding.pictureOfTheDayImageView.visibility = View.VISIBLE
                 binding.explanationTextView.visibility = View.VISIBLE
-                binding.pictureOfTheDayImageView.load(responseAppState.pictureOfTheDayResponseData.url) {
+               /* binding.pictureOfTheDayImageView.load(responseAppState.pictureOfTheDayResponseData.url) {
                     error(R.drawable.ic_load_error_vector)
-                    placeholder(R.drawable.ic_hamburger_menu_bottom_bar)
+                    placeholder(R.drawable.bg_system)
+                }*/
+
+                //binding.explanationTextView.text = responseAppState.pictureOfTheDayResponseData.explanation
+
+                //binding.explanationTextView.typeface =
+                //    Typeface.createFromAsset(requireActivity().assets, "azeret/AzeretMono-Light.ttf")
+
+                val spanned: Spanned
+                val spannableString : SpannableString
+                val spannableStringBuilder: SpannableStringBuilder
+
+                //val textSample = "My Text <ul> <li> bullet one</li> <li> bullet two</li> </ul>"
+                //binding.explanationTextView.text = Html.fromHtml(textSample)        // решение 90х
+
+                val textNewSample = "My Text \nbullet one \n bullet two"
+
+                spannableString = SpannableString(textNewSample)
+
+                val bulletSpan = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+                    BulletSpan(20, resources.getColor(R.color.my_color), 20)
+                } else {
+                    BulletSpan(20, resources.getColor(R.color.my_color))
                 }
-                binding.explanationTextView.text =
-                    responseAppState.pictureOfTheDayResponseData.explanation
+
+                val bitmap = ContextCompat.getDrawable(requireContext(), R.drawable.ic_earth )!!.toBitmap()
+
+                for(i in textNewSample.indices){
+                    if(textNewSample[i] == 't'){
+                        spannableString.setSpan(
+                            ForegroundColorSpan(ContextCompat.getColor(requireContext(), R.color.colorAccent)),
+                            i, i+1, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+                    } else if(textNewSample[i] == 'o'){
+                        bitmap?.let {
+                        spannableString.setSpan(
+                             ImageSpan(it) ,
+                            i, i+1, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+                        }
+                    }
+                }
+
+                Log.i(TAG, "renderDateFromNasa: ${textNewSample.indexesOf("\n").toString()}")
+
+
+                val result = textNewSample.indexesOf("\n")
+                var current = result.first()
+                result.forEach{
+                    if(it != current){
+                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+                            spannableString.setSpan( BulletSpan(20, resources.getColor(R.color.my_color), 20),
+                                current+1, it, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
+                            )
+                        }
+                    }
+                    current = it
+                }
+
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+                    spannableString.setSpan( BulletSpan(20, resources.getColor(R.color.my_color), 20),
+                        current+1, spannableString.length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
+                    )
+                }
+
+                binding.explanationTextView.text = spannableString
+
 
             }
         }

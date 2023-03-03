@@ -288,6 +288,7 @@ string app_name
 string application
 string before_yesterday
 string blue
+string cicero
 string clockwise_circle
 string danielson_crater
 string earth
@@ -302,7 +303,6 @@ string layout
 string lorem_ipsum
 string low_prior_note
 string mars
-string mars_description
 string mars_theme
 string marscuriosity
 string moon_theme
@@ -311,6 +311,7 @@ string nasapictureoftheday
 string next
 string norm_prior_name
 string note_description
+string notes
 string pause_left
 string pause_right
 string pause_right_play
