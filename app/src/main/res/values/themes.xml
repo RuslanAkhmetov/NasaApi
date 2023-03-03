@@ -18,6 +18,7 @@
         <item name="tabStyle">@style/MyTabLayoutStyle</item>
         <item name="bottomNavigationStyle">@style/MyBottomNavigationView</item>
         <item name="materialCardViewStyle">@style/MyCardViewStyle</item>
+        <item name="fontFamily">@font/aclonica</item>
         <!-- <item name="textAppearanceLabelLarge">@style/MyTextAppearanceBody2</item>-->
 
     </style>

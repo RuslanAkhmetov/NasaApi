@@ -15,14 +15,18 @@
         </item>
     </string-array>
     <array name="preloaded_fonts" translatable="false">
+        <item>@font/aclonica</item>
         <item>@font/aladin</item>
     </array>
     <attr format="color" name="myColor"/>
     <attr format="color" name="myColor2"/>
     <color name="black">#FF000000</color>
+    <color name="blue">#03A9F4</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="colorAccent40Alfa">#6603DAC5</color>
     <color name="color_gray">#668E8A8A</color>
+    <color name="green">#A8EA5D</color>
+    <color name="lightblue">#00BCD4</color>
     <color name="mars_seed">#c700e0</color>
     <color name="mars_theme_dark_background">#1E1A1D</color>
     <color name="mars_theme_dark_error">#FFB4AB</color>
@@ -146,7 +150,11 @@
     <color name="moon_theme_light_tertiary">#5A5C7E</color>
     <color name="moon_theme_light_tertiaryContainer">#E0E0FF</color>
     <color name="my_color">#2E468E</color>
+    <color name="orange">#FF9800</color>
+    <color name="purple">#9C27B0</color>
+    <color name="red">#FF5722</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#FFEB3B</color>
     <dimen name="animation_margin">16dp</dimen>
     <dimen name="appMargin">10dp</dimen>
     <dimen name="app_bar_height">300dp</dimen>
@@ -266,6 +274,7 @@
         <item name="tabStyle">@style/MyTabLayoutStyle</item>
         <item name="bottomNavigationStyle">@style/MyBottomNavigationView</item>
         <item name="materialCardViewStyle">@style/MyCardViewStyle</item>
+        <item name="fontFamily">@font/aclonica</item>
         
 
     </style>

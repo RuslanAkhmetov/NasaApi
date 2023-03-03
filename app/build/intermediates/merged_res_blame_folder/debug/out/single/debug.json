@@ -192,6 +192,10 @@
         "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-merged_res-46:\\font_aclonica.xml.flat",
+        "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\font\\aclonica.xml"
+    },
+    {
         "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-merged_res-46:\\xml_data_extraction_rules.xml.flat",
         "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\xml\\data_extraction_rules.xml"
     },
@@ -290,6 +294,10 @@
     {
         "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-merged_res-46:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-merged_res-46:\\drawable_error.png.flat",
+        "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\drawable\\error.png"
     },
     {
         "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-merged_res-46:\\drawable-v24_ic_back_fab.xml.flat",

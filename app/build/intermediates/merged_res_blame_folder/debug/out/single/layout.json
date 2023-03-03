@@ -44,12 +44,12 @@
         "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\layout\\recycler_item_note_low_priority.xml"
     },
     {
-        "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-mergeDebugResources-45:\\layout\\activity_view_pager.xml",
-        "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\layout\\activity_view_pager.xml"
-    },
-    {
         "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-mergeDebugResources-45:\\layout\\animation_explode_list_item.xml",
         "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\layout\\animation_explode_list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-mergeDebugResources-45:\\layout\\activity_view_pager.xml",
+        "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\layout\\activity_view_pager.xml"
     },
     {
         "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-mergeDebugResources-45:\\layout\\fragment_recycler.xml",
@@ -84,11 +84,11 @@
         "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\layout\\fragment_epic.xml"
     },
     {
-        "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-mergeDebugResources-45:\\layout\\fragment_coordinator.xml",
-        "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\layout\\fragment_coordinator.xml"
-    },
-    {
         "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-mergeDebugResources-45:\\layout\\fragment_mars_curiosity.xml",
         "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\layout\\fragment_mars_curiosity.xml"
+    },
+    {
+        "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-mergeDebugResources-45:\\layout\\fragment_coordinator.xml",
+        "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\layout\\fragment_coordinator.xml"
     }
 ]

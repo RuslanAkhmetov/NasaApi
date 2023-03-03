@@ -3,18 +3,16 @@ package com.geekbrain.android.nasa_api.view.picture
 import android.content.Intent
 import android.graphics.Typeface
 import android.net.Uri
-import android.os.Build
-import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
+import android.os.*
 import android.text.Spannable
 import android.text.SpannableString
-import android.text.SpannableStringBuilder
 import android.text.Spanned
-import android.text.style.BulletSpan
 import android.text.style.ForegroundColorSpan
-import android.text.style.ImageSpan
+import android.text.style.LeadingMarginSpan
+import android.text.style.LineHeightSpan
+import android.text.style.StyleSpan
 import android.text.style.TypefaceSpan
+import android.text.style.UnderlineSpan
 import android.transition.TransitionManager
 import android.util.Log
 import android.view.*
@@ -24,7 +22,6 @@ import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
-import androidx.core.graphics.drawable.toBitmap
 import androidx.core.provider.FontRequest
 import androidx.core.provider.FontsContractCompat
 import androidx.fragment.app.Fragment
@@ -37,7 +34,6 @@ import com.geekbrain.android.nasa_api.recyclerview.RecyclerFragment
 import com.geekbrain.android.nasa_api.view.drawer.BottomNavigationDrawerFragment
 import com.geekbrain.android.nasa_api.view.picture.utils.DAYS
 import com.geekbrain.android.nasa_api.view.picture.utils.getSelectedDay
-import com.geekbrain.android.nasa_api.view.picture.utils.indexesOf
 import com.geekbrain.android.nasa_api.view.settings.SettingsFragment
 import com.geekbrain.android.nasa_api.viewmodel.AppState
 import com.geekbrain.android.nasa_api.viewmodel.PictureOfTheDayViewModel
@@ -79,7 +75,7 @@ class PictureOfTheDayFragment : Fragment() {
 
     }
 
-    @RequiresApi(Build.VERSION_CODES.O)
+    @RequiresApi(Build.VERSION_CODES.Q)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -166,6 +162,7 @@ class PictureOfTheDayFragment : Fragment() {
         return super.onOptionsItemSelected(item)
     }
 
+    @RequiresApi(Build.VERSION_CODES.Q)
     private fun renderDateFromNasa(responseAppState: AppState) {
         when (responseAppState) {
             is AppState.Error -> {
@@ -184,59 +181,50 @@ class PictureOfTheDayFragment : Fragment() {
                 binding.pictureOfTheDayImageView.visibility = View.VISIBLE
                 binding.explanationTextView.visibility = View.VISIBLE
                 binding.pictureOfTheDayImageView.load(responseAppState.pictureOfTheDayResponseData.url) {
-                    error(R.drawable.ic_load_error_vector)
+                    error(R.drawable.error)
                     placeholder(R.drawable.bg_system)
                 }
 
                 val textExplanation = responseAppState.pictureOfTheDayResponseData.explanation
 
-                var spannableStringBuilder = SpannableStringBuilder(textExplanation)
+                var spannableString = SpannableString(textExplanation)
 
                 binding.explanationTextView.setText(
-                    spannableStringBuilder,
-                    TextView.BufferType.EDITABLE
+                    spannableString,
+                    TextView.BufferType.SPANNABLE
                 )
 
-                spannableStringBuilder = binding.explanationTextView.text as SpannableStringBuilder
+                spannableString = binding.explanationTextView.text as SpannableString
 
+                spannableString.apply {
+                    val startIndex = 0
+                    val endIndex = this.length
+                    val flag = Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
 
-                //binding.explanationTextView.typeface =
-                //    Typeface.createFromAsset(requireActivity().assets, "azeret/AzeretMono-Light.ttf")
-                //val textSample = "My Text <ul> <li> bullet one</li> <li> bullet two</li> </ul>"
-                //binding.explanationTextView.text = Html.fromHtml(textSample)        // решение 90х
+                    val boldTextEnd = if (endIndex < 30) this.length else 30
 
-                val spanned: Spanned
-                val spannableString: SpannableString
-
-
-                //val textNewSample = "My text \nbullet one \n bullet two"
-
-                val bitmap =
-                    ContextCompat.getDrawable(requireContext(), R.drawable.ic_earth)!!.toBitmap()
-
-
-                val ColorList = listOf(
-                    ContextCompat.getColor(requireContext(), R.color.red),
-                    ContextCompat.getColor(requireContext(), R.color.orange),
-                    ContextCompat.getColor(requireContext(), R.color.yellow),
-                    ContextCompat.getColor(requireContext(), R.color.green),
-                    ContextCompat.getColor(requireContext(), R.color.lightblue),
-                    ContextCompat.getColor(requireContext(), R.color.blue),
-                    ContextCompat.getColor(requireContext(), R.color.purple),
-                )
-
-                Log.i(TAG, "renderDateFromNasa: ${ColorList.toString()}")
-
-                for (i in textExplanation.indices) {
-                    val color: Int = ColorList.get(i % ColorList.size)
-                    spannableStringBuilder.setSpan(
-                        ForegroundColorSpan(color),
-                        i, i + 1, Spanned.SPAN_INCLUSIVE_INCLUSIVE
+                    setSpan(
+                        StyleSpan(Typeface.BOLD), startIndex, boldTextEnd, flag
                     )
 
+                    val underlinedTextEnd = if (endIndex < 20) endIndex else 20
+
+                    setSpan(
+                        UnderlineSpan(), startIndex, underlinedTextEnd, flag
+                    )
+
+                    val marginEndIndex = if(endIndex <50) endIndex else 50
+                    setSpan(
+                        LeadingMarginSpan.Standard(50), startIndex, marginEndIndex, flag
+                    )
+
+                    val lineHeight = 60
+
+                    setSpan(
+                        LineHeightSpan.Standard(lineHeight), startIndex, endIndex, flag)
                 }
 
-                /*val request = FontRequest(
+                val request = FontRequest(
                     "com.google.android.gms.fonts",
                     "com.google.android.gms",
                     "Aladin",
@@ -247,9 +235,9 @@ class PictureOfTheDayFragment : Fragment() {
                     @RequiresApi(Build.VERSION_CODES.P)
                     override fun onTypefaceRetrieved(typeface: Typeface?) {
                         typeface?.let {
-                            spannableStringBuilder.setSpan(
+                            spannableString.setSpan(
                                 TypefaceSpan(it),
-                                0, spannableStringBuilder.length,
+                                0, spannableString.length,
                                 Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
                             )
                         }
@@ -257,35 +245,67 @@ class PictureOfTheDayFragment : Fragment() {
                 }
 
 
-                FontsContractCompat.requestFont(
+                /*FontsContractCompat.requestFont(
                     requireContext(), request, fontCallback, Handler(
                         Looper.getMainLooper()
                     )
-                )
-*/
-                /*val result = textNewSample.indexesOf("\n")
-                    var current = result.first()
-                    result.forEach {
-                        if (it != current) {
-                            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
-                                spannableStringBuilder.setSpan(
-                                    BulletSpan(20, resources.getColor(R.color.my_color), 20),
-                                    current + 1, it, Spannable.SPAN_INCLUSIVE_INCLUSIVE
-                                )
-                            }
-                        }
-                        current = it
-                    }
-                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
-                        spannableStringBuilder.setSpan(
-                            BulletSpan(20, resources.getColor(R.color.my_color), 20),
-                            current + 1,
-                            spannableStringBuilder.length,
-                            Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
-                        )
-                    }*/
+                )*/
 
             }
+        }
+    }
+
+    private fun rainbow(
+        firstColor: Int,
+        textExplanation: String,
+        spannableStringBuilder: SpannableString
+    ) {
+        val ColorList = listOf(
+            ContextCompat.getColor(requireContext(), R.color.red),
+            ContextCompat.getColor(requireContext(), R.color.orange),
+            ContextCompat.getColor(requireContext(), R.color.yellow),
+            ContextCompat.getColor(requireContext(), R.color.green),
+            ContextCompat.getColor(requireContext(), R.color.lightblue),
+            ContextCompat.getColor(requireContext(), R.color.blue),
+            ContextCompat.getColor(requireContext(), R.color.purple),
+        )
+
+        var currentColor = firstColor
+        val timer = object : CountDownTimer(20000, 200) {
+            override fun onTick(millisUntilFinished: Long) {
+                paintText(currentColor, textExplanation, spannableStringBuilder, ColorList)
+                currentColor = ++currentColor % ColorList.size
+            }
+
+            override fun onFinish() {
+                rainbow(currentColor, textExplanation, spannableStringBuilder)
+            }
+        }
+        timer.start()
+
+    }
+
+    private fun paintText(
+        firstColor: Int,
+        textExplanation: String,
+        spannableStringBuilder: SpannableString,
+        ColorList: List<Int>
+    ) {
+        val spanArray = spannableStringBuilder.getSpans(
+            0, spannableStringBuilder.length,
+            ForegroundColorSpan::class.java
+        )
+
+        for (span in spanArray) {
+            spannableStringBuilder.removeSpan(span)
+        }
+
+        for (i in textExplanation.indices) {
+            val color: Int = ColorList[(i + firstColor) % ColorList.size]
+            spannableStringBuilder.setSpan(
+                ForegroundColorSpan(color),
+                i, i + 1, Spanned.SPAN_INCLUSIVE_INCLUSIVE
+            )
         }
     }
 

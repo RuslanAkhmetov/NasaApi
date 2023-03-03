@@ -8,9 +8,12 @@ array preloaded_fonts
 attr myColor
 attr myColor2
 color black
+color blue
 color colorAccent
 color colorAccent40Alfa
 color color_gray
+color green
+color lightblue
 color mars_seed
 color mars_theme_dark_background
 color mars_theme_dark_error
@@ -134,7 +137,11 @@ color moon_theme_light_surfaceVariant
 color moon_theme_light_tertiary
 color moon_theme_light_tertiaryContainer
 color my_color
+color orange
+color purple
+color red
 color white
+color yellow
 dimen animation_margin
 dimen appMargin
 dimen app_bar_height
@@ -150,6 +157,7 @@ drawable bg_system
 drawable circle_pause_vector
 drawable circle_play_vector
 drawable earth
+drawable error
 drawable ic_archive
 drawable ic_back_fab
 drawable ic_baseline_animation_24
@@ -179,6 +187,7 @@ drawable play_pause_circle
 drawable play_to_pause
 drawable swipe_indicator_active
 drawable swipe_indicator_passive
+font aclonica
 font aladin
 id FirstFragment
 id action_bar_favorite
