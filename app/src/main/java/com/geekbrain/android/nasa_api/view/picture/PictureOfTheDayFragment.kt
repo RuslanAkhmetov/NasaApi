@@ -15,6 +15,7 @@ import android.transition.TransitionManager
 import android.util.Log
 import android.view.*
 import android.widget.ImageView
+import android.widget.TextView
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.constraintlayout.widget.ConstraintLayout
@@ -184,41 +185,37 @@ class PictureOfTheDayFragment : Fragment() {
 
                 //binding.explanationTextView.typeface =
                 //    Typeface.createFromAsset(requireActivity().assets, "azeret/AzeretMono-Light.ttf")
-
-                val spanned: Spanned
-                val spannableString : SpannableString
-                val spannableStringBuilder: SpannableStringBuilder
-
                 //val textSample = "My Text <ul> <li> bullet one</li> <li> bullet two</li> </ul>"
                 //binding.explanationTextView.text = Html.fromHtml(textSample)        // решение 90х
 
-                val textNewSample = "My Text \nbullet one \n bullet two"
+                val spanned: Spanned
+                val spannableString : SpannableString
+                var spannableStringBuilder: SpannableStringBuilder
 
-                spannableString = SpannableString(textNewSample)
 
-                val bulletSpan = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
-                    BulletSpan(20, resources.getColor(R.color.my_color), 20)
-                } else {
-                    BulletSpan(20, resources.getColor(R.color.my_color))
-                }
+                val textNewSample = "My text \nbullet one \n bullet two"
+
+                spannableStringBuilder = SpannableStringBuilder(textNewSample)
+
+                binding.explanationTextView.setText(spannableStringBuilder, TextView.BufferType.EDITABLE)
+
+                spannableStringBuilder = binding.explanationTextView.text as SpannableStringBuilder
 
                 val bitmap = ContextCompat.getDrawable(requireContext(), R.drawable.ic_earth )!!.toBitmap()
 
                 for(i in textNewSample.indices){
                     if(textNewSample[i] == 't'){
-                        spannableString.setSpan(
+                        spannableStringBuilder.setSpan(
                             ForegroundColorSpan(ContextCompat.getColor(requireContext(), R.color.colorAccent)),
-                            i, i+1, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+                            i, i+1, Spanned.SPAN_INCLUSIVE_INCLUSIVE)
                     } else if(textNewSample[i] == 'o'){
                         bitmap?.let {
-                        spannableString.setSpan(
+                        spannableStringBuilder.setSpan(
                              ImageSpan(it) ,
                             i, i+1, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
                         }
                     }
                 }
-
-                Log.i(TAG, "renderDateFromNasa: ${textNewSample.indexesOf("\n").toString()}")
 
 
                 val result = textNewSample.indexesOf("\n")
@@ -226,8 +223,8 @@ class PictureOfTheDayFragment : Fragment() {
                 result.forEach{
                     if(it != current){
                         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
-                            spannableString.setSpan( BulletSpan(20, resources.getColor(R.color.my_color), 20),
-                                current+1, it, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
+                            spannableStringBuilder.setSpan( BulletSpan(20, resources.getColor(R.color.my_color), 20),
+                                current+1, it, Spannable.SPAN_INCLUSIVE_INCLUSIVE
                             )
                         }
                     }
@@ -235,12 +232,13 @@ class PictureOfTheDayFragment : Fragment() {
                 }
 
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
-                    spannableString.setSpan( BulletSpan(20, resources.getColor(R.color.my_color), 20),
-                        current+1, spannableString.length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
+                    spannableStringBuilder.setSpan( BulletSpan(20, resources.getColor(R.color.my_color), 20),
+                        current+1, spannableStringBuilder.length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
                     )
                 }
 
-                binding.explanationTextView.text = spannableString
+                spannableStringBuilder.insert(3, "word")
+
 
 
             }
