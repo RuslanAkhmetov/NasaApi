@@ -30,6 +30,7 @@ import androidx.core.provider.FontsContractCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import coil.dispose
+import coil.load
 import com.geekbrain.android.nasa_api.R
 import com.geekbrain.android.nasa_api.databinding.FragmentPictureOfTheDayBinding
 import com.geekbrain.android.nasa_api.recyclerview.RecyclerFragment
@@ -182,26 +183,14 @@ class PictureOfTheDayFragment : Fragment() {
                 binding.mainFragmentLoadingLayout.visibility = View.GONE
                 binding.pictureOfTheDayImageView.visibility = View.VISIBLE
                 binding.explanationTextView.visibility = View.VISIBLE
-                /* binding.pictureOfTheDayImageView.load(responseAppState.pictureOfTheDayResponseData.url) {
-                     error(R.drawable.ic_load_error_vector)
-                     placeholder(R.drawable.bg_system)
-                 }*/
+                binding.pictureOfTheDayImageView.load(responseAppState.pictureOfTheDayResponseData.url) {
+                    error(R.drawable.ic_load_error_vector)
+                    placeholder(R.drawable.bg_system)
+                }
 
-                //binding.explanationTextView.text = responseAppState.pictureOfTheDayResponseData.explanation
+                val textExplanation = responseAppState.pictureOfTheDayResponseData.explanation
 
-                //binding.explanationTextView.typeface =
-                //    Typeface.createFromAsset(requireActivity().assets, "azeret/AzeretMono-Light.ttf")
-                //val textSample = "My Text <ul> <li> bullet one</li> <li> bullet two</li> </ul>"
-                //binding.explanationTextView.text = Html.fromHtml(textSample)        // решение 90х
-
-                val spanned: Spanned
-                val spannableString: SpannableString
-                var spannableStringBuilder: SpannableStringBuilder
-
-
-                val textNewSample = "My text \nbullet one \n bullet two"
-
-                spannableStringBuilder = SpannableStringBuilder(textNewSample)
+                var spannableStringBuilder = SpannableStringBuilder(textExplanation)
 
                 binding.explanationTextView.setText(
                     spannableStringBuilder,
@@ -210,57 +199,44 @@ class PictureOfTheDayFragment : Fragment() {
 
                 spannableStringBuilder = binding.explanationTextView.text as SpannableStringBuilder
 
+
+                //binding.explanationTextView.typeface =
+                //    Typeface.createFromAsset(requireActivity().assets, "azeret/AzeretMono-Light.ttf")
+                //val textSample = "My Text <ul> <li> bullet one</li> <li> bullet two</li> </ul>"
+                //binding.explanationTextView.text = Html.fromHtml(textSample)        // решение 90х
+
+                val spanned: Spanned
+                val spannableString: SpannableString
+
+
+                //val textNewSample = "My text \nbullet one \n bullet two"
+
                 val bitmap =
                     ContextCompat.getDrawable(requireContext(), R.drawable.ic_earth)!!.toBitmap()
 
-                for (i in textNewSample.indices) {
-                    if (textNewSample[i] == 't') {
-                        spannableStringBuilder.setSpan(
-                            ForegroundColorSpan(
-                                ContextCompat.getColor(
-                                    requireContext(),
-                                    R.color.colorAccent
-                                )
-                            ),
-                            i, i + 1, Spanned.SPAN_INCLUSIVE_INCLUSIVE
-                        )
-                    } else if (textNewSample[i] == 'o') {
-                        bitmap?.let {
-                            spannableStringBuilder.setSpan(
-                                ImageSpan(it),
-                                i, i + 1, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE
-                            )
-                        }
-                    }
-                }
 
+                val ColorList = listOf(
+                    ContextCompat.getColor(requireContext(), R.color.red),
+                    ContextCompat.getColor(requireContext(), R.color.orange),
+                    ContextCompat.getColor(requireContext(), R.color.yellow),
+                    ContextCompat.getColor(requireContext(), R.color.green),
+                    ContextCompat.getColor(requireContext(), R.color.lightblue),
+                    ContextCompat.getColor(requireContext(), R.color.blue),
+                    ContextCompat.getColor(requireContext(), R.color.purple),
+                )
 
-                val result = textNewSample.indexesOf("\n")
-                var current = result.first()
-                result.forEach {
-                    if (it != current) {
-                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
-                            spannableStringBuilder.setSpan(
-                                BulletSpan(20, resources.getColor(R.color.my_color), 20),
-                                current + 1, it, Spannable.SPAN_INCLUSIVE_INCLUSIVE
-                            )
-                        }
-                    }
-                    current = it
-                }
+                Log.i(TAG, "renderDateFromNasa: ${ColorList.toString()}")
 
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+                for (i in textExplanation.indices) {
+                    val color: Int = ColorList.get(i % ColorList.size)
                     spannableStringBuilder.setSpan(
-                        BulletSpan(20, resources.getColor(R.color.my_color), 20),
-                        current + 1,
-                        spannableStringBuilder.length,
-                        Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
+                        ForegroundColorSpan(color),
+                        i, i + 1, Spanned.SPAN_INCLUSIVE_INCLUSIVE
                     )
+
                 }
 
-                spannableStringBuilder.insert(3, "word")
-
-                val request = FontRequest(
+                /*val request = FontRequest(
                     "com.google.android.gms.fonts",
                     "com.google.android.gms",
                     "Aladin",
@@ -280,12 +256,34 @@ class PictureOfTheDayFragment : Fragment() {
                     }
                 }
 
+
                 FontsContractCompat.requestFont(
                     requireContext(), request, fontCallback, Handler(
                         Looper.getMainLooper()
                     )
                 )
-
+*/
+                /*val result = textNewSample.indexesOf("\n")
+                    var current = result.first()
+                    result.forEach {
+                        if (it != current) {
+                            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+                                spannableStringBuilder.setSpan(
+                                    BulletSpan(20, resources.getColor(R.color.my_color), 20),
+                                    current + 1, it, Spannable.SPAN_INCLUSIVE_INCLUSIVE
+                                )
+                            }
+                        }
+                        current = it
+                    }
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+                        spannableStringBuilder.setSpan(
+                            BulletSpan(20, resources.getColor(R.color.my_color), 20),
+                            current + 1,
+                            spannableStringBuilder.length,
+                            Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
+                        )
+                    }*/
 
             }
         }
