@@ -18,9 +18,15 @@
         <item name="tabStyle">@style/MyTabLayoutStyle</item>
         <item name="bottomNavigationStyle">@style/MyBottomNavigationView</item>
         <item name="materialCardViewStyle">@style/MyCardViewStyle</item>
-        <item name="fontFamily">@font/aclonica</item>
+        <!--<item name="fontFamily">@font/aclonica</item>-->
         <!-- <item name="textAppearanceLabelLarge">@style/MyTextAppearanceBody2</item>-->
 
+    </style>
+
+    <style name="Theme.Nasa_api" parent="Base.Theme.Nasa_api" />
+
+    <style name = "SplashTheme" parent = "Base.Theme.Nasa_api">
+        <item name = "android:windowBackground">@drawable/splash_background</item>
     </style>
 
     <style name="MyBottomNavigationView" parent="Widget.Material3.BottomNavigationView">
@@ -156,6 +162,6 @@
         <item name="helperTextTextColor">#25447A</item>
     </style>
 
-    <style name="Theme.Nasa_api" parent="Base.Theme.Nasa_api" />
+
 
 </resources>

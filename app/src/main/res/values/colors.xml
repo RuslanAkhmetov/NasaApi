@@ -8,9 +8,11 @@
     <color name="orange">#FF9800</color>
     <color name="yellow">#FFEB3B</color>
     <color name="green">#A8EA5D</color>
-    <color name="lightblue">#00BCD4</color>
+    <color name="light_blue">#00BCD4</color>
     <color name="blue">#03A9F4</color>
     <color name="purple">#9C27B0</color>
+    <color name="light_gray">#66656565</color>
+
 
 
     <color name="mars_seed">#c700e0</color>

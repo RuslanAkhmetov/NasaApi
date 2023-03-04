@@ -14,6 +14,7 @@ class BottomBarActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         binding = ActivityBottomBarBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -22,8 +23,8 @@ class BottomBarActivity : AppCompatActivity() {
                 R.id.action_view_earth -> {navigateTo(EarthFragment())}
                 R.id.action_view_mars -> {navigateTo(MarsCuriosityFragment())}
                 R.id.action_view_system -> {navigateTo(EPICFragment())}
-                R.id.action_layout -> {navigateTo(LayoutFragment())}
-                R.id.action_motion -> {navigateTo(MotionFragment())}
+                /*R.id.action_layout -> {navigateTo(LayoutFragment())}
+                R.id.action_motion -> {navigateTo(MotionFragment())}*/
                 else -> {}
             }
             true

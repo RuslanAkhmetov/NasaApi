@@ -12,41 +12,36 @@
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Nasa_api"
+        android:theme="@style/SplashTheme"
         tools:targetApi="31">
 
         <activity
-            android:name=".MainActivity"
+            android:name=".view.splash.SplashActivity"
             android:exported="true"
-            android:label="@string/app_name"
-
-            android:theme="@style/Theme.Nasa_api">
-
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-
-        <activity
-            android:name=".view.navigation.ViewPagerActivity"
-            android:exported="true">
-        </activity>
-
-        <activity
-            android:name=".view.navigation.BottomBarActivity"
-            android:exported="true"
-            android:theme="@style/Theme.Nasa_api">
+            android:label="NASA_APP"
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
         <activity
-            android:name=".view.animation.AnimationActivity"
-            android:exported="true">
+            android:name=".view.navigation.BottomBarActivity"
+            android:exported="true"
+            android:label="NASA_APP"
+            android:theme="@style/SplashTheme">
 
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Nasa_api">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
         </activity>
 
         <meta-data

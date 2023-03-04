@@ -13,7 +13,8 @@ color colorAccent
 color colorAccent40Alfa
 color color_gray
 color green
-color lightblue
+color light_blue
+color light_gray
 color mars_seed
 color mars_theme_dark_background
 color mars_theme_dark_error
@@ -176,15 +177,18 @@ drawable ic_plus_fab
 drawable ic_search
 drawable ic_send
 drawable ic_settings_menu
+drawable ic_splash_screen
 drawable ic_system
 drawable ic_wikipedia
 drawable image
 drawable mars_curiosity
 drawable mars_photo
 drawable my_selector_background_chip
+drawable nasa
 drawable pause_to_play
 drawable play_pause_circle
 drawable play_to_pause
+drawable splash_background
 drawable swipe_indicator_active
 drawable swipe_indicator_passive
 font aclonica
@@ -234,6 +238,7 @@ id guidelinethirdhorizontal
 id guidelinethirdvertical
 id header
 id home
+id image_view
 id input
 id inputLayout
 id loadingLayout
@@ -264,6 +269,7 @@ layout activity_animation_end
 layout activity_animation_start
 layout activity_bottom_bar
 layout activity_main
+layout activity_splash
 layout activity_view_pager
 layout animation_explode_list_item
 layout bottom_navigation_layout
@@ -355,6 +361,7 @@ style MyTextAppearanceBody2
 style MyTextInputStyle
 style MyThirdTheme
 style RedTheme
+style SplashTheme
 style Theme.Nasa_api
 xml backup_rules
 xml data_extraction_rules

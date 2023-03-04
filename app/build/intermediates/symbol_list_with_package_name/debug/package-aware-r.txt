@@ -1422,7 +1422,8 @@ color foreground_material_light
 color green
 color highlighted_text_material_dark
 color highlighted_text_material_light
-color lightblue
+color light_blue
+color light_gray
 color m3_appbar_overlay_color
 color m3_assist_chip_icon_tint_color
 color m3_assist_chip_stroke_color
@@ -2943,6 +2944,7 @@ drawable ic_search
 drawable ic_search_black_24
 drawable ic_send
 drawable ic_settings_menu
+drawable ic_splash_screen
 drawable ic_system
 drawable ic_wikipedia
 drawable image
@@ -3007,6 +3009,7 @@ drawable mtrl_switch_track
 drawable mtrl_switch_track_decoration
 drawable mtrl_tabs_default_indicator
 drawable my_selector_background_chip
+drawable nasa
 drawable navigation_empty_icon
 drawable notification_action_background
 drawable notification_bg
@@ -3023,6 +3026,7 @@ drawable notify_panel_notification_icon_bg
 drawable pause_to_play
 drawable play_pause_circle
 drawable play_to_pause
+drawable splash_background
 drawable swipe_indicator_active
 drawable swipe_indicator_passive
 drawable test_level_drawable
@@ -3290,6 +3294,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id image_view
 id immediateStop
 id included
 id indeterminate
@@ -3707,6 +3712,7 @@ layout activity_animation_end
 layout activity_animation_start
 layout activity_bottom_bar
 layout activity_main
+layout activity_splash
 layout activity_view_pager
 layout animation_explode_list_item
 layout bottom_navigation_layout
@@ -4420,6 +4426,7 @@ style ShapeAppearanceOverlay_MaterialComponents_MaterialCalendar_Day
 style ShapeAppearanceOverlay_MaterialComponents_MaterialCalendar_Window_Fullscreen
 style ShapeAppearanceOverlay_MaterialComponents_MaterialCalendar_Year
 style ShapeAppearanceOverlay_MaterialComponents_TextInputLayout_FilledBox
+style SplashTheme
 style TextAppearance_AppCompat
 style TextAppearance_AppCompat_Body1
 style TextAppearance_AppCompat_Body2

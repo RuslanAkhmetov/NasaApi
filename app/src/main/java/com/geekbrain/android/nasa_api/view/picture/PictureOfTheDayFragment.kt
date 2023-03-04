@@ -8,11 +8,7 @@ import android.text.Spannable
 import android.text.SpannableString
 import android.text.Spanned
 import android.text.style.ForegroundColorSpan
-import android.text.style.LeadingMarginSpan
-import android.text.style.LineHeightSpan
-import android.text.style.StyleSpan
 import android.text.style.TypefaceSpan
-import android.text.style.UnderlineSpan
 import android.transition.TransitionManager
 import android.util.Log
 import android.view.*
@@ -196,7 +192,7 @@ class PictureOfTheDayFragment : Fragment() {
 
                 spannableString = binding.explanationTextView.text as SpannableString
 
-                spannableString.apply {
+                /*spannableString.apply {
                     val startIndex = 0
                     val endIndex = this.length
                     val flag = Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
@@ -222,7 +218,7 @@ class PictureOfTheDayFragment : Fragment() {
 
                     setSpan(
                         LineHeightSpan.Standard(lineHeight), startIndex, endIndex, flag)
-                }
+                }*/
 
                 val request = FontRequest(
                     "com.google.android.gms.fonts",
@@ -265,7 +261,7 @@ class PictureOfTheDayFragment : Fragment() {
             ContextCompat.getColor(requireContext(), R.color.orange),
             ContextCompat.getColor(requireContext(), R.color.yellow),
             ContextCompat.getColor(requireContext(), R.color.green),
-            ContextCompat.getColor(requireContext(), R.color.lightblue),
+            ContextCompat.getColor(requireContext(), R.color.light_blue),
             ContextCompat.getColor(requireContext(), R.color.blue),
             ContextCompat.getColor(requireContext(), R.color.purple),
         )

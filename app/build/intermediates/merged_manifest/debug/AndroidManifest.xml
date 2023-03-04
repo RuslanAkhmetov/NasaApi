@@ -28,7 +28,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/Theme.Nasa_api" >
+        android:theme="@style/SplashTheme" >
+        <activity
+            android:name="com.geekbrain.android.nasa_api.view.splash.SplashActivity"
+            android:exported="true"
+            android:label="NASA_APP"
+            android:theme="@style/SplashTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.geekbrain.android.nasa_api.view.navigation.BottomBarActivity"
+            android:exported="true"
+            android:label="NASA_APP"
+            android:theme="@style/SplashTheme" >
+        </activity>
         <activity
             android:name="com.geekbrain.android.nasa_api.MainActivity"
             android:exported="true"
@@ -37,24 +54,6 @@
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
-        </activity>
-        <activity
-            android:name="com.geekbrain.android.nasa_api.view.navigation.ViewPagerActivity"
-            android:exported="true" >
-        </activity>
-        <activity
-            android:name="com.geekbrain.android.nasa_api.view.navigation.BottomBarActivity"
-            android:exported="true"
-            android:theme="@style/Theme.Nasa_api" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name="com.geekbrain.android.nasa_api.view.animation.AnimationActivity"
-            android:exported="true" >
         </activity>
 
         <meta-data

@@ -8,8 +8,8 @@
         "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\layout\\activity_animation_start.xml"
     },
     {
-        "merged": "com.geekbrain.android.nasa_api.app-merged_res-46:/layout_fragment_picture_of_the_day.xml.flat",
-        "source": "com.geekbrain.android.nasa_api.app-main-48:/layout/fragment_picture_of_the_day.xml"
+        "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-merged_res-46:\\drawable-v24_ic_splash_screen.png.flat",
+        "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\drawable-v24\\ic_splash_screen.png"
     },
     {
         "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-merged_res-46:\\drawable-v24_mars_photo.png.flat",
@@ -18,6 +18,10 @@
     {
         "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-merged_res-46:\\drawable_ic_launcher_background.xml.flat",
         "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.geekbrain.android.nasa_api.app-merged_res-46:/layout_activity_splash.xml.flat",
+        "source": "com.geekbrain.android.nasa_api.app-main-48:/layout/activity_splash.xml"
     },
     {
         "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-merged_res-46:\\layout_fragment_epic.xml.flat",
@@ -78,6 +82,10 @@
     {
         "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-merged_res-46:\\drawable_image.jpg.flat",
         "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\drawable\\image.jpg"
+    },
+    {
+        "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-merged_res-46:\\drawable_splash_background.xml.flat",
+        "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\drawable\\splash_background.xml"
     },
     {
         "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-merged_res-46:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
@@ -146,6 +154,10 @@
     {
         "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-merged_res-46:\\drawable_circle_pause_vector.xml.flat",
         "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\drawable\\circle_pause_vector.xml"
+    },
+    {
+        "merged": "com.geekbrain.android.nasa_api.app-merged_res-46:/drawable-v24_nasa.png.flat",
+        "source": "com.geekbrain.android.nasa_api.app-main-48:/drawable-v24/nasa.png"
     },
     {
         "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-merged_res-46:\\drawable-v24_bg_earth.xml.flat",
@@ -310,6 +322,10 @@
     {
         "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-merged_res-46:\\menu_menu_main.xml.flat",
         "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\menu\\menu_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-merged_res-46:\\layout_activity_splash.xml.flat",
+        "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\layout\\activity_splash.xml"
     },
     {
         "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-merged_res-46:\\drawable-v24_swipe_indicator_passive.xml.flat",
