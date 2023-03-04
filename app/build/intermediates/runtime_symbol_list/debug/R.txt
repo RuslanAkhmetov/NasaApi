@@ -3434,6 +3434,7 @@ int id position 0x7f0a018d
 int id postLayout 0x7f0a018e
 int id pressed 0x7f0a018f
 int id prioriry_label 0x7f0a0190
+int id progress_bar 0x7f0a0237
 int id progress_circular 0x7f0a0191
 int id progress_horizontal 0x7f0a0192
 int id radio 0x7f0a0193

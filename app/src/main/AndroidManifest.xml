@@ -12,14 +12,14 @@
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/SplashTheme"
+        android:theme="@style/Theme.Nasa_api"
         tools:targetApi="31">
 
         <activity
             android:name=".view.splash.SplashActivity"
             android:exported="true"
             android:label="NASA_APP"
-            android:theme="@style/SplashTheme">
+            android:theme="@style/Theme.Nasa_api">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

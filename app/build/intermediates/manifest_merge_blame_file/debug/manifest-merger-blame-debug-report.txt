@@ -46,8 +46,8 @@
 29        android:supportsRtl="true"
 29-->C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:14:9-35
 30        android:testOnly="true"
-31        android:theme="@style/SplashTheme" >
-31-->C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:15:9-43
+31        android:theme="@style/Theme.Nasa_api" >
+31-->C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:15:9-46
 32        <activity
 32-->C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:18:9-27:20
 33            android:name="com.geekbrain.android.nasa_api.view.splash.SplashActivity"
@@ -56,8 +56,8 @@
 34-->C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:20:13-36
 35            android:label="NASA_APP"
 35-->C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:21:13-37
-36            android:theme="@style/SplashTheme" >
-36-->C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:22:13-47
+36            android:theme="@style/Theme.Nasa_api" >
+36-->C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:22:13-50
 37            <intent-filter>
 37-->C:\Users\1\AndroidStudioProjects\NasaApi\app\src\main\AndroidManifest.xml:23:13-26:29
 38                <action android:name="android.intent.action.MAIN" />

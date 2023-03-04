@@ -256,6 +256,7 @@ id pictureOfTheDayImageView
 id play
 id play_pause_circle
 id prioriry_label
+id progress_bar
 id recyclerActivityFAB
 id recyclerView
 id start

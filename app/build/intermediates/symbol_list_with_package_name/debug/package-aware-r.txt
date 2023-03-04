@@ -3435,6 +3435,7 @@ id position
 id postLayout
 id pressed
 id prioriry_label
+id progress_bar
 id progress_circular
 id progress_horizontal
 id radio

@@ -28,12 +28,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/SplashTheme" >
+        android:theme="@style/Theme.Nasa_api" >
         <activity
             android:name="com.geekbrain.android.nasa_api.view.splash.SplashActivity"
             android:exported="true"
             android:label="NASA_APP"
-            android:theme="@style/SplashTheme" >
+            android:theme="@style/Theme.Nasa_api" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

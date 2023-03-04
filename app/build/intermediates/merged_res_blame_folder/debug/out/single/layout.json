@@ -16,12 +16,12 @@
         "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\layout\\fragment_system.xml"
     },
     {
-        "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-mergeDebugResources-45:\\layout\\recycler_item_header.xml",
-        "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\layout\\recycler_item_header.xml"
-    },
-    {
         "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-mergeDebugResources-45:\\layout\\fragment_picture_of_the_day.xml",
         "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\layout\\fragment_picture_of_the_day.xml"
+    },
+    {
+        "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-mergeDebugResources-45:\\layout\\recycler_item_header.xml",
+        "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\layout\\recycler_item_header.xml"
     },
     {
         "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-mergeDebugResources-45:\\layout\\activity_view_pager.xml",
