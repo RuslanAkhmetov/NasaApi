@@ -27,6 +27,8 @@ anim design_bottom_sheet_slide_in
 anim design_bottom_sheet_slide_out
 anim design_snackbar_in
 anim design_snackbar_out
+anim fade_in
+anim fade_out
 anim fragment_fast_out_extra_slow_in
 anim linear_indeterminate_line1_head_interpolator
 anim linear_indeterminate_line1_tail_interpolator
@@ -45,6 +47,8 @@ anim nav_default_enter_anim
 anim nav_default_exit_anim
 anim nav_default_pop_enter_anim
 anim nav_default_pop_exit_anim
+anim slide_in
+anim slide_out
 animator design_appbar_state_list_animator
 animator design_fab_hide_motion_spec
 animator design_fab_show_motion_spec
@@ -3089,9 +3093,7 @@ id actionUp
 id action_bar
 id action_bar_activity_content
 id action_bar_container
-id action_bar_favorite
 id action_bar_root
-id action_bar_settings
 id action_bar_spinner
 id action_bar_subtitle
 id action_bar_title
@@ -3099,13 +3101,11 @@ id action_container
 id action_context_bar
 id action_divider
 id action_image
-id action_layout
 id action_menu_divider
 id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
-id action_motion
 id action_text
 id action_theme_mars
 id action_theme_moon
@@ -3142,7 +3142,6 @@ id beginning
 id bestChoice
 id blocking
 id bottom
-id bottomAppBar
 id bottomSheetContainer
 id bottom_navigation_view
 id bounce
@@ -3168,10 +3167,6 @@ id chain2
 id chains
 id checkbox
 id checked
-id chipGroup
-id chipbeforeyesterday
-id chiptoday
-id chipyesterday
 id chronometer
 id circle_center
 id clear_text
@@ -3247,7 +3242,6 @@ id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
 id explanationTextView
-id fab
 id fabbtn
 id fade
 id fill
@@ -3811,7 +3805,6 @@ layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 menu menu_bottom_navigation
 menu menu_bottom_navigation_view
-menu menu_main
 mipmap ic_launcher
 mipmap ic_launcher_round
 navigation nav_graph
@@ -3879,7 +3872,6 @@ string fayvourite
 string first_fragment_label
 string green
 string hide_bottom_view_on_scroll_behavior
-string hint
 string home
 string icon_content_description
 string item_view_role_description

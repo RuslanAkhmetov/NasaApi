@@ -194,7 +194,6 @@
     <string name="fayvourite">Fayvourite</string>
     <string name="first_fragment_label">First Fragment</string>
     <string name="green">Green</string>
-    <string name="hint">Wiki search</string>
     <string name="home">Home</string>
     <string name="layout">Layout</string>
     <string name="lorem_ipsum">
@@ -262,7 +261,8 @@
     <style name="Base.Theme.Nasa_api" parent="Theme.Material3.DynamicColors.DayNight">
         
         
-        
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
 
 
 
@@ -377,7 +377,6 @@
     </style>
     <style name="MyTabLayoutStyle" parent="@style/Widget.Material3.TabLayout">
         <item name="tabIndicatorFullWidth">false</item>
-
     </style>
     <style name="MyTextAppearanceBody2" parent="TextAppearance.AppCompat.Body2">
         <item name="fontFamily">@font/aladin</item>

@@ -20,8 +20,7 @@ class ViewPagerAdapter(fragmentManager: FragmentManager): FragmentStatePagerAdap
     }
 
     override fun getPageTitle(position: Int): CharSequence {
-        return fragments[position].myTag
-        //return fragments[position].tag.toString()
+        return fragments[position].tag.toString()
 
     }
 }

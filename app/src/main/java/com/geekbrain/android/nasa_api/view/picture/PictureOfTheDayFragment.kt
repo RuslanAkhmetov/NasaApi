@@ -1,36 +1,31 @@
 package com.geekbrain.android.nasa_api.view.picture
 
+
 import android.content.Intent
-import android.graphics.Typeface
 import android.net.Uri
 import android.os.*
-import android.text.Spannable
 import android.text.SpannableString
 import android.text.Spanned
 import android.text.style.ForegroundColorSpan
-import android.text.style.TypefaceSpan
 import android.transition.TransitionManager
 import android.util.Log
-import android.view.*
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
-import androidx.core.provider.FontRequest
-import androidx.core.provider.FontsContractCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import coil.dispose
 import coil.load
 import com.geekbrain.android.nasa_api.R
 import com.geekbrain.android.nasa_api.databinding.FragmentPictureOfTheDayBinding
-import com.geekbrain.android.nasa_api.recyclerview.RecyclerFragment
-import com.geekbrain.android.nasa_api.view.drawer.BottomNavigationDrawerFragment
 import com.geekbrain.android.nasa_api.view.picture.utils.DAYS
 import com.geekbrain.android.nasa_api.view.picture.utils.getSelectedDay
-import com.geekbrain.android.nasa_api.view.settings.SettingsFragment
 import com.geekbrain.android.nasa_api.viewmodel.AppState
 import com.geekbrain.android.nasa_api.viewmodel.PictureOfTheDayViewModel
 
@@ -75,6 +70,11 @@ class PictureOfTheDayFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        Handler(Looper.getMainLooper()).postDelayed({
+            if(isAdded)    //проверяем не умер ли фрагмент
+                tutorial()
+        }, 500)
+
         viewModel.getLiveData().observe(
             viewLifecycleOwner
         ) { renderDateFromNasa(it) }
@@ -85,19 +85,7 @@ class PictureOfTheDayFragment : Fragment() {
             viewModel.sendRequest(selectedDay)
         }
 
-        binding.chiptoday.setOnClickListener {
-            viewModel.sendRequest()
-        }
 
-        binding.chipyesterday.setOnClickListener {
-            val selectedDay = getSelectedDay(DAYS.YESTERDAY)
-            viewModel.sendRequest(selectedDay)
-        }
-
-        binding.chipbeforeyesterday.setOnClickListener {
-            val selectedDay = getSelectedDay(DAYS.BEFORE_YESTERDAY)
-            viewModel.sendRequest(selectedDay)
-        }
 
         binding.inputLayout.setEndIconOnClickListener {
             startActivity(Intent(Intent.ACTION_VIEW).apply {
@@ -123,40 +111,11 @@ class PictureOfTheDayFragment : Fragment() {
 
     }
 
-    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        super.onCreateOptionsMenu(menu, inflater)
-        inflater.inflate(R.menu.menu_main, menu)
+    private fun tutorial() {
+
+
     }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
-            R.id.action_bar_favorite -> {
-                requireActivity().supportFragmentManager
-                    .beginTransaction()
-                    .add(R.id.container, RecyclerFragment.newInstance())
-                    .addToBackStack("")
-                    .commit()
-
-            }
-
-            R.id.action_bar_settings -> {
-                requireActivity().supportFragmentManager
-                    .beginTransaction()
-//                    .hide(this)
-                    .add(R.id.container, SettingsFragment.newInstance())
-                    .addToBackStack("")
-                    .commit()
-            }
-
-            android.R.id.home -> {
-                activity?.let {
-                    BottomNavigationDrawerFragment().show(it.supportFragmentManager, "TAG")
-                }
-            }
-        }
-
-        return super.onOptionsItemSelected(item)
-    }
 
     @RequiresApi(Build.VERSION_CODES.Q)
     private fun renderDateFromNasa(responseAppState: AppState) {
@@ -192,60 +151,6 @@ class PictureOfTheDayFragment : Fragment() {
 
                 spannableString = binding.explanationTextView.text as SpannableString
 
-                /*spannableString.apply {
-                    val startIndex = 0
-                    val endIndex = this.length
-                    val flag = Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
-
-                    val boldTextEnd = if (endIndex < 30) this.length else 30
-
-                    setSpan(
-                        StyleSpan(Typeface.BOLD), startIndex, boldTextEnd, flag
-                    )
-
-                    val underlinedTextEnd = if (endIndex < 20) endIndex else 20
-
-                    setSpan(
-                        UnderlineSpan(), startIndex, underlinedTextEnd, flag
-                    )
-
-                    val marginEndIndex = if(endIndex <50) endIndex else 50
-                    setSpan(
-                        LeadingMarginSpan.Standard(50), startIndex, marginEndIndex, flag
-                    )
-
-                    val lineHeight = 60
-
-                    setSpan(
-                        LineHeightSpan.Standard(lineHeight), startIndex, endIndex, flag)
-                }*/
-
-                val request = FontRequest(
-                    "com.google.android.gms.fonts",
-                    "com.google.android.gms",
-                    "Aladin",
-                    R.array.com_google_android_gms_fonts_certs
-                )
-
-                val fontCallback = object : FontsContractCompat.FontRequestCallback() {
-                    @RequiresApi(Build.VERSION_CODES.P)
-                    override fun onTypefaceRetrieved(typeface: Typeface?) {
-                        typeface?.let {
-                            spannableString.setSpan(
-                                TypefaceSpan(it),
-                                0, spannableString.length,
-                                Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
-                            )
-                        }
-                    }
-                }
-
-
-                /*FontsContractCompat.requestFont(
-                    requireContext(), request, fontCallback, Handler(
-                        Looper.getMainLooper()
-                    )
-                )*/
 
             }
         }

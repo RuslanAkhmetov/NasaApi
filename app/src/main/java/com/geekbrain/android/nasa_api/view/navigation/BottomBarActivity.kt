@@ -5,8 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.geekbrain.android.nasa_api.R
 import com.geekbrain.android.nasa_api.databinding.ActivityBottomBarBinding
-import com.geekbrain.android.nasa_api.view.layout.behaviors.LayoutFragment
-import com.geekbrain.android.nasa_api.view.maket.MotionFragment
 import com.google.android.material.badge.BadgeDrawable
 
 class BottomBarActivity : AppCompatActivity() {
@@ -44,7 +42,10 @@ class BottomBarActivity : AppCompatActivity() {
     }
 
     private fun navigateTo (fragment: Fragment){
-        supportFragmentManager.beginTransaction().replace(R.id.container, fragment).commit()
+        supportFragmentManager.beginTransaction()
+
+            .setCustomAnimations(R.anim.slide_in, R.anim.fade_out, R.anim.fade_in, R.anim.slide_out)
+            .replace(R.id.container, fragment).commit()
     }
 
 

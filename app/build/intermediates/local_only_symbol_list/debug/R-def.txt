@@ -1,5 +1,9 @@
 R_DEF: Internal format may change without notice
 local
+anim fade_in
+anim fade_out
+anim slide_in
+anim slide_out
 animator toolbar_elevation
 array com_google_android_gms_fonts_certs
 array com_google_android_gms_fonts_certs_dev
@@ -194,10 +198,6 @@ drawable swipe_indicator_passive
 font aclonica
 font aladin
 id FirstFragment
-id action_bar_favorite
-id action_bar_settings
-id action_layout
-id action_motion
 id action_theme_mars
 id action_theme_moon
 id action_view_earth
@@ -207,17 +207,12 @@ id appBar
 id appBarTextView
 id backgroundImage
 id barrier
-id bottomAppBar
 id bottomSheetContainer
 id bottom_navigation_view
 id btn1
 id btn2
 id btn3
 id cardView
-id chipGroup
-id chipbeforeyesterday
-id chiptoday
-id chipyesterday
 id constraint_container
 id container
 id date
@@ -227,7 +222,6 @@ id editItemImageView
 id end
 id epic_image_view
 id explanationTextView
-id fab
 id fabbtn
 id frameLayout
 id guidelinefirsthorizontal
@@ -237,7 +231,6 @@ id guidelinesecondvertical
 id guidelinethirdhorizontal
 id guidelinethirdvertical
 id header
-id home
 id image_view
 id input
 id inputLayout
@@ -291,7 +284,6 @@ layout recycler_item_note_low_priority
 layout recycler_item_usual_priority
 menu menu_bottom_navigation
 menu menu_bottom_navigation_view
-menu menu_main
 mipmap ic_launcher
 mipmap ic_launcher_round
 navigation nav_graph
@@ -313,7 +305,6 @@ string epic
 string fayvourite
 string first_fragment_label
 string green
-string hint
 string home
 string layout
 string lorem_ipsum

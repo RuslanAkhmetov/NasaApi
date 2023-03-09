@@ -20,10 +20,6 @@
         "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "com.geekbrain.android.nasa_api.app-merged_res-46:/layout_activity_splash.xml.flat",
-        "source": "com.geekbrain.android.nasa_api.app-main-48:/layout/activity_splash.xml"
-    },
-    {
         "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-merged_res-46:\\layout_fragment_epic.xml.flat",
         "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\layout\\fragment_epic.xml"
     },
@@ -62,6 +58,10 @@
     {
         "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-merged_res-46:\\xml_fragment_motion_scene.xml.flat",
         "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\xml\\fragment_motion_scene.xml"
+    },
+    {
+        "merged": "com.geekbrain.android.nasa_api.app-merged_res-46:/anim_slide_out.xml.flat",
+        "source": "com.geekbrain.android.nasa_api.app-main-48:/anim/slide_out.xml"
     },
     {
         "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-merged_res-46:\\drawable-v24_ic_plus_fab.xml.flat",
@@ -260,6 +260,10 @@
         "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\drawable-v24\\ic_mars.xml"
     },
     {
+        "merged": "com.geekbrain.android.nasa_api.app-merged_res-46:/anim_slide_in.xml.flat",
+        "source": "com.geekbrain.android.nasa_api.app-main-48:/anim/slide_in.xml"
+    },
+    {
         "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-merged_res-46:\\drawable-v24_ic_archive.xml.flat",
         "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\drawable-v24\\ic_archive.xml"
     },
@@ -320,10 +324,6 @@
         "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\layout\\recycler_item_note_low_priority.xml"
     },
     {
-        "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-merged_res-46:\\menu_menu_main.xml.flat",
-        "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\menu\\menu_main.xml"
-    },
-    {
         "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-merged_res-46:\\layout_activity_splash.xml.flat",
         "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\layout\\activity_splash.xml"
     },
@@ -340,7 +340,15 @@
         "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\drawable-v24\\ic_hamburger_menu_bottom_bar.xml"
     },
     {
+        "merged": "com.geekbrain.android.nasa_api.app-merged_res-46:/anim_fade_out.xml.flat",
+        "source": "com.geekbrain.android.nasa_api.app-main-48:/anim/fade_out.xml"
+    },
+    {
         "merged": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-merged_res-46:\\mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\1\\.gradle\\daemon\\7.4\\com.geekbrain.android.nasa_api.app-main-48:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.geekbrain.android.nasa_api.app-merged_res-46:/anim_fade_in.xml.flat",
+        "source": "com.geekbrain.android.nasa_api.app-main-48:/anim/fade_in.xml"
     }
 ]

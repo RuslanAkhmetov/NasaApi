@@ -2,15 +2,11 @@ package com.geekbrain.android.nasa_api.view.navigation
 
 import android.os.Build
 import android.os.Bundle
-import android.util.Log
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import coil.load
 import com.geekbrain.android.nasa_api.R
@@ -19,36 +15,16 @@ import com.geekbrain.android.nasa_api.viewmodel.AppStateEPIC
 import com.geekbrain.android.nasa_api.viewmodel.EPICViewModel
 
 
-class EPICFragment : Fragment() {
+class EPICFragment : ViewBindingFragment<FragmentEpicBinding>(FragmentEpicBinding::inflate) {
 
     private val TAG = "EPICFragment"
-
-    private var _binding: FragmentEpicBinding? = null
 
     private var isExpanded = false
 
     // This property is only valid between onCreateView and
     // onDestroyView.
-    private val binding get() = _binding!!
-
     private val viewModel by viewModels<EPICViewModel>()
 
-
-    companion object {
-
-        fun newInstance() = EPICFragment()
-    }
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        Log.i(TAG, "onCreateView: ")
-
-        _binding = FragmentEpicBinding.inflate(inflater, container, false)
-        return binding.root
-
-    }
 
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -73,9 +49,6 @@ class EPICFragment : Fragment() {
 
         viewModel.sendRequest()
     }
-
-
-
 
 
     private fun renderDateFromNasa(responseAppState: AppStateEPIC) {
@@ -104,8 +77,5 @@ class EPICFragment : Fragment() {
         }
     }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
-    }
+
 }

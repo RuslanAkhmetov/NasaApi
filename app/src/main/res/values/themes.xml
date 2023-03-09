@@ -3,8 +3,8 @@
     <style name="Base.Theme.Nasa_api" parent="Theme.Material3.DynamicColors.DayNight">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-        <!--  <item name="windowActionBar">false</item>
-              <item name="windowNoTitle">true</item>-->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
 
 <!--        <item name="myColor">@color/my_color</item>
         <item name="myColor2">#FF0101</item>-->
@@ -106,7 +106,6 @@
 
     <style name="MyTabLayoutStyle" parent="@style/Widget.Material3.TabLayout">
         <item name="tabIndicatorFullWidth">false</item>
-
     </style>
 
     <style name="MyAppBarStyle" parent="@style/Widget.Material3.BottomAppBar">
@@ -161,7 +160,5 @@
     <style name="MyTextInputStyle" parent="Widget.Material3.TextInputLayout.OutlinedBox">
         <item name="helperTextTextColor">#25447A</item>
     </style>
-
-
 
 </resources>

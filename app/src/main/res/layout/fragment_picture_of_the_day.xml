@@ -20,7 +20,7 @@
             android:layout_gravity="top"
             android:padding="@dimen/padding_5dp">
 
-            <com.google.android.material.chip.ChipGroup
+         <!--   <com.google.android.material.chip.ChipGroup
                 android:id="@+id/chipGroup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -47,14 +47,12 @@
                     android:layout_height="wrap_content"
                     android:text="@string/today" />
 
-            </com.google.android.material.chip.ChipGroup>
+            </com.google.android.material.chip.ChipGroup>-->
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/inputLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:visibility="visible"
-                android:hint="@string/hint"
                 android:padding="@dimen/padding_5dp"
                 app:counterEnabled="true"
                 app:counterMaxLength="20"
@@ -62,13 +60,12 @@
                 app:endIconMode="custom"
                 app:helperText="wiki_helper_text"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/chipGroup">
+                app:layout_constraintTop_toTopOf="parent">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/input"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/aclonica"
                     android:hint="@string/wiki_search"
                     android:minHeight="48dp" />
 
@@ -111,7 +108,7 @@
 
     </androidx.core.widget.NestedScrollView>
 
-    <com.google.android.material.bottomappbar.BottomAppBar
+<!--    <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bottomAppBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -128,6 +125,6 @@
         android:visibility="visible"
         android:contentDescription="@string/picture_of_the_day"
         app:layout_anchor="@id/bottomAppBar"
-        app:srcCompat="@drawable/ic_plus_fab" />
+        app:srcCompat="@drawable/ic_plus_fab" />-->
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
